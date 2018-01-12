@@ -3,8 +3,120 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+//@import "compass/reset";
+
+/** Colors */
+$blue: #29c0ff;
+$black: #252023;
+$grey: #726d70;
+$light-grey: #fafafa;
+
+/** Fonts */
+@font-face {
+    font-family: LatoRegular;
+    src: url('../fonts/lato_regular.ttf');
+}
+
+@font-face {
+    font-family: LatoLight;
+    src: url('../fonts/lato_light.ttf');
+}
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url('../fonts/montserrat_regular.ttf');
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url('../fonts/montserrat_bold.ttf');
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.clearfix {
+    clear: both;
+  }
 
 body {
   margin: 0;
+}
+
+div#slider {
+  overflow: hidden;
+}
+
+.arrow-wrapper {
+   position: absolute;
+   z-index: 1;
+   color: white;
+   margin:0;
+   width: 100%;
+   text-align: center;
+   top: 50%;
+}
+
+.left-arrow {
+  float: left;
+}
+
+.right-arrow {
+  float: right;
+}
+
+.slide {
+  width: 33%;
+  float: left;
+  display: inline;
+ }
+
+div#slider #figure {
+  position: relative;
+  width: 309%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+
+}
+
+#slide1{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/wenice.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#slide2{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/paris.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#slide3{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/budapest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+#main {
+  height: 1000px;
 }
