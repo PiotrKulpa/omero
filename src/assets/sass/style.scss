@@ -32,91 +32,245 @@ $light-grey: #fafafa;
     src: url('../fonts/montserrat_bold.ttf');
 }
 
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
 
-.clearfix {
-    clear: both;
-  }
-
 body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  color: $black;
+  background-color: $light-grey;
   margin: 0;
 }
 
-div#slider {
-  overflow: hidden;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.arrow-wrapper {
-   position: absolute;
-   z-index: 1;
-   color: white;
-   margin:0;
-   width: 100%;
-   text-align: center;
-   top: 50%;
+.slider-wrapper {
+  z-index:1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
-.left-arrow {
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 1.1em;
+  font-family: LatoLight;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.nav-wrapper-inner {
+  width: 100%;
+}
+
+.logo-container {
   float: left;
+  width: 50%;
 }
 
-.right-arrow {
-  float: right;
-}
-
-.slide {
-  width: 33%;
+.nav {
+  text-align: right;
   float: left;
-  display: inline;
- }
+  width: 50%;
+  padding-right: 5px;
+}
 
-div#slider #figure {
-  position: relative;
-  width: 309%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
+.logo {
+  width: 200px;
+}
+
+.arrows-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-slogan {
+  text-align: center;
+  vertical-align: middle;
 
 }
 
-#slide1{
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/wenice.jpg");
+.social {
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.left, .right {
+   width: 100px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-content {
+  background-color: #ecf0f1;
   background-size: cover;
   background-position: center;
-}
-
-#slide2{
-  width: 100vw;
+  flex: 0 0 100%;
   height: 100vh;
-  background-image: url("../images/paris.jpg");
-  background-size: cover;
-  background-position: center;
+  margin: 0px;
+  padding: 15px;
+  color: white;
+  vertical-align: middle;
+  padding-top: 30%;
 }
 
-#slide3{
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/budapest.jpg");
-  background-size: cover;
-  background-position: center;
+.s1 {
+  background-image: url('../images/wenice.jpg');
 }
 
+.s2 {
+  background-image: url('../images/paris.jpg');
+}
 
+.s3 {
+  background-image: url('../images/budapest.jpg');
+}
 
 #main {
   height: 1000px;
 }
+
+// html {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+//
+// *, *:before, *:after {
+//   -webkit-box-sizing: inherit;
+//   -moz-box-sizing: inherit;
+//   box-sizing: inherit;
+//   }
+//
+// .clearfix {
+//     clear: both;
+//   }
+//
+// body {
+//   margin: 0;
+// }
+//
+// div#slider {
+//   overflow: hidden;
+// }
+// .slider-inner {
+//   position: absolute;
+//   display: flex;
+//   z-index: 1;
+//   color: white;
+//   text-align: center;
+//   width: 100%;
+// }
+//
+// .nav {
+//   width: 50%;
+// }
+//
+// .logo-container {
+//   width: 50%;
+// }
+//
+// .slider-content {
+//   width: 300%;
+// }
+//
+//
+// .arrow-wrapper {
+//    position: absolute;
+//
+//    color: white;
+//    margin:0;
+//    width: 100%;
+//    text-align: center;
+//    top: 50%;
+// }
+//
+// .left-arrow {
+//   float: left;
+// }
+//
+// .right-arrow {
+//   float: right;
+// }
+//
+// .logo {
+//
+//
+//   width: 300px;
+// }
+//
+// .slide {
+//   width: 33%;
+//   float: left;
+//   display: inline;
+//  }
+//
+// div#slider #figure {
+//   position: relative;
+//   width: 309%;
+//   margin: 0;
+//   padding: 0;
+//   left: 0;
+//   text-align: left;
+//   font-size: 0;
+//
+// }
+//
+// #slide1{
+//   width: 100vw;
+//   height: 100vh;
+//   background-image: url("../images/wenice.jpg");
+//   background-size: cover;
+//   background-position: center;
+// }
+//
+// #slide2{
+//   width: 100vw;
+//   height: 100vh;
+//   background-image: url("../images/paris.jpg");
+//   background-size: cover;
+//   background-position: center;
+// }
+//
+// #slide3{
+//   width: 100vw;
+//   height: 100vh;
+//   background-image: url("../images/budapest.jpg");
+//   background-size: cover;
+//   background-position: center;
+// }

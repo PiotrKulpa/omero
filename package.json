@@ -1,0 +1,23 @@
+{
+  "name": "omero",
+  "version": "1.0.0",
+  "description": "Web app for Omero company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiotrKulpa/omero.git"
+  },
+  "author": "p.kulpa@onet.eu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiotrKulpa/omero/issues"
+  },
+  "homepage": "https://github.com/PiotrKulpa/omero#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  }
+}

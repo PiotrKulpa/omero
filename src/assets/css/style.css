@@ -21,101 +21,153 @@
   src: url("../fonts/montserrat_bold.ttf");
 }
 /* line 35, ../sass/style.scss */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 41, ../sass/style.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/* line 47, ../sass/style.scss */
-.clearfix {
-  clear: both;
-}
-
-/* line 51, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body {
-  margin: 0;
-}
-
-/* line 55, ../sass/style.scss */
-div#slider {
-  overflow: hidden;
-}
-
-/* line 59, ../sass/style.scss */
-.arrow-wrapper {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
-  text-align: center;
-  top: 50%;
+  height: 100%;
+  color: #252023;
+  background-color: #fafafa;
+  margin: 0;
 }
 
-/* line 69, ../sass/style.scss */
-.left-arrow {
-  float: left;
+/* line 52, ../sass/style.scss */
+body::-webkit-scrollbar {
+  display: none;
 }
 
-/* line 73, ../sass/style.scss */
-.right-arrow {
-  float: right;
+/* line 56, ../sass/style.scss */
+.slider-wrapper {
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 63, ../sass/style.scss */
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 1.1em;
+  font-family: LatoLight;
+}
+/* line 71, ../sass/style.scss */
+.nav-wrapper a {
+  color: white;
+  text-decoration: none;
 }
 
 /* line 77, ../sass/style.scss */
-.slide {
-  width: 33%;
+.nav-wrapper-inner {
+  width: 100%;
+}
+
+/* line 81, ../sass/style.scss */
+.logo-container {
   float: left;
-  display: inline;
+  width: 50%;
 }
 
-/* line 83, ../sass/style.scss */
-div#slider #figure {
-  position: relative;
-  width: 309%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
+/* line 86, ../sass/style.scss */
+.nav {
+  text-align: right;
+  float: left;
+  width: 50%;
+  padding-right: 5px;
 }
 
-/* line 94, ../sass/style.scss */
-#slide1 {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/wenice.jpg");
-  background-size: cover;
-  background-position: center;
+/* line 93, ../sass/style.scss */
+.logo {
+  width: 200px;
 }
 
-/* line 102, ../sass/style.scss */
-#slide2 {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/paris.jpg");
-  background-size: cover;
-  background-position: center;
+/* line 97, ../sass/style.scss */
+.arrows-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 104, ../sass/style.scss */
+.slider-slogan {
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* line 110, ../sass/style.scss */
-#slide3 {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/budapest.jpg");
-  background-size: cover;
-  background-position: center;
+.social {
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  text-align: center;
+  vertical-align: middle;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
+.arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* line 126, ../sass/style.scss */
+.left, .right {
+  width: 100px;
+}
+
+/* line 130, ../sass/style.scss */
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+/* line 135, ../sass/style.scss */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 139, ../sass/style.scss */
+.slider-content {
+  background-color: #ecf0f1;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 15px;
+  color: white;
+  vertical-align: middle;
+  padding-top: 30%;
+}
+
+/* line 152, ../sass/style.scss */
+.s1 {
+  background-image: url("../images/wenice.jpg");
+}
+
+/* line 156, ../sass/style.scss */
+.s2 {
+  background-image: url("../images/paris.jpg");
+}
+
+/* line 160, ../sass/style.scss */
+.s3 {
+  background-image: url("../images/budapest.jpg");
+}
+
+/* line 164, ../sass/style.scss */
 #main {
   height: 1000px;
 }

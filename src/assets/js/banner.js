@@ -1,19 +1,20 @@
 var i = 0, x = 0, slide = 0;
-$('.arrow-wrapper').on('click','.left-arrow', function () {
-  slide+=-33.3;
-  $('#figure').css({
-    'transform': 'translate('+ slide +'%, 0)',
-    'transition': 'transform 1s ease'
-  });
-  console.log(slide);
+$('.left').click(function () {
+  if (slide > -200) {
+    slide+=-100;
+    $('.slider-content').css({
+      'transform': 'translate('+slide+'%, 0)',
+      'transition': 'transform 1s ease'
+    });
+   }
 });
 
-$('.arrow-wrapper').on('click','.right-arrow', function () {
-  slide+=33.3;
-  $('#figure').css({
-    'transform': 'translate('+ slide +'%, 0)',
-    'transition': 'transform 1s ease'
-  });
-  console.log(slide);
-
+$('.right').click(function () {
+  if (slide < 0) {
+    slide+=100;
+    $('.slider-content').css({
+      'transform': 'translate('+ slide +'%, 0)',
+      'transition': 'transform 1s ease'
+    });
+  }
 });
