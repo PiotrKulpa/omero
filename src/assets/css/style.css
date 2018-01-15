@@ -20,14 +20,14 @@
   font-family: MontserratBold;
   src: url("../fonts/montserrat_bold.ttf");
 }
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -35,16 +35,17 @@ body {
   width: 100%;
   height: 100%;
   color: #252023;
-  background-color: #fafafa;
+  background-color: white;
   margin: 0;
+  font-family: LatoRegular;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .slider-wrapper {
   z-index: 1;
   position: absolute;
@@ -52,7 +53,7 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .nav-wrapper {
   position: fixed;
   width: 100%;
@@ -61,24 +62,28 @@ body::-webkit-scrollbar {
   font-size: 1.1em;
   font-family: LatoLight;
 }
-/* line 71, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .nav-wrapper a {
   color: white;
   text-decoration: none;
 }
+/* line 78, ../sass/style.scss */
+.nav-wrapper a:hover {
+  color: #29c0ff;
+}
 
-/* line 77, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .nav-wrapper-inner {
   width: 100%;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .logo-container {
   float: left;
   width: 50%;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .nav {
   text-align: right;
   float: left;
@@ -86,12 +91,12 @@ body::-webkit-scrollbar {
   padding-right: 5px;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .logo {
   width: 200px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .arrows-wrapper {
   display: flex;
   height: 100%;
@@ -99,46 +104,87 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .slider-slogan {
+  padding-top: 10%;
   text-align: center;
   vertical-align: middle;
 }
+/* line 116, ../sass/style.scss */
+.slider-slogan h1 {
+  font-family: MontserratBold;
+  font-size: 4em;
+}
+/* line 121, ../sass/style.scss */
+.slider-slogan h3 {
+  font-family: LatoRegular;
+  font-size: 1em;
+}
+/* line 126, ../sass/style.scss */
+.slider-slogan button {
+  background-color: #29c0ff;
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+}
 
-/* line 110, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .social {
   color: white;
+  font-size: 1.5em;
   position: absolute;
   width: 100%;
   bottom: 10%;
   text-align: center;
   vertical-align: middle;
 }
+/* line 146, ../sass/style.scss */
+.social i {
+  border: solid 1px white;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 152, ../sass/style.scss */
+.social i:hover {
+  color: #29c0ff;
+}
 
-/* line 119, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .arrows {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .left, .right {
-  width: 100px;
+  width: 25px;
+  height: 25px;
+  background-color: #29c0ff;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* line 174, ../sass/style.scss */
+.left:hover, .right:hover {
+  opacity: 0.5;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .slider {
   display: flex;
   overflow-x: auto;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .slider::-webkit-scrollbar {
   display: none;
 }
 
-/* line 139, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .slider-content {
   background-color: #ecf0f1;
   background-size: cover;
@@ -149,25 +195,112 @@ body::-webkit-scrollbar {
   padding: 15px;
   color: white;
   vertical-align: middle;
-  padding-top: 30%;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .s1 {
   background-image: url("../images/wenice.jpg");
 }
 
-/* line 156, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .s2 {
   background-image: url("../images/paris.jpg");
 }
 
-/* line 160, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .s3 {
   background-image: url("../images/budapest.jpg");
 }
 
-/* line 164, ../sass/style.scss */
-#main {
-  height: 1000px;
+/* line 219, ../sass/style.scss */
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/* line 228, ../sass/style.scss */
+.short-info {
+  width: 33.33%;
+  text-align: center;
+  padding: 15px 50px 15px 50px;
+  background-color: #fafafa;
+  font-family: LatoLight;
+  border-left: 1px #e7e7e7 solid;
+  border-bottom: 1px #e7e7e7 solid;
+  margin: 0;
+}
+/* line 238, ../sass/style.scss */
+.short-info h1 {
+  font-size: 1.2em;
+  color: #252023;
+}
+/* line 243, ../sass/style.scss */
+.short-info i {
+  padding-top: 25px;
+  font-size: 1.5em;
+  color: #29c0ff;
+}
+/* line 249, ../sass/style.scss */
+.short-info p {
+  padding-bottom: 25px;
+  color: #726d70;
+}
+
+/* line 255, ../sass/style.scss */
+.about-us {
+  text-align: center;
+  padding: 40px;
+}
+/* line 259, ../sass/style.scss */
+.about-us h1 {
+  font-family: MontserratRegular;
+  font-size: 3em;
+}
+/* line 264, ../sass/style.scss */
+.about-us p {
+  font-size: 2.5em;
+  font-family: LatoLight;
+  color: #726d70;
+}
+
+/* line 271, ../sass/style.scss */
+.blue-part {
+  display: flex;
+  justify-content: space-around;
+  background-color: #29c0ff;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* line 280, ../sass/style.scss */
+.blue-part-inner {
+  width: 30%;
+}
+/* line 283, ../sass/style.scss */
+.blue-part-inner h1 {
+  font-family: MontserratRegular;
+}
+/* line 287, ../sass/style.scss */
+.blue-part-inner p {
+  font-family: LatoLight;
+  padding: 25px;
+}
+
+/* line 293, ../sass/style.scss */
+.success-block {
+  margin: 0;
+  background-image: url("../images/success-bck.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+}
+
+/* line 302, ../sass/style.scss */
+.success-block-wrapper {
+  vertical-align: middle;
+  height: 100%;
 }

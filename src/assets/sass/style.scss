@@ -10,6 +10,7 @@ $blue: #29c0ff;
 $black: #252023;
 $grey: #726d70;
 $light-grey: #fafafa;
+$grey-lines: #e7e7e7;
 
 /** Fonts */
 @font-face {
@@ -45,8 +46,9 @@ body {
   width: 100%;
   height: 100%;
   color: $black;
-  background-color: $light-grey;
+  background-color: white;
   margin: 0;
+  font-family: LatoRegular;
 }
 
 body::-webkit-scrollbar {
@@ -71,6 +73,11 @@ body::-webkit-scrollbar {
   a {
     color: white;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: $blue;
+
   }
 }
 
@@ -102,18 +109,50 @@ body::-webkit-scrollbar {
 }
 
 .slider-slogan {
+  padding-top: 10%;
   text-align: center;
   vertical-align: middle;
 
-}
+  h1 {
+    font-family: MontserratBold;
+    font-size: 4em;
+  }
 
+  h3 {
+    font-family: LatoRegular;
+    font-size: 1em;
+  }
+
+  button {
+    background-color: $blue;
+    border: none;
+    width: 150px;
+    height: 50px;
+    color: white;
+  }
+
+}
 .social {
   color: white;
+  font-size: 1.5em;
   position: absolute;
   width: 100%;
   bottom: 10%;
   text-align: center;
   vertical-align: middle;
+
+
+
+  i {
+    border: solid 1px white;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+  }
 }
 
 .arrows {
@@ -124,8 +163,21 @@ body::-webkit-scrollbar {
 }
 
 .left, .right {
-   width: 100px;
+   width: 25px;
+   height: 25px;
+   background-color: $blue;
+   border: none;
+   color: white;
+   border-radius: 15px;
+   cursor: pointer;
+
+   &:hover {
+     opacity: 0.5;
+   }
+
 }
+
+
 
 .slider {
   display: flex;
@@ -146,7 +198,6 @@ body::-webkit-scrollbar {
   padding: 15px;
   color: white;
   vertical-align: middle;
-  padding-top: 30%;
 }
 
 .s1 {
@@ -162,9 +213,96 @@ body::-webkit-scrollbar {
 }
 
 #main {
-  height: 1000px;
+
 }
 
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+
+}
+
+.short-info {
+  width: 33.33%;
+  text-align: center;
+  padding: 15px 50px 15px 50px;
+  background-color: $light-grey;
+  font-family: LatoLight;
+  border-left: 1px $grey-lines solid;
+  border-bottom: 1px $grey-lines solid;
+  margin: 0;
+
+  h1 {
+    font-size: 1.2em;
+    color: $black;
+  }
+
+  i {
+    padding-top: 25px;
+    font-size: 1.5em;
+    color: $blue;
+  }
+
+  p {
+    padding-bottom: 25px;
+    color: $grey;
+  }
+}
+
+.about-us {
+  text-align: center;
+  padding: 40px;
+
+  h1 {
+    font-family: MontserratRegular;
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 2.5em;
+    font-family: LatoLight;
+    color: $grey;
+  }
+}
+
+.blue-part {
+  display: flex;
+  justify-content: space-around;
+  background-color: $blue;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.blue-part-inner {
+  width: 30%;
+
+  h1 {
+    font-family: MontserratRegular;
+  }
+
+  p {
+    font-family: LatoLight;
+    padding: 25px;
+  }
+}
+
+.success-block {
+  margin: 0;
+  background-image: url('../images/success-bck.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+}
+
+.success-block-wrapper {
+  vertical-align: middle;
+  height: 100%;
+}
 // html {
 //   -webkit-box-sizing: border-box;
 //   -moz-box-sizing: border-box;
