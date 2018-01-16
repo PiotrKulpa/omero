@@ -21,7 +21,7 @@
 			<div class="nav-wrapper">
 				<div class="nav-wrapper-inner">
 						<div class="logo-container">
-							<img class="logo" src="./assets/images/logo.svg" />
+							<a href="/"><img class="logo" src="./assets/images/logo.svg" /></a>
 						</div>
 
 						<div class="nav">
@@ -34,10 +34,10 @@
 							</div>
 
 							<div class="nav-menu">
-								<a href="">Home</a><span> / </span>
-								<a href="">O nas</a><span> / </span>
-								<a href="">Referencje</a><span> / </span>
-								<a href="">Kontakt</a>
+								<a href="" data-position=".slider-wrapper">Home</a><span> / </span>
+								<a href="" data-position=".about-us">O nas</a><span> / </span>
+								<a href="" data-position=".blue-part">Referencje</a><span> / </span>
+								<a href="" data-position=".contact-form">Kontakt</a>
 							</div>
 
 						</div>
@@ -73,87 +73,25 @@
 		<div class="slider-slogan">
 			<h1>JAKOŚĆ</h1>
 			<h3>TO CO NAS WYRÓŻNIA</h3>
-			<button>WIĘCEJ</button>
+			<button class="btn">WIĘCEJ</button>
 		</div>
   </div>
   <div class="slider-content s2">
 		<div class="slider-slogan">
 			<h1>JAKOŚĆ</h1>
 			<h3>TO CO NAS WYRÓŻNIA</h3>
-			<button>WIĘCEJ</button>
+			<button class="btn">WIĘCEJ</button>
 		</div>
   </div>
   <div class="slider-content s3">
 		<div class="slider-slogan">
 			<h1>JAKOŚĆ</h1>
 			<h3>TO CO NAS WYRÓŻNIA</h3>
-			<button>WIĘCEJ</button>
+			<button class="btn">WIĘCEJ</button>
 		</div>
   </div>
 
 </div>
-
-<!-- <div class="main">
-  Main
-</div> -->
-
-		<!-- <div id="slider">
-		<div class="slider-inner">
-
-			<div class="logo-container">
-				<img class="logo" src="./assets/images/logo.svg" />
-			</div>
-
-			<div class="nav">
-
-				<div class="nav-lang">
-					<a href="">PL</a>
-					<a href="">EN</a>
-					<a href="">DE</a>
-					<a href="">ES</a>
-				</div>
-
-				<div class="nav-menu">
-					<a href="">Home</a><span> / </span>
-					<a href="">O nas</a><span> / </span>
-					<a href="">Referencje</a><span> / </span>
-					<a href="">Kontakt</a>
-				</div>
-
-			</div>
-
-
-
-			<div class="slider-content">
-
-				<div class="slogan">
-					<h1>JAKOŚĆ</h1>
-					<h3>TO CO NAS WYRÓŻNIA</h3>
-					<button>WIĘCEJ</button>
-					<div class="social">
-						<i class="fa fa-facebook-square" aria-hidden="true"></i>
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-					</div>
-
-				</div>
-
-
-				<div class="arrow-wrapper">
-					<button class="left-arrow"> Lewo<<<< </button>
-					<button class="right-arrow"> Prawo>>>> </button>
-				</div>
-
-			</div>
-			</div>
-
-		  <div id="figure" >
-		    <div id="slide1" class="slide"></div>
-		    <div id="slide2" class="slide"></div>
-		    <div id="slide3" class="slide"></div>
-		   </div>
-
-			</div> -->
 
 		<!-- Main content -->
 		<div id="main" >
@@ -217,31 +155,96 @@
 				<div class="success-block-wrapper">
 					<h1>SUKCES</h1>
 					<h4>OSIĄGNIESZ Z NAMI</h4>
-					<button>WIĘCEJ</button>
+					<button class="btn">WIĘCEJ</button>
 				</div>
 			</div>
 
 			<div class="contact-form">
 				<h2>KONTAKT</h2>
 				<form action="">
-					<input type="text"><input type="email">
-					<textarea name="name" rows="8" cols="80"></textarea>
-					<input type="button" name="" value="Wyślij">
+					<input class="inp-name" type="text" placeholder="Imię"><input class="inp-email" type="email" placeholder="E-mail">
+					<textarea class="inp-msg" name="name" rows="3" cols="10" placeholder="Wiadomość"></textarea>
+					<input class="btn" type="button" name="" value="Wyślij">
 				</form>
 			</div>
 
-			<div class="map"></div>
+			<div id="googleMap" class="map"></div>
 
 
 		</div>
 
 		<!-- Footer -->
 		<div id="footer">
-			<div class="footer-logo"></div>
+			<div class="footer-logo"><img src="assets/images/logo.jpg" /></div>
 			<div class="rights">All rights reserved 2017</div>
 		</div>
+		<!-- <div class="main">
+		  Main
+		</div> -->
 
+				<!-- <div id="slider">
+				<div class="slider-inner">
+
+					<div class="logo-container">
+						<img class="logo" src="./assets/images/logo.svg" />
+					</div>
+
+					<div class="nav">
+
+						<div class="nav-lang">
+							<a href="">PL</a>
+							<a href="">EN</a>
+							<a href="">DE</a>
+							<a href="">ES</a>
+						</div>
+
+						<div class="nav-menu">
+							<a href="">Home</a><span> / </span>
+							<a href="">O nas</a><span> / </span>
+							<a href="">Referencje</a><span> / </span>
+							<a href="">Kontakt</a>
+						</div>
+
+					</div>
+
+
+
+					<div class="slider-content">
+
+						<div class="slogan">
+							<h1>JAKOŚĆ</h1>
+							<h3>TO CO NAS WYRÓŻNIA</h3>
+							<button>WIĘCEJ</button>
+							<div class="social">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+							</div>
+
+						</div>
+
+
+						<div class="arrow-wrapper">
+							<button class="left-arrow"> Lewo<<<< </button>
+							<button class="right-arrow"> Prawo>>>> </button>
+						</div>
+
+					</div>
+					</div>
+
+				  <div id="figure" >
+				    <div id="slide1" class="slide"></div>
+				    <div id="slide2" class="slide"></div>
+				    <div id="slide3" class="slide"></div>
+				   </div>
+
+					</div> -->
+
+					<!-- api AIzaSyA0CNfYubMCK65RWVnI8TzIRw1ROhSZLzc -->
+		<script src="./assets/js/menu.js"></script>
+		<script src="./assets/js/map.js"></script>
 		<script src="./assets/js/banner.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0CNfYubMCK65RWVnI8TzIRw1ROhSZLzc&callback=omeroMap"></script>
 	</body>
 
 </html>

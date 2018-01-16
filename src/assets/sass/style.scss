@@ -7,6 +7,7 @@
 
 /** Colors */
 $blue: #29c0ff;
+$dark-blue: #058fc8;
 $black: #252023;
 $grey: #726d70;
 $light-grey: #fafafa;
@@ -56,7 +57,7 @@ body::-webkit-scrollbar {
 }
 
 .slider-wrapper {
-  z-index:1;
+  z-index: 2;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -64,6 +65,7 @@ body::-webkit-scrollbar {
 
 .nav-wrapper {
   position: fixed;
+  z-index: 3;
   width: 100%;
   padding: 15px;
   color: white;
@@ -83,6 +85,7 @@ body::-webkit-scrollbar {
 
 .nav-wrapper-inner {
   width: 100%;
+
 }
 
 .logo-container {
@@ -108,10 +111,60 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+.slider {
+  // display: -webkit-box;
+  // display: -webkit-flex;
+  // display: -moz-box;
+  // display: -ms-flexbox;
+
+  //flex-wrap: nowrap;
+  // -webkit-box-orient: vertical;
+  // -webkit-box-direction: normal;
+  // -webkit-flex-direction: column;
+  // -moz-box-orient: vertical;
+  // -moz-box-direction: normal;
+  // -ms-flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.s1 {
+  background-image: url('../images/wenice.jpg');
+}
+
+.s2 {
+  background-image: url('../images/paris.jpg');
+}
+
+.s3 {
+  background-image: url('../images/budapest.jpg');
+}
+
 .slider-slogan {
-  padding-top: 10%;
+  z-index: 1;
   text-align: center;
-  vertical-align: middle;
+
 
   h1 {
     font-family: MontserratBold;
@@ -123,15 +176,28 @@ body::-webkit-scrollbar {
     font-size: 1em;
   }
 
-  button {
-    background-color: $blue;
-    border: none;
-    width: 150px;
-    height: 50px;
-    color: white;
-  }
+}
+
+.btn {
+  background-color: $blue;
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+  margin: 10px;
 
 }
+
+.btn:hover {
+  -webkit-transition: background-color 0.5s ease;
+ -moz-transition: background-color 0.5s ease;
+ -ms-transition: background-color 0.5s ease;
+ -o-transition: background-color 0.5s ease;
+ transition: background-color 0.5s ease;
+
+  background-color: $dark-blue;
+}
+
 .social {
   color: white;
   font-size: 1.5em;
@@ -179,38 +245,7 @@ body::-webkit-scrollbar {
 
 
 
-.slider {
-  display: flex;
-  overflow-x: auto;
-}
 
-.slider::-webkit-scrollbar {
-  display: none;
-}
-
-.slider-content {
-  background-color: #ecf0f1;
-  background-size: cover;
-  background-position: center;
-  flex: 0 0 100%;
-  height: 100vh;
-  margin: 0px;
-  padding: 15px;
-  color: white;
-  vertical-align: middle;
-}
-
-.s1 {
-  background-image: url('../images/wenice.jpg');
-}
-
-.s2 {
-  background-image: url('../images/paris.jpg');
-}
-
-.s3 {
-  background-image: url('../images/budapest.jpg');
-}
 
 #main {
 
@@ -218,10 +253,10 @@ body::-webkit-scrollbar {
 
 .info-wrapper {
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
   flex-flow: row wrap;
-
+  align-content: stretch;
 
 }
 
@@ -295,13 +330,89 @@ body::-webkit-scrollbar {
   background-image: url('../images/success-bck.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
   height: 500px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .success-block-wrapper {
-  vertical-align: middle;
-  height: 100%;
+  text-align: center;
+
+  h1 {
+    font-family: MontserratBold;
+    font-size: 4em;
+    margin: 0;
+  }
+
+  h4 {
+    font-family: LatoLight;
+    color: $grey;
+    margin: 0;
+
+  }
+}
+
+.contact-form {
+  width: 80%;
+  margin: auto;
+  font-family: LatoLight;
+  color: $grey;
+
+
+  h2 {
+    font-family: MontserratRegular;
+    font-size: 3em;
+    color: $black;
+  }
+
+  .inp-name, .inp-email {
+    width: 45%;
+    border: none;
+    border-bottom: 1px solid $grey-lines;
+    padding: 5px;
+    margin-right: 25px;
+    font-size: 1.2em;
+  }
+
+  .inp-msg {
+    width: 70%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid $grey-lines;
+    font-family: LatoLight;
+    font-size: 1.2em;
+    vertical-align: bottom;
+  }
+
+
+}
+
+.inp-name:focus, .inp-email:focus, .inp-msg:focus {
+  outline: none;
+  box-shadow: 0 0 5px $blue;
+}
+
+.map{
+  width: 100%;
+  height: 400px;
+  margin-top: 25px;
+}
+
+#footer {
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  align-content: space-between;
+}
+
+.footer-logo, .rights {
+  width: 50%;
+}
+
+.rights {
+  text-align: right;
 }
 // html {
 //   -webkit-box-sizing: border-box;

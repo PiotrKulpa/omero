@@ -20,14 +20,14 @@
   font-family: MontserratBold;
   src: url("../fonts/montserrat_bold.ttf");
 }
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -40,50 +40,51 @@ body {
   font-family: LatoRegular;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .slider-wrapper {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   width: 100vw;
   height: 100vh;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .nav-wrapper {
   position: fixed;
+  z-index: 3;
   width: 100%;
   padding: 15px;
   color: white;
   font-size: 1.1em;
   font-family: LatoLight;
 }
-/* line 73, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .nav-wrapper a {
   color: white;
   text-decoration: none;
 }
-/* line 78, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .nav-wrapper a:hover {
   color: #29c0ff;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .nav-wrapper-inner {
   width: 100%;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .logo-container {
   float: left;
   width: 50%;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .nav {
   text-align: right;
   float: left;
@@ -91,12 +92,12 @@ body::-webkit-scrollbar {
   padding-right: 5px;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .logo {
   width: 200px;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .arrows-wrapper {
   display: flex;
   height: 100%;
@@ -104,32 +105,87 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-/* line 111, ../sass/style.scss */
-.slider-slogan {
-  padding-top: 10%;
-  text-align: center;
-  vertical-align: middle;
+/* line 114, ../sass/style.scss */
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
 }
-/* line 116, ../sass/style.scss */
+
+/* line 133, ../sass/style.scss */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 137, ../sass/style.scss */
+.slider-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+/* line 152, ../sass/style.scss */
+.s1 {
+  background-image: url("../images/wenice.jpg");
+}
+
+/* line 156, ../sass/style.scss */
+.s2 {
+  background-image: url("../images/paris.jpg");
+}
+
+/* line 160, ../sass/style.scss */
+.s3 {
+  background-image: url("../images/budapest.jpg");
+}
+
+/* line 164, ../sass/style.scss */
+.slider-slogan {
+  z-index: 1;
+  text-align: center;
+}
+/* line 169, ../sass/style.scss */
 .slider-slogan h1 {
   font-family: MontserratBold;
   font-size: 4em;
 }
-/* line 121, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .slider-slogan h3 {
   font-family: LatoRegular;
   font-size: 1em;
 }
-/* line 126, ../sass/style.scss */
-.slider-slogan button {
+
+/* line 181, ../sass/style.scss */
+.btn {
   background-color: #29c0ff;
   border: none;
   width: 150px;
   height: 50px;
   color: white;
+  margin: 10px;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
+.btn:hover {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background-color: #058fc8;
+}
+
+/* line 201, ../sass/style.scss */
 .social {
   color: white;
   font-size: 1.5em;
@@ -139,26 +195,26 @@ body::-webkit-scrollbar {
   text-align: center;
   vertical-align: middle;
 }
-/* line 146, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .social i {
   border: solid 1px white;
   border-radius: 25px;
   padding: 5px;
   cursor: pointer;
 }
-/* line 152, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .social i:hover {
   color: #29c0ff;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .arrows {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .left, .right {
   width: 25px;
   height: 25px;
@@ -168,59 +224,20 @@ body::-webkit-scrollbar {
   border-radius: 15px;
   cursor: pointer;
 }
-/* line 174, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .left:hover, .right:hover {
   opacity: 0.5;
 }
 
-/* line 182, ../sass/style.scss */
-.slider {
-  display: flex;
-  overflow-x: auto;
-}
-
-/* line 187, ../sass/style.scss */
-.slider::-webkit-scrollbar {
-  display: none;
-}
-
-/* line 191, ../sass/style.scss */
-.slider-content {
-  background-color: #ecf0f1;
-  background-size: cover;
-  background-position: center;
-  flex: 0 0 100%;
-  height: 100vh;
-  margin: 0px;
-  padding: 15px;
-  color: white;
-  vertical-align: middle;
-}
-
-/* line 203, ../sass/style.scss */
-.s1 {
-  background-image: url("../images/wenice.jpg");
-}
-
-/* line 207, ../sass/style.scss */
-.s2 {
-  background-image: url("../images/paris.jpg");
-}
-
-/* line 211, ../sass/style.scss */
-.s3 {
-  background-image: url("../images/budapest.jpg");
-}
-
-/* line 219, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .info-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-flow: row wrap;
+  align-content: stretch;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .short-info {
   width: 33.33%;
   text-align: center;
@@ -231,41 +248,41 @@ body::-webkit-scrollbar {
   border-bottom: 1px #e7e7e7 solid;
   margin: 0;
 }
-/* line 238, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .short-info h1 {
   font-size: 1.2em;
   color: #252023;
 }
-/* line 243, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .short-info i {
   padding-top: 25px;
   font-size: 1.5em;
   color: #29c0ff;
 }
-/* line 249, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .short-info p {
   padding-bottom: 25px;
   color: #726d70;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .about-us {
   text-align: center;
   padding: 40px;
 }
-/* line 259, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .about-us h1 {
   font-family: MontserratRegular;
   font-size: 3em;
 }
-/* line 264, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .about-us p {
   font-size: 2.5em;
   font-family: LatoLight;
   color: #726d70;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .blue-part {
   display: flex;
   justify-content: space-around;
@@ -275,32 +292,110 @@ body::-webkit-scrollbar {
   padding: 30px;
 }
 
-/* line 280, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 .blue-part-inner {
   width: 30%;
 }
-/* line 283, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .blue-part-inner h1 {
   font-family: MontserratRegular;
 }
-/* line 287, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .blue-part-inner p {
   font-family: LatoLight;
   padding: 25px;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .success-block {
   margin: 0;
   background-image: url("../images/success-bck.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
   height: 500px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .success-block-wrapper {
-  vertical-align: middle;
-  height: 100%;
+  text-align: center;
+}
+/* line 342, ../sass/style.scss */
+.success-block-wrapper h1 {
+  font-family: MontserratBold;
+  font-size: 4em;
+  margin: 0;
+}
+/* line 348, ../sass/style.scss */
+.success-block-wrapper h4 {
+  font-family: LatoLight;
+  color: #726d70;
+  margin: 0;
+}
+
+/* line 356, ../sass/style.scss */
+.contact-form {
+  width: 80%;
+  margin: auto;
+  font-family: LatoLight;
+  color: #726d70;
+}
+/* line 363, ../sass/style.scss */
+.contact-form h2 {
+  font-family: MontserratRegular;
+  font-size: 3em;
+  color: #252023;
+}
+/* line 369, ../sass/style.scss */
+.contact-form .inp-name, .contact-form .inp-email {
+  width: 45%;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 5px;
+  margin-right: 25px;
+  font-size: 1.2em;
+}
+/* line 378, ../sass/style.scss */
+.contact-form .inp-msg {
+  width: 70%;
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  font-family: LatoLight;
+  font-size: 1.2em;
+  vertical-align: bottom;
+}
+
+/* line 392, ../sass/style.scss */
+.inp-name:focus, .inp-email:focus, .inp-msg:focus {
+  outline: none;
+  box-shadow: 0 0 5px #29c0ff;
+}
+
+/* line 397, ../sass/style.scss */
+.map {
+  width: 100%;
+  height: 400px;
+  margin-top: 25px;
+}
+
+/* line 403, ../sass/style.scss */
+#footer {
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  align-content: space-between;
+}
+
+/* line 410, ../sass/style.scss */
+.footer-logo, .rights {
+  width: 50%;
+}
+
+/* line 414, ../sass/style.scss */
+.rights {
+  text-align: right;
 }

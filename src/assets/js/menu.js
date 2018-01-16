@@ -1,0 +1,19 @@
+(function () {
+  //menu color change
+  $( window ).scroll(function() {
+    var scrollPos = $( window ).scrollTop();
+    scrollPos > 300 ?
+    $( ".nav-wrapper" ).css( "background-color", "#252023" ) :
+    $( ".nav-wrapper" ).css( "background-color", "transparent" );
+  });
+
+  //menu scroll
+  $(".nav-menu").on('click', 'a', function(e){
+    e.preventDefault();
+    var position = $(this).data('position');
+    $('html, body').animate({
+    scrollTop: $(position).offset().top
+    }, 'slow');
+	});
+
+} ());
