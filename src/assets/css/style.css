@@ -47,7 +47,6 @@ body::-webkit-scrollbar {
 
 /* line 59, ../sass/style.scss */
 .slider-wrapper {
-  z-index: 2;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -56,7 +55,7 @@ body::-webkit-scrollbar {
 /* line 66, ../sass/style.scss */
 .nav-wrapper {
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   width: 100%;
   padding: 15px;
   color: white;
@@ -98,14 +97,62 @@ body::-webkit-scrollbar {
 }
 
 /* line 107, ../sass/style.scss */
-.arrows-wrapper {
+.social-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
+.arrows {
+  width: 100%;
+  text-align: right;
+  right: 10px;
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+}
+
+/* line 132, ../sass/style.scss */
+.left, .right {
+  width: 25px;
+  height: 25px;
+  background-color: #29c0ff;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* line 141, ../sass/style.scss */
+.left:hover, .right:hover {
+  opacity: 0.5;
+}
+
+/* line 147, ../sass/style.scss */
+.social {
+  color: white;
+  font-size: 1.5em;
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+  margin-bottom: 5%;
+  z-index: 1;
+}
+/* line 158, ../sass/style.scss */
+.social i {
+  border: solid 1px white;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 164, ../sass/style.scss */
+.social i:hover {
+  color: #29c0ff;
+}
+
+/* line 170, ../sass/style.scss */
 .slider {
   display: flex;
   flex-direction: row;
@@ -113,12 +160,12 @@ body::-webkit-scrollbar {
   overflow-x: auto;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .slider::-webkit-scrollbar {
   display: none;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .slider-content {
   display: flex;
   flex-direction: row;
@@ -134,38 +181,37 @@ body::-webkit-scrollbar {
   color: white;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .s1 {
   background-image: url("../images/wenice.jpg");
 }
 
-/* line 156, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .s2 {
   background-image: url("../images/paris.jpg");
 }
 
-/* line 160, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .s3 {
   background-image: url("../images/budapest.jpg");
 }
 
-/* line 164, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .slider-slogan {
-  z-index: 1;
   text-align: center;
 }
-/* line 169, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .slider-slogan h1 {
   font-family: MontserratBold;
-  font-size: 4em;
+  font-size: 5em;
 }
-/* line 174, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .slider-slogan h3 {
-  font-family: LatoRegular;
+  font-family: LatoLight;
   font-size: 1em;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .btn {
   background-color: #29c0ff;
   border: none;
@@ -175,7 +221,7 @@ body::-webkit-scrollbar {
   margin: 10px;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .btn:hover {
   -webkit-transition: background-color 0.5s ease;
   -moz-transition: background-color 0.5s ease;
@@ -185,51 +231,7 @@ body::-webkit-scrollbar {
   background-color: #058fc8;
 }
 
-/* line 201, ../sass/style.scss */
-.social {
-  color: white;
-  font-size: 1.5em;
-  position: absolute;
-  width: 100%;
-  bottom: 10%;
-  text-align: center;
-  vertical-align: middle;
-}
-/* line 212, ../sass/style.scss */
-.social i {
-  border: solid 1px white;
-  border-radius: 25px;
-  padding: 5px;
-  cursor: pointer;
-}
-/* line 218, ../sass/style.scss */
-.social i:hover {
-  color: #29c0ff;
-}
-
-/* line 224, ../sass/style.scss */
-.arrows {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-/* line 231, ../sass/style.scss */
-.left, .right {
-  width: 25px;
-  height: 25px;
-  background-color: #29c0ff;
-  border: none;
-  color: white;
-  border-radius: 15px;
-  cursor: pointer;
-}
-/* line 240, ../sass/style.scss */
-.left:hover, .right:hover {
-  opacity: 0.5;
-}
-
-/* line 254, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .info-wrapper {
   display: flex;
   justify-content: space-between;
@@ -237,7 +239,7 @@ body::-webkit-scrollbar {
   align-content: stretch;
 }
 
-/* line 263, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .short-info {
   width: 33.33%;
   text-align: center;
@@ -247,42 +249,54 @@ body::-webkit-scrollbar {
   border-left: 1px #e7e7e7 solid;
   border-bottom: 1px #e7e7e7 solid;
   margin: 0;
+  cursor: pointer;
 }
-/* line 273, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .short-info h1 {
   font-size: 1.2em;
   color: #252023;
 }
-/* line 278, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .short-info i {
   padding-top: 25px;
   font-size: 1.5em;
   color: #29c0ff;
 }
-/* line 284, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .short-info p {
-  padding-bottom: 25px;
+  padding-bottom: 0;
+  margin: 0;
   color: #726d70;
 }
+/* line 307, ../sass/style.scss */
+.short-info a {
+  text-decoration: none;
+  color: #29c0ff;
+  font-size: 1em;
+}
+/* line 312, ../sass/style.scss */
+.short-info a i {
+  font-size: 1em;
+}
 
-/* line 290, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .about-us {
   text-align: center;
   padding: 40px;
 }
-/* line 294, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .about-us h1 {
   font-family: MontserratRegular;
   font-size: 3em;
 }
-/* line 299, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .about-us p {
   font-size: 2.5em;
   font-family: LatoLight;
   color: #726d70;
 }
 
-/* line 306, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .blue-part {
   display: flex;
   justify-content: space-around;
@@ -292,21 +306,21 @@ body::-webkit-scrollbar {
   padding: 30px;
 }
 
-/* line 315, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .blue-part-inner {
   width: 30%;
 }
-/* line 318, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .blue-part-inner h1 {
   font-family: MontserratRegular;
 }
-/* line 322, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .blue-part-inner p {
   font-family: LatoLight;
   padding: 25px;
 }
 
-/* line 328, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .success-block {
   margin: 0;
   background-image: url("../images/success-bck.jpg");
@@ -318,37 +332,37 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-/* line 339, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 .success-block-wrapper {
   text-align: center;
 }
-/* line 342, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .success-block-wrapper h1 {
   font-family: MontserratBold;
   font-size: 4em;
   margin: 0;
 }
-/* line 348, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .success-block-wrapper h4 {
   font-family: LatoLight;
   color: #726d70;
   margin: 0;
 }
 
-/* line 356, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .contact-form {
   width: 80%;
   margin: auto;
   font-family: LatoLight;
   color: #726d70;
 }
-/* line 363, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .contact-form h2 {
   font-family: MontserratRegular;
   font-size: 3em;
   color: #252023;
 }
-/* line 369, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 .contact-form .inp-name, .contact-form .inp-email {
   width: 45%;
   border: none;
@@ -357,7 +371,7 @@ body::-webkit-scrollbar {
   margin-right: 25px;
   font-size: 1.2em;
 }
-/* line 378, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .contact-form .inp-msg {
   width: 70%;
   padding: 5px;
@@ -369,20 +383,20 @@ body::-webkit-scrollbar {
   vertical-align: bottom;
 }
 
-/* line 392, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 .inp-name:focus, .inp-email:focus, .inp-msg:focus {
   outline: none;
   box-shadow: 0 0 5px #29c0ff;
 }
 
-/* line 397, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .map {
   width: 100%;
   height: 400px;
   margin-top: 25px;
 }
 
-/* line 403, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 #footer {
   margin: 5px;
   padding: 15px;
@@ -390,12 +404,44 @@ body::-webkit-scrollbar {
   align-content: space-between;
 }
 
-/* line 410, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .footer-logo, .rights {
   width: 50%;
 }
 
-/* line 414, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .rights {
   text-align: right;
+}
+
+/* line 446, ../sass/style.scss */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  color: #252023;
+  padding: 35px;
+  height: 70%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #252023;
+}
+/* line 462, ../sass/style.scss */
+.popup .short-info-close {
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}
+/* line 468, ../sass/style.scss */
+.popup i {
+  font-size: 2em;
+}
+
+/* line 474, ../sass/style.scss */
+.slide-down {
+  display: none;
 }
