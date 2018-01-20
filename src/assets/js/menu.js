@@ -7,7 +7,7 @@
     $( ".nav-wrapper" ).css( "background-color", "transparent" );
   });
 
-  //menu scroll
+  //menu scroll system
   $(".nav-menu").on('click', 'a', function(e){
     e.preventDefault();
     var menuHeight = $('.nav-wrapper').height();

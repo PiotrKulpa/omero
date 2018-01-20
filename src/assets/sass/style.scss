@@ -50,14 +50,15 @@ body {
   background-color: white;
   margin: 0;
   font-family: LatoRegular;
+  overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
+// body::-webkit-scrollbar {
+//   //display: none;
+// }
 
 .slider-wrapper {
-  //z-index: 2;
+
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -65,7 +66,7 @@ body::-webkit-scrollbar {
 
 .nav-wrapper {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   padding: 15px;
   color: white;
@@ -106,7 +107,7 @@ body::-webkit-scrollbar {
 
 .social-wrapper {
   display: flex;
-  //position: absolute;
+  z-index: 1;
   flex-wrap: wrap;
   align-items: flex-end;
   height: 100%;
@@ -120,7 +121,7 @@ body::-webkit-scrollbar {
 
   width: 100%;
   text-align: right;
-  right: 10px;
+  right: 30px;
   position: absolute;
   z-index: 1;
   align-self: center;
@@ -147,12 +148,12 @@ body::-webkit-scrollbar {
 .social {
   color: white;
   font-size: 1.5em;
-  //position: absolute;
+  z-index: 1;
   width: 100%;
   align-self: flex-end;
   text-align: center;
   margin-bottom: 5%;
-  z-index: 1;
+
 
 
   i {
@@ -162,28 +163,38 @@ body::-webkit-scrollbar {
     cursor: pointer;
 
     &:hover {
+
+      -webkit-transition: background-color 1s;
+      -moz-transition: background-color 1s;
+      -ms-transition: background-color 1s;
+      -o-transition: background-color 1s;
+      transition: background-color 1s;
+      cursor: pointer;
+      background-color: white;
       color: $blue;
     }
   }
 }
 
+
+
 .slider {
+  display: flex;
   // display: -webkit-box;
   // display: -webkit-flex;
   // display: -moz-box;
   // display: -ms-flexbox;
-
-  //flex-wrap: nowrap;
-  // -webkit-box-orient: vertical;
-  // -webkit-box-direction: normal;
-  // -webkit-flex-direction: column;
-  // -moz-box-orient: vertical;
-  // -moz-box-direction: normal;
-  // -ms-flex-direction: column;
-  display: flex;
   flex-direction: row;
+  // -webkit-box-orient: vertical;
+  //-webkit-box-direction: normal;
+  // -webkit-flex-direction: column;
+  //-moz-box-orient: vertical;
+  //-moz-box-direction: normal;
+  // -ms-flex-direction: column;
+
+
   align-items: center;
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .slider::-webkit-scrollbar {
@@ -218,7 +229,7 @@ body::-webkit-scrollbar {
 }
 
 .slider-slogan {
-  //z-index: 1;
+
   text-align: center;
 
 
@@ -236,23 +247,34 @@ body::-webkit-scrollbar {
 
 .btn {
   background-color: $blue;
+  color: white;
   border: none;
   width: 150px;
   height: 50px;
-  color: white;
-  margin: 10px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+}
 
-
+//dodaj
+.btn-fix {
+  position: relative;
+  margin: 0;
+  left: 0;
+  right: 0;
 }
 
 .btn:hover {
-  -webkit-transition: background-color 0.5s ease;
- -moz-transition: background-color 0.5s ease;
- -ms-transition: background-color 0.5s ease;
- -o-transition: background-color 0.5s ease;
- transition: background-color 0.5s ease;
-
-  background-color: $dark-blue;
+  -webkit-transition: background-color 1s, color 1s;
+ -moz-transition: background-color 1s, color 1s;
+ -ms-transition: background-color 1s, color 1s;
+ -o-transition: background-color 1s, color 1s;
+ transition: background-color 1s, color 1s;
+  cursor: pointer;
+  background-color: white;
+  color: $black;
 }
 
 
@@ -285,7 +307,10 @@ body::-webkit-scrollbar {
   border-left: 1px $grey-lines solid;
   border-bottom: 1px $grey-lines solid;
   margin: 0;
+  color: $grey;
   cursor: pointer;
+
+  transition: background-color 1s;
 
   h1 {
     font-size: 1.2em;
@@ -312,6 +337,20 @@ body::-webkit-scrollbar {
     i {
       font-size: 1em;
     }
+  }
+}
+
+.short-info:hover {
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+  background-color: $blue;
+  color: white;
+
+  p, h1, i, a {
+    color: white;
   }
 }
 
@@ -446,7 +485,7 @@ body::-webkit-scrollbar {
 .popup {
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   background-color: white;
   color: $black;
   padding: 35px;
