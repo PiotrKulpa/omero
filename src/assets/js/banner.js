@@ -1,5 +1,6 @@
+(function () {
 var i = 0, x = 0, slide = 0;
-$('.left').click(function () {
+$('.right').click(function () {
   if (slide > -200) {
     slide+=-100;
     $('.slider-content').css({
@@ -9,7 +10,7 @@ $('.left').click(function () {
    }
 });
 
-$('.right').click(function () {
+$('.left').click(function () {
   if (slide < 0) {
     slide+=100;
     $('.slider-content').css({
@@ -18,3 +19,4 @@ $('.right').click(function () {
     });
   }
 });
+} ());

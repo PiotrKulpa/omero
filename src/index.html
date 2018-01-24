@@ -27,6 +27,8 @@
 
 		<div class="slider-wrapper">
 
+
+
 			<div class="nav-wrapper">
 				<div class="nav-wrapper-inner">
 						<div class="logo-container">
@@ -44,23 +46,35 @@
 
 							<div class="nav-menu">
 								<a href="" data-position=".slider-wrapper">Home</a><span> / </span>
-								<a href="#Usługi" data-position=".info-wrapper">Usługi</a><span> / </span>
+								<div class="dropdown">
+									<a href="#Usługi" data-position=".info-wrapper">Usługi</a><span> / </span>
+									<div class="dropdown-content">
+								    <a href="" data-position=".info-wrapper">Tłumaczenia pisemne</a>
+										<a href="" data-position=".info-wrapper">Tłumaczenia pisemne poświadczone</a>
+										<a href="" data-position=".info-wrapper">Tłumaczenia konsekutywne</a>
+										<a href="" data-position=".info-wrapper">Tłumaczenia symultaniczne</a>
+										<a href="" data-position=".info-wrapper">Tłumaczenia ustne poświadczone</a>
+										<a href="" data-position=".info-wrapper">Tłumaczenia szeptane</a>
+										<a href="" data-position=".info-wrapper">Konsultacje językowe</a>
+										<a href="" data-position=".info-wrapper">Dtp i druk</a> 
+								  </div>
+								</div>
 								<a href="" data-position=".about-us">O nas</a><span> / </span>
 								<a href="" data-position=".blue-part">Referencje</a><span> / </span>
-								<a href="" data-position=".contact-form">Kontakt</a>
+								<div class="dropdown">
+									<a href="" data-position=".contact-form">Kontakt</a>
+									<div class="dropdown-content">
+								    <a href="" data-position=".map">Mapa</a>
+								  </div>
+								</div>
+
 							</div>
 
 						</div>
 					</div>
-
-
-
 			</div>
 
-
-
-
-			<!-- arrows -->
+			<!-- arrows & social -->
 			<div class="social-wrapper">
 
 				<div class="arrows">
@@ -82,27 +96,30 @@
 
 			</div>
 
+
+
+
 		</div>
 
 <div class="slider">
 
   <div class="slider-content s1">
 		<div class="slider-slogan">
-			<h1>JAKOŚĆ</h1>
+			<h1>LOREM IPSUM</h1>
 			<h3>TO CO NAS WYRÓŻNIA</h3>
 			<button class="btn">WIĘCEJ</button>
 		</div>
   </div>
   <div class="slider-content s2">
 		<div class="slider-slogan">
-			<h1>JAKOŚĆ</h1>
+			<h1>DOLOR SIT AMET</h1>
 			<h3>TO CO NAS WYRÓŻNIA</h3>
 			<button class="btn">WIĘCEJ</button>
 		</div>
   </div>
   <div class="slider-content s3">
 		<div class="slider-slogan">
-			<h1>JAKOŚĆ</h1>
+			<h1>CONSECTETUR ADIPISICING</h1>
 			<h3>TO CO NAS WYRÓŻNIA</h3>
 			<button class="btn">WIĘCEJ</button>
 		</div>
@@ -171,6 +188,18 @@
 					<h1>Jakość</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eum omnis odit laboriosam aut fugiat dolor, illum accusamus in beatae molestiae odio tempore quam officiis vitae sunt cum magni, eligendi.</p>
 				</div>
+
+
+				<div class="ref-logos">
+					<h1>Zaufali nam</h1>
+					<img src="assets/images/ref-ziaja.jpg" alt="">
+					<img src="assets/images/ref-performance.jpg" alt="">
+					<img src="assets/images/ref-materne.jpg" alt="">
+					<img src="assets/images/ref-lakma.jpg" alt="">
+					<img src="assets/images/ref-hill.jpg" alt="">
+					<img src="assets/images/ref-biowin.jpg" alt="">
+					<img src="assets/images/ref-berger.jpg" alt="">
+				</div>
 			</div>
 
 			<div class="success-block">
@@ -184,8 +213,10 @@
 			<div class="contact-form">
 				<h2>KONTAKT</h2>
 				<form action="">
-					<input class="inp-name" type="text" placeholder="Imię"><input class="inp-email" type="email" placeholder="E-mail">
+					<input class="inp-name" type="text" placeholder="Firma"><input class="inp-email" type="email" placeholder="E-mail">
 					<textarea class="inp-msg" name="name" rows="3" cols="10" placeholder="Wiadomość"></textarea>
+					<input type="file" name="file" id="file" class="inputfile" multiple/>
+					<label for="file">Wybierz pliki</label>
 					<input class="btn btn-fix" type="button" name="" value="Wyślij">
 				</form>
 			</div>
