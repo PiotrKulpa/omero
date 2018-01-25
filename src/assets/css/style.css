@@ -42,7 +42,7 @@ body {
 }
 
 /* line 60, ../sass/style.scss */
-.slider-wrapper {
+.home {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -55,7 +55,7 @@ body {
   width: 100%;
   padding: 15px;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-family: LatoLight;
 }
 /* line 76, ../sass/style.scss */
@@ -74,44 +74,55 @@ body {
 }
 
 /* line 92, ../sass/style.scss */
+.nav-slash {
+  padding: 0 5px 0 5px;
+}
+
+/* line 96, ../sass/style.scss */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .dropdown-content {
-  font-size: 1em;
+  font-size: 0.9em !important;
   text-align: left;
   display: none;
   position: absolute;
   color: white;
   background-color: #29c0ff;
-  min-width: 200px;
+  width: 300px;
+  max-width: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 5px;
   z-index: 1;
 }
-/* line 109, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .dropdown-content a {
   width: 100%;
   display: block;
   color: white !important;
+  padding: 2px 0 2px 0;
+}
+/* line 121, ../sass/style.scss */
+.dropdown-content a:hover {
+  color: #252023 !important;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .dropdown:hover .dropdown-content {
   display: block;
   color: white;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .logo-container {
   float: left;
   width: 50%;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .nav {
   text-align: right;
   float: left;
@@ -119,12 +130,12 @@ body {
   padding-right: 5px;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .logo {
   width: 200px;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .social-wrapper {
   display: flex;
   z-index: 1;
@@ -133,7 +144,7 @@ body {
   width: 100%;
 }
 
-/* line 145, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .arrows {
   width: 100%;
   text-align: right;
@@ -142,7 +153,7 @@ body {
   align-self: flex-end;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .left, .right {
   width: 25px;
   height: 25px;
@@ -152,12 +163,12 @@ body {
   border-radius: 15px;
   cursor: pointer;
 }
-/* line 162, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .left:hover, .right:hover {
   opacity: 0.5;
 }
 
-/* line 167, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .social {
   color: white;
   font-size: 1.5em;
@@ -167,14 +178,14 @@ body {
   text-align: center;
   margin-bottom: 5%;
 }
-/* line 178, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .social i {
   border: solid 1px white;
   border-radius: 25px;
   padding: 5px;
   cursor: pointer;
 }
-/* line 184, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .social i:hover {
   -webkit-transition: background-color 1s;
   -moz-transition: background-color 1s;
@@ -186,7 +197,7 @@ body {
   color: #29c0ff;
 }
 
-/* line 200, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .slider {
   display: flex;
   flex-direction: row;
@@ -194,12 +205,12 @@ body {
   overflow: hidden;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .slider::-webkit-scrollbar {
   display: none;
 }
 
-/* line 223, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .slider-content {
   display: flex;
   flex-direction: row;
@@ -215,37 +226,37 @@ body {
   color: white;
 }
 
-/* line 238, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .s1 {
   background-image: url("../images/wenice.jpg");
 }
 
-/* line 242, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .s2 {
   background-image: url("../images/paris.jpg");
 }
 
-/* line 246, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .s3 {
   background-image: url("../images/budapest.jpg");
 }
 
-/* line 250, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .slider-slogan {
   text-align: center;
 }
-/* line 255, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .slider-slogan h1 {
   font-family: MontserratBold;
   font-size: 5em;
 }
-/* line 260, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .slider-slogan h3 {
   font-family: LatoLight;
   font-size: 1em;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .btn {
   background-color: #29c0ff;
   color: white;
@@ -260,7 +271,7 @@ body {
   position: absolute;
 }
 
-/* line 282, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .btn-fix {
   position: relative;
   margin: 0;
@@ -268,7 +279,7 @@ body {
   right: 0;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .btn:hover {
   -webkit-transition: background-color 1s, color 1s;
   -moz-transition: background-color 1s, color 1s;
@@ -280,15 +291,15 @@ body {
   color: #252023;
 }
 
-/* line 312, ../sass/style.scss */
-.info-wrapper {
+/* line 323, ../sass/style.scss */
+.services {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   align-content: stretch;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .short-info {
   width: 33.33%;
   text-align: center;
@@ -302,35 +313,35 @@ body {
   cursor: pointer;
   transition: background-color 1s;
 }
-/* line 335, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .short-info h1 {
   font-size: 1.2em;
   color: #252023;
 }
-/* line 340, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .short-info i {
   padding-top: 25px;
   font-size: 1.5em;
   color: #29c0ff;
 }
-/* line 346, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .short-info p {
   padding-bottom: 0;
   margin: 0;
   color: #726d70;
 }
-/* line 352, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .short-info a {
   text-decoration: none;
   color: #29c0ff;
   font-size: 1em;
 }
-/* line 357, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .short-info a i {
   font-size: 1em;
 }
 
-/* line 363, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .short-info:hover {
   -webkit-transition: background-color 1s;
   -moz-transition: background-color 1s;
@@ -340,30 +351,30 @@ body {
   background-color: #29c0ff;
   color: white;
 }
-/* line 372, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .short-info:hover p, .short-info:hover h1, .short-info:hover i, .short-info:hover a {
   color: white;
 }
 
-/* line 377, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 .about-us {
   text-align: center;
   padding: 40px;
 }
-/* line 381, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .about-us h1 {
   font-family: MontserratRegular;
   font-size: 3em;
 }
-/* line 386, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 .about-us p {
   font-size: 2.5em;
   font-family: LatoLight;
   color: #726d70;
 }
 
-/* line 393, ../sass/style.scss */
-.blue-part {
+/* line 404, ../sass/style.scss */
+.reference {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -373,29 +384,29 @@ body {
   padding: 30px;
 }
 
-/* line 403, ../sass/style.scss */
+/* line 414, ../sass/style.scss */
 .blue-part-inner {
   width: 33%;
 }
-/* line 406, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .blue-part-inner h1 {
   font-family: MontserratRegular;
 }
-/* line 410, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 .blue-part-inner p {
   font-family: LatoLight;
   padding: 25px;
 }
 
-/* line 416, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 .ref-logos {
   width: 100%;
 }
-/* line 420, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 .ref-logos h1 {
   font-family: MontserratRegular;
 }
-/* line 424, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 .ref-logos img {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
@@ -405,7 +416,7 @@ body {
   vertical-align: middle;
   margin: 2px;
 }
-/* line 433, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .ref-logos img:hover {
   transition: filter 1s;
   -webkit-filter: none;
@@ -414,7 +425,7 @@ body {
   filter: none;
 }
 
-/* line 443, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .success-block {
   margin: 0;
   background-image: url("../images/success-bck.jpg");
@@ -426,37 +437,37 @@ body {
   align-items: center;
 }
 
-/* line 454, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 .success-block-wrapper {
   text-align: center;
 }
-/* line 457, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 .success-block-wrapper h1 {
   font-family: MontserratBold;
   font-size: 4em;
   margin: 0;
 }
-/* line 463, ../sass/style.scss */
+/* line 474, ../sass/style.scss */
 .success-block-wrapper h4 {
   font-family: LatoLight;
   color: #726d70;
   margin: 0;
 }
 
-/* line 471, ../sass/style.scss */
+/* line 482, ../sass/style.scss */
 .contact-form {
   width: 80%;
   margin: auto;
   font-family: LatoLight;
   color: #726d70;
 }
-/* line 478, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 .contact-form h2 {
   font-family: MontserratRegular;
   font-size: 3em;
   color: #252023;
 }
-/* line 484, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 .contact-form .inp-name, .contact-form .inp-email {
   width: 45%;
   border: none;
@@ -465,7 +476,7 @@ body {
   margin-right: 25px;
   font-size: 1.2em;
 }
-/* line 493, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 .contact-form .inp-msg {
   width: 70%;
   padding: 5px;
@@ -477,13 +488,13 @@ body {
   vertical-align: bottom;
 }
 
-/* line 507, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .inp-name:focus, .inp-email:focus, .inp-msg:focus {
   outline: none;
   box-shadow: 0 0 5px #29c0ff;
 }
 
-/* line 512, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 .inputfile {
   width: 0.1px;
   height: 0.1px;
@@ -498,7 +509,7 @@ body {
   height: 50px;
 }
 
-/* line 526, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .inputfile + label {
   font-size: 1em;
   color: white;
@@ -507,7 +518,7 @@ body {
   padding: 10px;
 }
 
-/* line 535, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 .inputfile:focus + label,
 .inputfile + label:hover {
   background-color: white;
@@ -515,37 +526,43 @@ body {
   border: 1px solid #252023;
 }
 
-/* line 542, ../sass/style.scss */
+/* line 553, ../sass/style.scss */
 .map {
   width: 100%;
   height: 400px;
   margin-top: 25px;
 }
 
-/* line 548, ../sass/style.scss */
+/* line 559, ../sass/style.scss */
 #footer {
-  margin: 5px;
-  padding: 15px;
+  margin: 5px 0 0 0;
   display: flex;
+  flex-wrap: wrap;
   align-content: space-between;
 }
 
-/* line 555, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
+.footer-inner {
+  width: 100%;
+  padding: 15px;
+}
+
+/* line 572, ../sass/style.scss */
 .footer-logo, .rights {
   width: 50%;
 }
 
-/* line 559, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .rights {
   text-align: right;
 }
 
-/* line 563, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 .popup {
   display: none;
   position: fixed;
   z-index: 6;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #252023;
   padding: 35px;
   height: 70%;
@@ -556,18 +573,37 @@ body {
   border-radius: 10px;
   box-shadow: 2px 2px 5px #252023;
 }
-/* line 579, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .popup .short-info-close {
   width: 100%;
   text-align: right;
   cursor: pointer;
 }
-/* line 585, ../sass/style.scss */
+/* line 602, ../sass/style.scss */
 .popup i {
   font-size: 2em;
 }
 
-/* line 591, ../sass/style.scss */
+/* line 608, ../sass/style.scss */
 .slide-down {
   display: none;
+}
+
+/* line 612, ../sass/style.scss */
+.bottom-links {
+  width: 50%;
+  background-color: #252023;
+  color: white;
+  padding: 55px;
+  font-family: LatoLight;
+}
+/* line 619, ../sass/style.scss */
+.bottom-links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+/* line 625, ../sass/style.scss */
+.bottom-links a:hover {
+  color: #29c0ff;
 }

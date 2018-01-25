@@ -1,6 +1,6 @@
 (function () {
 
-  var infoLink = $('.short-info a'),
+  var infoLink = $('.popup-btn'),
       closeInfoLink = $('.short-info-close'),
       popup = $('.popup'),
       slideDown = $('.short-info'),

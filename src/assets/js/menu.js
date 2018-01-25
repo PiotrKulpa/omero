@@ -8,8 +8,8 @@
   });
 
   //menu scroll system
-  $(".nav-menu").on('click', 'a', function(e){
-    e.preventDefault();
+  $(".nav-menu, .bottom-links").on('click', 'a', function(e){
+    //e.preventDefault();
     var menuHeight = $('.nav-wrapper').height();
     var position = $(this).data('position');
     $('html, body').animate({
