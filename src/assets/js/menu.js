@@ -1,5 +1,5 @@
 (function () {
-  //menu color change
+  //menu bar color change
   $( window ).scroll(function() {
     var scrollPos = $( window ).scrollTop();
     scrollPos > 300 ?
@@ -15,6 +15,17 @@
     $('html, body').animate({
     scrollTop: $(position).offset().top - menuHeight
     }, 'slow');
+	});
+
+  //Footer navigation for other content
+
+  $(".bottom-links-nav").on('click', 'a', function(e){
+    //e.preventDefault();
+    var tar = $( this ).data('target');
+    var other = $('.other');
+    var otherContent = $('.other-content');
+    otherContent.hide();
+    $(tar).show();
 	});
 
 } ());

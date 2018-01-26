@@ -535,29 +535,34 @@ body {
 
 /* line 559, ../sass/style.scss */
 #footer {
-  margin: 5px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  width: 100%;
 }
 
-/* line 566, ../sass/style.scss */
+/* line 567, ../sass/style.scss */
 .footer-inner {
   width: 100%;
-  padding: 15px;
-}
-
-/* line 572, ../sass/style.scss */
-.footer-logo, .rights {
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* line 576, ../sass/style.scss */
+.footer-logo, .rights {
+  width: 50%;
+  padding: 25px;
+}
+
+/* line 581, ../sass/style.scss */
 .rights {
   text-align: right;
 }
 
-/* line 580, ../sass/style.scss */
+/* line 585, ../sass/style.scss */
 .popup {
   display: none;
   position: fixed;
@@ -573,23 +578,23 @@ body {
   border-radius: 10px;
   box-shadow: 2px 2px 5px #252023;
 }
-/* line 596, ../sass/style.scss */
+/* line 601, ../sass/style.scss */
 .popup .short-info-close {
   width: 100%;
   text-align: right;
   cursor: pointer;
 }
-/* line 602, ../sass/style.scss */
+/* line 607, ../sass/style.scss */
 .popup i {
   font-size: 2em;
 }
 
-/* line 608, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 .slide-down {
   display: none;
 }
 
-/* line 612, ../sass/style.scss */
+/* line 617, ../sass/style.scss */
 .bottom-links {
   width: 50%;
   background-color: #252023;
@@ -597,13 +602,26 @@ body {
   padding: 55px;
   font-family: LatoLight;
 }
-/* line 619, ../sass/style.scss */
+/* line 624, ../sass/style.scss */
 .bottom-links a {
   text-decoration: none;
   color: white;
   display: block;
 }
-/* line 625, ../sass/style.scss */
+/* line 630, ../sass/style.scss */
 .bottom-links a:hover {
   color: #29c0ff;
+}
+
+/* line 634, ../sass/style.scss */
+.other {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/* line 641, ../sass/style.scss */
+.other-content {
+  display: none;
+  padding: 25px;
 }
