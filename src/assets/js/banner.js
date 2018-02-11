@@ -1,4 +1,5 @@
 (function () {
+  //TODO MVC
 var i = 0, x = 0, slide = 0;
 $('.right').click(function () {
   if (slide > -200) {

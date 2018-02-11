@@ -53,6 +53,15 @@ body {
   overflow-x: hidden;
 }
 
+.nav-lang .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: block;
+}
+
 // body::-webkit-scrollbar {
 //   //display: none;
 // }
@@ -169,6 +178,7 @@ body {
    color: white;
    border-radius: 15px;
    cursor: pointer;
+   outline: none;
 
    &:hover {
      opacity: 0.5;
@@ -655,6 +665,14 @@ body {
     width: 100%;
     text-align: center;
     font-size: 1.3em;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-lang .fa-bars {
+    display: inline;
   }
 
   .nav-menu a {

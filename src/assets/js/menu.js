@@ -1,31 +1,98 @@
+/**
+* Represents a all menu medhods.
+* top menu background color change after scrolling
+* animated scrolling page
+* bottom menu system
+*/
+
 (function () {
-  //menu bar color change
-  $( window ).scroll(function() {
-    var scrollPos = $( window ).scrollTop();
-    scrollPos > 300 ?
-    $( ".nav-wrapper" ).css( "background-color", "#252023" ) :
-    $( ".nav-wrapper" ).css( "background-color", "transparent" );
-  });
 
-  //menu scroll system
-  $(".nav-menu, .bottom-links").on('click', 'a', function(e){
-    //e.preventDefault();
-    var menuHeight = $('.nav-wrapper').height();
-    var position = $(this).data('position');
-    $('html, body').animate({
-    scrollTop: $(position).offset().top - menuHeight
-    }, 'slow');
-	});
+ /**
+ * MVC start.
+ */
+  var model = {
 
-  //Footer navigation for other content
+  };
 
-  $(".bottom-links-nav").on('click', 'a', function(e){
-    //e.preventDefault();
-    var tar = $( this ).data('target');
-    var other = $('.other');
-    var otherContent = $('.other-content');
-    otherContent.hide();
-    $(tar).show();
-	});
+  /**
+  * Controller.
+  * Initialize view methods.
+  */
+  var controller = {
 
+    init: function () {
+      view.init();
+    }
+
+  };
+
+  /**
+  * View.
+  */
+  var view = {
+    /** Get DOM elements. */
+    body: $('html, body'),
+    navWrapper: $( ".nav-wrapper" ),
+    navMenuBottom: $(".nav-menu, .bottom-links"),
+    navBottom: $(".bottom-links-nav"),
+    otherContent: $('.other-content'),
+    hamburger: $('.nav-lang .fa-bars'),
+    mainMenu: $('.nav-menu'),
+
+    /** Get current vertical position of scrollbar. */
+    scrollPos: function () {
+      return $( window ).scrollTop();
+    },
+
+    /** Get absolute top menu height. */
+    menuHeight: function () {
+      return $('.nav-wrapper').outerHeight(true);
+    },
+
+    /** Initialize main methods. */
+    init: function () {
+
+      /**
+      * Button events start.
+      */
+
+      /** Initialize top menu bar color change after scroling down. */
+      $( window ).scroll(function() {
+        // var scrollPos = $( window ).scrollTop();
+        // scrollPos > 300 ?
+        view.scrollPos() > 300 ?
+        view.navWrapper.css( "background-color", "#252023" ) :
+        view.navWrapper.css( "background-color", "transparent" );
+      });
+
+      /** Initialize top and bottom menu scroll system. */
+      this.navMenuBottom.on('click', 'a', function(e){
+        // var menuHeight = $('.nav-wrapper').height();
+        var position = $(this).data('position');
+        view.body.animate({
+        scrollTop: $(position).offset().top - view.menuHeight()
+        }, 'slow');
+    	});
+
+      /** Initialize footer navigation for other content. */
+      this.navBottom.on('click', 'a', function(e){
+        //e.preventDefault();
+        var tar = $( this ).data('target');
+        //var other = $('.other');
+        //var otherContent = $('.other-content');
+        view.otherContent.hide();
+        $(tar).show();
+    	});
+
+      this.hamburger.on('click', function () {
+        view.mainMenu.slideToggle();
+      });
+
+
+    }
+
+  };
+
+  /** Initialize controller. */
+  controller.init();
 } ());
