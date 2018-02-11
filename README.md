@@ -9,7 +9,8 @@ Single Page Application for translation company.
 Instruction
 -------------------------
 * use gulp commands
-* gulp default  - build project into dist folder
+* gulp copy  - build project into dist folder
+* gulp inject - to inject library links to index.html 
 
 
 ### Features
