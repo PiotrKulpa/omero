@@ -52,7 +52,7 @@ gulp.task('copy', ['static', 'copy:libs', 'scripts'], function() {
 //02: inject to index
 gulp.task('inject', function() {
   gulp.src('./src/index.html')
-    .pipe(inject(gulp.src('/libs/jquery/dist/jquery.min.js', {base: './dist'}), {starttag: '<!-- inject:head:{{ext}} -->'}))
-    .pipe(inject(gulp.src(['/assets/js/main.min.js', '/assets/css/*.css', '/libs/font-awesome/css/font-awesome.min.css'], {base: './dist'})))
+    .pipe(inject(gulp.src('./dist/libs/jquery/dist/jquery.min.js'), {starttag: '<!-- inject:head:{{ext}} -->', ignorePath: 'dist'}))
+    .pipe(inject(gulp.src(['./dist/assets/js/main.min.js', './dist/assets/css/*.css', './dist/libs/font-awesome/css/font-awesome.min.css']), {ignorePath: 'dist'}))
     .pipe(gulp.dest('./dist'));
 });

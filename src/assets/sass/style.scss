@@ -67,7 +67,6 @@ body {
 // }
 
 .home {
-
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -94,6 +93,9 @@ body {
 }
 
 .nav-wrapper-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   width: 100%;
 
 }
@@ -139,13 +141,13 @@ body {
 }
 
 .logo-container {
-  float: left;
+  //float: left;
   width: 30%;
 }
 
 .nav {
   text-align: right;
-  float: left;
+  //float: left;
   width: 70%;
   padding-right: 5px;
 }
@@ -755,8 +757,18 @@ body {
   }
 
   .nav-wrapper {
-    font-size: 0.9em;
+    font-size: 1.3em;
     font-stretch: condensed;
+  }
+
+  .logo-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav {
+    width: 100%;
+    text-align: center;
   }
 
   .logo {
@@ -784,4 +796,21 @@ body {
   .btn-fix {
     margin: 15px;
   }
+}
+
+@media screen and (min-width: 1900px) {
+  .container, .nav-wrapper {
+    width: 1900px;
+    margin: auto;
+  }
+
+  .social, .arrows {
+    width: 1900px;
+  }
+
+  .arrows {
+    padding-right: 15px;
+  }
+
+
 }
