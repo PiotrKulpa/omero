@@ -61,7 +61,7 @@
         // var scrollPos = $( window ).scrollTop();
         // scrollPos > 300 ?
         view.scrollPos() > 300 ?
-        view.navWrapper.css( "background-color", "#252023" ) :
+        view.navWrapper.css( "background-color", "#29c0ff" ) :
         view.navWrapper.css( "background-color", "transparent" );
       });
 
