@@ -46,7 +46,7 @@
     init: function () {
       this.openPopup();
       this.closePopup();
-      this.toggleService();
+      //this.toggleService();
     }
   };
 

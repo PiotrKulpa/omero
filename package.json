@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/PiotrKulpa/omero#readme",
   "dependencies": {
+    "countup.js": "^1.9.3",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "swiper": "^4.1.6"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

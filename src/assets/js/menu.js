@@ -22,6 +22,13 @@
 
     init: function () {
       view.init();
+    },
+    routerSystem: function(e) {
+      var tar = $( e.currentTarget ).data('target');
+      console.log(tar);
+      view.otherContent.hide();
+      view.main.children().hide();
+      $(tar).show();
     }
 
   };
@@ -34,10 +41,12 @@
     body: $('html, body'),
     navWrapper: $( ".nav-wrapper" ),
     navMenuBottom: $(".nav-menu, .bottom-links"),
-    navBottom: $(".bottom-links-nav"),
+    routs: $(".router-links"),
+    rout: $(".router-link"),
     otherContent: $('.other-content'),
     hamburger: $('.nav-lang .fa-bars'),
     mainMenu: $('.nav-menu'),
+    main: $('#main'),
 
     /** Get current vertical position of scrollbar. */
     scrollPos: function () {
@@ -75,13 +84,14 @@
     	});
 
       /** Initialize footer navigation for other content. */
-      this.navBottom.on('click', 'a', function(e){
+      this.routs.on('click', 'a', function(e){
         //e.preventDefault();
-        var tar = $( this ).data('target');
-        //var other = $('.other');
-        //var otherContent = $('.other-content');
-        view.otherContent.hide();
-        $(tar).show();
+        controller.routerSystem(e);
+    	});
+
+      this.rout.on('click', function(e){
+        //e.preventDefault();
+        controller.routerSystem(e);
     	});
 
       this.hamburger.on('click', function () {

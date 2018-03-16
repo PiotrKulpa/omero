@@ -11,6 +11,7 @@
 		<!-- inject:css -->
 		<link rel="stylesheet" href="assets/css/style.css" media="screen">
 		<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
 		<!-- endinject -->
 
 		<!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
@@ -24,38 +25,31 @@
 	</head>
 
 	<body>
-		<div class="container">
-		<!-- Popup system -->
-		<div class="popup">
-			<div class="short-info-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-			</p>
-		</div>
 
-		<!-- Slider -->
-
-		<div class="home">
-
-
-
+		<div class="header">
 			<div class="nav-wrapper">
+		<div class="stripe-wrapper">
 			<div class="nav-stripe-top">
 				<div class="stripe-top-left">dok@omero.pl</div>
 				<div class="stripe-top-right">
-				<div class="stripe-top-content">Freetranslation</div>
-				<div class="stripe-top-content">Zaloguj</div>
+				<div class="stripe-top-content"><a href="#freetranslation">Freetranslation</a></div>
+				<div class="stripe-top-content"><a href="#login">Zaloguj</a></div>
 				<div class="stripe-top-content">
-					<select>
-					  <option value="pl">PL</option>
-					  <option value="en">EN</option>
-					  <option value="de">DE</option>
-					  <option value="es">ES</option>
-					</select>
-				</div>
+					<div class=" languages" value="pl">
+						<div>
+							<a href="/">PL <img class="flag" src="./assets/images/pl.jpg" alt="flaga polski"></a>
+						</div>
+						<div class="languages-dropdown">
+						  <div value="en"><a href="/en">EN <img class="flag" src="./assets/images/en.jpg" alt="flaga anglii"></a></div>
+						  <div value="de"><a href="/de">DE <img class="flag" src="./assets/images/de.jpg" alt="flaga niemiec"></a></div>
+						  <div value="es"><a href="/es">ES <img class="flag" src="./assets/images/es.jpg" alt="flaga hiszpani"></a></div>
+						</div>
+					</div>
+					</div>
 				</div>
 			</div>
+		</div>
+			<div class="nav-wrapper-box">
 				<div class="nav-wrapper-inner">
 						<div class="logo-container">
 							<a href="/"><img class="logo" src="./assets/images/logo.svg" /></a>
@@ -63,17 +57,11 @@
 
 						<div class="nav">
 
-							<!-- <div class="nav-lang">
-								<i class="fa fa-bars" aria-hidden="true"></i>
-								<a href="">PL</a><span> | </span>
-								<a href="">EN</a><span> | </span>
-								<a href="">DE</a><span> | </span>
-								<a href="">ES</a>
-							</div> -->
+
 
 
 							<div class="nav-menu">
-								<a href="#" data-position=".home">Home</a><span class="nav-slash">  /  </span>
+								<a class="router-link" href="#" data-position=".home" data-target=".home">Home</a><span class="nav-slash">  /  </span>
 								<a href="#/onas" data-position=".about-us">O nas</a><span class="nav-slash">  /  </span>
 								<div class="dropdown">
 									<a href="#/uslugi" data-position=".services">Usługi</a><span class="nav-slash">  /  </span>
@@ -93,17 +81,7 @@
 										<div class="dropdown-content-link">
 											<a href="#/uslugi" data-position=".services">
 												<i class="fa fa-video-camera" aria-hidden="true"></i>
-												Multimedia</a>
-										</div>
-										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services">
-												<i class="fa fa-comments-o" aria-hidden="true"></i>
-												Lokalizacja</a>
-										</div>
-										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services">
-												<i class="fa fa-commenting" aria-hidden="true"></i>
-												Tłumaczenia <br /> symultaniczne</a>
+												Multimedia <br />i lokalizacja</a>
 										</div>
 										<div class="dropdown-content-link">
 											<a href="#/uslugi" data-position=".services">
@@ -127,122 +105,108 @@
 
 						</div>
 					</div>
+				</div>
 			</div>
 
-			<!-- arrows & social -->
-			<div class="social-wrapper">
+			<!-- Swiper -->
+	 <div class="swiper-container">
 
-				<div class="arrows">
-					<button class="left">
-						<
-					</button>
-					<button class="right">
-						>
-					</button>
-				</div>
+		 <div class="social-wrapper">
 
-
-
-				<div class="social">
-					<i class="fa fa-facebook-square" aria-hidden="true"></i>
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-				</div>
-
+			<div class="social">
+			 <span class="help"><a href="#help">HELP</a></span><br />
+			 <a href="https://www.facebook.com/omero.tlumaczenia/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><br />
+			 <a href="https://www.linkedin.com/company/omero-language-solutions/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 			</div>
 
+		 </div>
+
+		 <div class="swiper-wrapper">
+			 <div class="swiper-slide" style="background-image: url(./assets/images/wenice.jpg)">
+
+				 <div class="slider-slogan">
+				 	<h1>Omero - twój partner w biznesie</h1>
+				 	<h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
+				 	<button class="btn popup-btn">WIĘCEJ</button>
+				 </div>
+
+				 <div class="slider-contact">
+				 	<a href="#">
+				 		<p>
+				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				 				Porozmawiaj z naszym konsultantem
+				 		</p>
+				 	</a>
+				 </div>
 
 
+			 </div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/paris.jpg)">
+				 Slide 2
+			 </div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">
+				 Slide 3
+			 </div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">Slide 4</div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">Slide 5</div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">Slide 6</div>
+		 </div>
+		 <!-- Add Arrows -->
+		 <div class="swiper-button-next"></div>
+		 <div class="swiper-button-prev"></div>
+	 </div>
+
+	 <div class="nav-stripe-bottom">
+
+		 <div class="nav-stripe-bottom-inner">Quality standards: Omero is ISO 9001:2008, 13485:2012 & 17100:2015 certified - Omero ranks among world leaders 2016 (Common Sense Advisory - 2016)</div>
+
+	 </div>
 
 		</div>
 
-<div class="slider">
-
-  <div class="slider-content s1">
-		<div class="slider-slogan">
-			<h1>LOREM IPSUM</h1>
-			<h3>LOREM IPSUM</h3>
-			<button class="btn popup-btn">WIĘCEJ</button>
+		<!-- Popup system -->
+		<div class="popup">
+			<div class="short-info-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
+			</p>
 		</div>
-  </div>
-  <div class="slider-content s2">
-		<div class="slider-slogan">
-			<h1>DOLOR SIT AMET</h1>
-			<h3>LOREM IPSUM</h3>
-			<button class="btn popup-btn">WIĘCEJ</button>
-		</div>
-  </div>
-  <div class="slider-content s3">
-		<div class="slider-slogan">
-			<h1>CONSECTETUR ADIPISICING</h1>
-			<h3>LOREM IPSUM</h3>
-			<button class="btn popup-btn">WIĘCEJ</button>
-		</div>
-  </div>
 
-</div>
+		<div class="container">
 
-		<!-- Main content -->
-		<div id="main" >
+		<!-- Home content -->
+		<div id="main">
+		<div class="home">
 
-			<div class="nav-stripe-bottom">Quality standards: Omero is ISO 9001:2008, 13485:2012 & 17100:2015 certified - Omero ranks among world leaders 2016 (Common Sense Advisory - 2016)</div>
 
-			<div class="services">
 
-				<div class="short-info">
-					<i class="fa fa-users" aria-hidden="true"></i>
-					<h1>TŁUMACZENIA PISEMNE</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, at voluptatibus. Accusamus, optio, incidunt facere adipisci, sapiente in laboriosam delectus enim iure id maxime! Esse eius ipsam qui, minus fuga.</p>
-					<p class="slide-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-					</p>
+			<div class="services router-links">
+
+				<div class="short-info ">
+					<a href="#/tlumaczenia-pisemne" data-position=".translations" data-target=".translations"><i class="fa fa-users" aria-hidden="true"></i>
+						<h1>TŁUMACZENIA PISEMNE</h1>
+						<p>Tłumaczymy setki tysięcy słów na ponad 40 języków w różnych specjalizacjach i różnego rodzaju dokumentów.</p></a>
+					<p class="slide-down"></p>
 					<!-- <a href="">Więcej <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a> -->
 				</div>
 				<div class="short-info">
-					<i class="fa fa-globe" aria-hidden="true"></i>
-					<h1>TŁUMACZENIA USTNE</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, at voluptatibus. Accusamus, optio, incidunt facere adipisci, sapiente in laboriosam delectus enim iure id maxime! Esse eius ipsam qui, minus fuga.</p>
-					<p class="slide-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-					</p>
+					<a href="#" data-position=".oral" data-target=".oral"><i class="fa fa-globe" aria-hidden="true"></i>
+						<h1>TŁUMACZENIA USTNE</h1>
+						<p>Zapewniamy realizację wszystkich rodzajów potrzeb tłumaczeniowych, takimi jak tłumaczenie symultaniczne, konsekutywne, telefoniczne lub obsługa konferencji.</p></a>
+					<p class="slide-down"></p>
 				</div>
 				<div class="short-info">
-					<i class="fa fa-video-camera" aria-hidden="true"></i>
-					<h1>MULTIMEDIA</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, at voluptatibus. Accusamus, optio, incidunt facere adipisci, sapiente in laboriosam delectus enim iure id maxime! Esse eius ipsam qui, minus fuga.</p>
-					<p class="slide-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-					</p>
+					<a href="#" data-position=".multimedia" data-target=".multimedia"><i class="fa fa-video-camera" aria-hidden="true"></i>
+						<h1>MULTIMEDIA I LOKALIZACJA</h1>
+						<p>Pomagamy naszym klientom działać globalnie lokalizując strony internetowe oraz dostosowujemy zawartość multimedialną za pomocą transkrypcji wideo, dubbingu, produkcji napisów lub lokalizacji grafiki.</p></a>
+					<p class="slide-down"></p>
 				</div>
 				<div class="short-info">
-					<i class="fa fa-comments-o" aria-hidden="true"></i>
-					<h1>LOKALIZACJA</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, at voluptatibus. Accusamus, optio, incidunt facere adipisci, sapiente in laboriosam delectus enim iure id maxime! Esse eius ipsam qui, minus fuga.</p>
-					<p class="slide-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-					</p>
-				</div>
-				<div class="short-info">
-					<i class="fa fa-commenting" aria-hidden="true"></i>
-					<h1>TŁUMACZENIA SYMULTANICZNE</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, at voluptatibus. Accusamus, optio, incidunt facere adipisci, sapiente in laboriosam delectus enim iure id maxime! Esse eius ipsam qui, minus fuga.</p>
-					<p class="slide-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-					</p>
-				</div>
-				<div class="short-info">
-					<i class="fa fa-desktop" aria-hidden="true"></i>
-					<h1>CENTRUM DTP</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, at voluptatibus. Accusamus, optio, incidunt facere adipisci, sapiente in laboriosam delectus enim iure id maxime! Esse eius ipsam qui, minus fuga.</p>
-					<p class="slide-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-					</p>
+					<a href="#" data-position=".dtp" data-target=".dtp"><i class="fa fa-desktop" aria-hidden="true"></i>
+						<h1>CENTRUM DTP</h1>
+						<p>Nasz zespół DTP dostosuje lub utworzy układ dokumentów i dostarczy profesjonalne wielojęzyczne pliki cyfrowe lub gotowe do druku.</p></a>
+					<p class="slide-down"></p>
 				</div>
 
 			</div>
@@ -299,40 +263,145 @@
 			</div>
 
 			<div id="googleMap" class="map"></div>
+		</div>
+		</div>
 
-			<div id="other" class="other">
-				<div class="other-content policy">
-					<h1>Polityka prywatności</h1>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cum tempora culpa libero dicta perspiciatis natus id eius eum nobis non, quis, deleniti nulla nisi debitis labore eaque itaque. Itaque.</div>
-				<div class="other-content job">
-					<h1>Praca</h1>
-					2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
+		<!-- Router content-->
+		<div class="other-content translations">
+			<p>
+				1.	Tłumaczenia pisemne
+Tłumaczenia pisemne to najczęściej zamawiana usługa przez naszych klientów. Każdego dnia tłumaczonych jest tysiące stron na całym świecie. Tłumaczenie przybliża różne kultury, łączy ludzi i umożliwia globalny zasięg wielu produktów i usług.
+Profesjonalne tłumaczenie rozpoczyna się przede wszystkim od zrozumienia znaczenia tekstu źródłowego, następnie utworzenia odpowiadającej mu treści w języku docelowym.
+Nasi tłumacze nie tylko świetnie rozumieją język źródłowy, ale przede wszystkim mają znakomity wgląd w kulturę krajów zarówno języka źródłowego jak i docelowego. A co jest najbardziej istotne, doskonale posługują się językiem docelowym. Nasi tłumacze w dużej części są native speakerami języków, na które wykonują tłumaczenia.
+
+1.1.	Tłumaczenia biznesowe – to niech się zwija tak jak w Powerlingu
+Znaczna część dokumentów powierzanych nam do tłumaczenia ma charakter biznesowy. W takich tłumaczeniach liczy się nie tylko dokładność i precyzja, ale również szybkość. Dzięki sprawnemu zarządzaniu projektami tłumaczeniowymi, pomagamy naszym klientom szybko i skutecznie osiągać ich cele biznesowe, tłumacząc najróżniejsze dokumenty na potrzeby w ich działalności. Nasi klienci często zwracają się do nas z dokumentami do tłumaczenia „na wczoraj”, a my z chęcią podejmujemy się najbardziej nietypowych i wymagających zadań. Dzięki autorskiemu oprogramowaniu do zarządzania projektami tłumaczeniowymi jesteśmy w stanie sprawnie realizować tłumaczenia zachowując najwyższą jakość przekładu.
+Przykłady dokumentów biznesowych:
+umowy, korespondencja handlowa, oferty handlowe, prezentacje, sprawozdania, kosztorysy, biznes plany itp.
+
+1.2.	Tłumaczenia specjalistyczne
+Wśród dokumentów biznesowych, które tłumaczymy dla naszych klientów spora część to dokumenty specjalistyczne, wymagające wiedzy i doświadczenia w tłumaczeniu tekstów z poszczególnych dziedzin. Nasi tłumacze to doświadczeni fachowcy specjalizujący się w określonych branżach. Powierzając nam swoje teksty do tłumaczenia, nasi klienci mogą mieć pewność, że zostaną one powierzone specjalistom, którzy oprócz perfekcyjnej znajomości języka źródłowego i docelowego doskonale rozumieją tematykę tłumaczonych tekstów. Dzięki temu nasi klienci mogą mieć pewność, że ich teksty będą poprawne językowo jak i merytorycznie.
+Przykłady dokumentów specjalistycznych:
+sprawozdania finansowe, dokumenty przetargowe, DTR, opisy maszyn rolniczych i sprzętu medycznego, aplikacje komputerowe, instrukcje obsługi itp.
+
+1.3.	Tłumaczenia do publikacji
+Znaczna część powierzanych nam do tłumaczenia dokumentów biznesowych to teksty, które nasi klienci rozpowszechniają zarówno w formie elektronicznej jak i papierowej. Teksty te mają charakter wizytówkowy, reklamowy, marketingowy. Ich zadaniem jest dotarcie do określonych odbiorców i zainteresowanie ich opisywanymi produktami czy usługami. Takie teksty charakteryzują się nienaganną dbałością o poprawność językową i stylistyczną. W tym przypadku istotna jest nie tylko poprawność merytoryczna przekładu, ale również odpowiedni styl i stuprocentowa poprawność językowa. W przypadku tekstów przeznaczonych do publikacji zawsze oferujemy naszym klientom korektę językową Native Speakera języka docelowego. Tylko naturalność, wyczucie językowe i dostosowanie treści do kontekstu kulturowego przez rodzinnego użytkownika języka jest w stanie zapewnić, że przetłumaczony tekst jest naturalny w odbiorze.
+Tekstom do publikacji, które są tłumaczone w naszej firmie, często towarzyszy dodatkowy proces, jakim jest skład graficzny dokumentu. Nasz dział DTP zajmuje się przygotowaniem graficznym przetłumaczonych dokumentów, w rezultacie czego nasi klienci otrzymują produkt gotowy do realizacji swoich celów biznesowych.
+Przykłady dokumentów do publikacji:
+artykuły, ulotki, katalogi, banery, strony internetowe, opisy na opakowaniach produktów, materiały reklamowe, social media itp.
+
+1.4.	Tłumaczenia poświadczone
+Niektóre dokumenty, zwłaszcza te tłumaczone celem przedłożenia do urzędów, wymagają poświadczenia przez tłumacza przysięgłego. Współpracujemy z najlepszymi tłumaczami przysięgłymi w kraju, którzy tłumaczą wszelkie dokumenty dla naszych klientów. Tłumaczenie można odebrać osobiście w naszym biurze lub możemy je dostarczyć do Państwa za pomocą kuriera lub Poczty Polskiej.
+Przykłady dokumentów poświadczonych:
+dokumenty rejestrowe firm, zaświadczenia, certyfikaty, faktury, pełnomocnictwa, umowy, formularze, regulaminy itp.
+1.5.	Kontrola jakości
+Jakość to słowo, które w naszej firmie ma szczególne znaczenie i jest wyznacznikiem odpowiedniej organizacji projektów tłumaczeniowych. Zapewnienie najwyższej jakości wykonywanym przez nas tłumaczeniom rozpoczynamy już od pierwszej rozmowy z klientem, omawiając jego potrzeby tłumaczeniowe i przeznaczenie tłumaczonego tekstu. Proponujemy klientom najlepsze rozwiązania i dobieramy odpowiednie procesy, aby zamówione tłumaczenie całkowicie spełniało  oczekiwania najbardziej wymagających klientów.
+Zapewniamy wysoką jakość naszych tłumaczeń już na początkowym etapie realizacji projektu, dobierając odpowiednie narzędzia i procesy, a przede wszystkim najlepszych tłumaczy w danej specjalizacji i stylu dokumentu. Dodatkowo, finalnym procesem w realizacji każdego projektu tłumaczeniowego jest kontrola jakości wykonywana przez kierownika projektu. Etap ten polega na sprawdzeniu tłumaczenia pod kątem kompletności, poprawności stosowanej terminologii z glosariuszem, zgodności danych liczbowych oraz układu i formatowania tekstu.
+Nasz autorski system zarządzania projektami tłumaczeniowymi pomaga nam sprawnie i efektywnie realizować wszystkie procesy tłumaczeniowe. Regularna ewaluacja tłumaczy i procesów tłumaczeniowych oraz ciągłe podnoszenie umiejętności naszych pracowników umożliwia nam ciągłe podnoszenie jakości oferowanych usług.
+
+1.6.	Korekta native speakera
+Tę usługę oferujemy naszym klientom jako kolejny etap po tłumaczeniu tekstów przeznaczonych do publikacji, czyli wszelkich tekstów, w których odpowiedni styl i naturalność zastosowanego języka mogą mieć realny wpływ na osiąganie zamierzonych celów biznesowych przez naszych klientów. Korekta native speakera polega na sprawdzeniu tłumaczenia bez porównywania z oryginałem. Jej celem jest wygładzenie językowe tłumaczenia, aby tekst brzmiał jak najbardziej naturalnie, biorąc pod uwagę kontekst i uwarunkowania kulturowe rodzimych użytkowników języka docelowego.
+1.7.	Weryfikacja merytoryczna
+Dodatkowym procesem zapewniającym najwyższą jakość tłumaczenia jest weryfikacja merytoryczna wykonywana przez tłumacza. Proces ten wykonywany jest przez tłumacza specjalistę w danej dziedzinie i polega na dokładnym porównaniu tłumaczenia z tekstem źródłowym i poprawieniu go pod względem merytorycznym i językowym.
 
 
-				</div>
-				<div class="other-content cert">
-					<h1>Certyfikaty</h1>
-					<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
-					<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
-					<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
-					<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
-					<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
-					<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
+			</p>
+
+		</div>
+		<div class="other-content oral">
+			<p>
+				2.	Tłumaczenia ustne
+W odróżnieniu od tłumaczy pisemnych, tłumacze ustni zajmują się przekładem języka mówionego w czasie rzeczywistym. Przekład taki wymaga od tłumacza nie tylko zgłębionej wiedzy na temat danego zagadnienia, ale również świadomości różnic kulturowych pomiędzy odbiorcami tłumaczonych języków oraz doskonałych umiejętności miękkich, jak zdolność koncentracji przez długi czas, umiejętność rozumienia i rozwijania skrótów myślowych, umiejętność natychmiastowego tłumaczenia. Zadaniem tłumaczy ustnych jest zapewnienie płynnego przebiegu spotkań biznesowych, jakby wszyscy ich uczestnicy mówili jednym językiem.
+Nasi tłumacze ustni są profesjonalistami z wieloletnim doświadczeniem. Współpracujemy z najlepszymi tłumaczami w kraju i dobieramy odpowiednich tłumaczy do tematyki spotkań biznesowych.
+Jesteśmy w stanie sprostać najbardziej nietypowym i wymagającym potrzebom tłumaczeniowym naszych klientów. Mamy doświadczenie w tłumaczeniach ustnych od audytów medycznych, konferencji, spotkań handlowych, po niejednokrotne delegowanie tłumaczy zagranicę - od kilkudniowych tłumaczeń biznesowych po kilkumiesięczne pobyty w fabrykach na tłumaczeniach szkoleń w Stanach Zjednoczonych.
+2.1.	Tłumaczenia symultaniczne
+Ten rodzaj tłumaczeń ustnych ma zastosowanie przede wszystkim podczas wielojęzycznych konferencji. Tłumaczenie odbywa się w czasie rzeczywistym równolegle do słów wypowiadanych przez prelegenta. Tłumacz wykonujący tłumaczenie przebywa w kabinie, a samo tłumaczenie wykonywane jest przez 2 tłumaczy. Wypowiedź prelegenta może być tłumaczona równolegle na kilka języków, a odbiorcy tłumaczenia słuchają jego treści przez słuchawki. Odbywające się równolegle do wypowiedzi prelegentów tłumaczenie symultaniczne nie wydłuża czasu trwania konferencji, co jest niewątpliwą zaletą zwłaszcza podczas całodziennych wydarzeń.
+
+2.2.	Tłumaczenie konsekutywne
+To drugi rodzaj tłumaczeń ustnych wykonywany podczas spotkań biznesowych, przemówień, rozmów handlowych, negocjacji oraz wszelkiego rodzaju spotkań i konferencji, jednak bez korzystania z kabiny i specjalistycznego sprzętu. Tłumaczenie odbywa się tuż po wypowiedzi prelegenta, który robi przerwy w swym wystąpieniu co kilka zdań, aby umożliwić tłumaczowi przekład na język odbiorców. W przypadku tłumaczenia konsekutywnego istnieje możliwość interakcji pomiędzy rozmówcami. Planując organizację wydarzeń z udziałem tłumacza konsekutywnego, klienci powinni mieć świadomość, że tłumaczenie konsekutywne wydłuża ich czas trwania.
+2.3.	Tłumaczenie szeptane
+Jest to forma tłumaczenia symultanicznego bez użycia specjalistycznego sprzętu. W trakcie takiego tłumaczenia tłumacz półgłosem przekazuje niewielkiemu gronu odbiorców treść wypowiedzi, bez konieczności przerywania tej wypowiedzi. Tłumaczenie szeptane jest często stosowane w sytuacjach, gdy niewielka liczba osób nie zna języka, którym posługuje się większość uczestników spotkania.
+2.4.	Tłumaczenie ustne poświadczone
+To rodzaj tłumaczenia konsekutywnego, które wykonywane jest przez tłumacza przysięgłego. Ten rodzaj tłumaczeń najczęściej stosowany jest przy podpisywaniu aktów notarialnych, umów, składaniu dokumentów w urzędach, sądach i innych instytucjach wymagających obecności tłumacza przysięgłego. Podczas takiego tłumaczenia, oprócz tradycyjnego przekładu, tłumacz może również poświadczać podpisem i pieczęcią sporządzone podczas spotkania dokumenty.
+
+			</p>
+		</div>
+		<div class="other-content multimedia">
+			<p>
+				3.	Lokalizacja i multimedia
+Lokalizacja
+Każda strona internetowa, każdy rynek ma swój unikalny zestaw wymagań.
+W OMERO specjalizujemy się w dostosowywaniu treści internetowych - tekstu, grafiki, innych treści funkcjonalnych - do lokalnego języka, pamiętając o lokalnej kulturze rynku docelowego. Zapewniając naszym klientom stronę internetową dostosowaną kulturowo, umożliwiamy im dotarcie do docelowej bazy klientów bez żadnych przeszkód, językowych czy kulturowych.
+Zapewniamy tłumaczenia zarówno statycznych jak i dynamicznych stron internetowych z wykorzystaniem HTML, SGML, XML, PHP i MySQL oraz Flash.
+Multimedia
+Omero zapewnia dedykowane rozwiązania multimedialne, które odpowiadają współczesnym wymaganiom naszych klientów. Nasze usługi lokalizowania multimediów obejmują:
+Transkrypcja wideo
+Tłumaczenie i produkcja napisów
+Dubbing
+Lokalizacja grafiki
+
+			</p>
+		</div>
+		<div class="other-content dtp">
+			<p>
+				4.	Centrum DTP
+W OMERO świadczymy kompletną opiekę techniczną nad przygotowaniem dokumentów do publikacji i druku (opracowanie graficzne i językowe np. katalogów reklamowych, instrukcji, ulotek, artykułów prasowych i innych materiałów drukowanych). Usługa obejmuje dostosowanie dokumentu tłumaczenia pod względem graficznym do oryginału bądź też na stworzeniu zupełnie nowego układu graficznego.
+Współpracujemy ze specjalistami zajmującymi się wszelkimi pracami związanymi z całym procesem przygotowania tłumaczenia, opracowaniem grafiki, składu tekstu oraz profesjonalnego przygotowania materiałów do druku.
+DTP proste obejmuje:
+• konwersję dokumentów w formatach .pdf, .jpg, .tiff, .gif, idd., .bmp, na .doc
+• zachowanie układu strony z uwzględnieniem akapitów i czcionek
+• konwersję dokumentów zawierających tabele na format .xls
+• konwersję dokumentów w formacie .doc lub .xls na .pdf
+• przygotowanie wersji elektronicznej skanów o prostym układzie strony
+• przygotowanie wersji elektronicznej maszynopisów o prostym układzie strony
+DTP złożone obejmuje:
+konwersję dokumentów o złożonej szacie graficznej w formatach .pdf, .jpg, .tiff, .gif, .bmp, .indd do formatów edytowalnych, dla dokumentów zawierających:
+• rysunki z opisami, wykresy, schematy
+• skomplikowane układy stron zawierające tabele, kolumny, rysunki w tabelach, nagłówki, stopki
+• rysunki techniczne i dokumentacje techniczne
+• tabele złożone
+• teksty mało czytelne, nieedytowalne
+• inne elementy niestandardowe
+Zaawansowane usługi DTP obejmują wszelkie obróbki dokumentów z wykorzystaniem profesjonalnych programów graficznych, takich jak: Adobe FrameMaker, Adobe InDesign, Adobe PageMaker, Corel Draw, QuarkXPress, Photoshop.
+Projektowanie i wydruk
+Oferujemy druk na różnego rodzaju papierze przy wykorzystaniu nowoczesnych maszyn zgodnie z oczekiwaniami klientów. Dzięki współpracy z najlepszymi drukarniami oferujemy druk materiałów reklamowych na najwyższym poziomie.
+Usługi drukarskie obejmują:
+• projekt szaty graficznej dokumentu
+• naniesienie tłumaczenia na oryginalną szatę graficzną dokumentu
+• wykonanie korekty przed drukiem
+• przygotowanie finalnego dokumentu w dowolnym formacie np. .pdf
+• wydruk gotowego materiału (np. katalog)
+Usługi świadczone przez Centrum DTP w OMERO to nie tylko najwyższa jakość, ale także wysoki poziom kreatywności, unikatowe rozwiązania i elastyczność w reagowaniu na potrzeby naszych klientów.
+
+			</p>
+		</div>
+		<div class="other-content policy">
+			<h1>Polityka prywatności</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cum tempora culpa libero dicta perspiciatis natus id eius eum nobis non, quis, deleniti nulla nisi debitis labore eaque itaque. Itaque.</div>
+		<div class="other-content job">
+			<h1>Praca</h1>
+			2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.
+			<ul>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
 
 
-				</div>
-			</div>
-
+		</div>
+		<div class="other-content cert">
+			<h1>Certyfikaty</h1>
+			<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
+			<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
+			<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
+			<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
+			<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
+			<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
 
 
 		</div>
@@ -343,11 +412,11 @@
 				<div class="footer-logo"><img src="assets/images/logo.jpg" /></div>
 				<div class="rights">All rights reserved <span class="copyright"></span></div>
 			</div>
-			<div class="bottom-links bottom-links-nav">
+			<div class="bottom-links router-links">
 				<h1>Przydatne linki</h1>
-				<a href="#/polityka" data-position=".other" data-target=".policy">Polityka prywatności</a>
-				<a href="#/praca" data-position=".other" data-target=".job">Praca</a>
-				<a href="#/certyfikaty" data-position=".other" data-target=".cert">Certyfikaty jakości</a>
+				<a href="#/polityka" data-position=".policy" data-target=".policy">Polityka prywatności</a>
+				<a href="#/praca" data-position=".job" data-target=".job">Praca</a>
+				<a href="#/certyfikaty" data-position=".cert" data-target=".cert">Certyfikaty jakości</a>
 			</div>
 			<div class="bottom-links">
 				<h1>Menu</h1>
@@ -359,6 +428,13 @@
 			</div>
 		</div>
 
+
+
+ <!-- Counup -->
+<div id="cu"></div>
+<div id="cu2"></div>
+
+
 		</div>
 		<!-- inject:js -->
 		<script src="./assets/js/menu.js"></script>
@@ -366,6 +442,10 @@
 		<script src="./assets/js/banner.js"></script>
 		<script src="./assets/js/popup.js"></script>
 		<script src="./assets/js/rights.js"></script>
+		<script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
+		<script src="./assets/js/swiper.js"></script>
+		<script src="../node_modules/countup.js/dist/countUp.min.js"></script>
+		<script src="./assets/js/countup.js"></script>
 		<!-- endinject -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0CNfYubMCK65RWVnI8TzIRw1ROhSZLzc&callback=omeroMap"></script>
 	</body>
