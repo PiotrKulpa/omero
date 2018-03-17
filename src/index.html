@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,9 +57,6 @@
 
 						<div class="nav">
 
-
-
-
 							<div class="nav-menu">
 								<a class="router-link" href="#" data-position=".home" data-target=".home">Home</a><span class="nav-slash">  /  </span>
 								<a href="#/onas" data-position=".about-us">O nas</a><span class="nav-slash">  /  </span>
@@ -114,7 +111,7 @@
 		 <div class="social-wrapper">
 
 			<div class="social">
-			 <span class="help"><a href="#help">HELP</a></span><br />
+			 <span class="help popup-link" data-popup=".popup-help"><a href="#help">HELP</a></span><br />
 			 <a href="https://www.facebook.com/omero.tlumaczenia/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><br />
 			 <a href="https://www.linkedin.com/company/omero-language-solutions/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 			</div>
@@ -127,7 +124,7 @@
 				 <div class="slider-slogan">
 				 	<h1>Omero - twój partner w biznesie</h1>
 				 	<h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
-				 	<button class="btn popup-btn">WIĘCEJ</button>
+				 	<button class="btn popup-btn popup-link" data-popup=".popup-baner1">WIĘCEJ</button>
 				 </div>
 
 				 <div class="slider-contact">
@@ -167,10 +164,60 @@
 		<!-- Popup system -->
 		<div class="popup">
 			<div class="short-info-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam inventore, aliquid tempore expedita iusto alias minima facilis laudantium hic illum? Accusantium ratione beatae neque obcaecati, dolorem odio deserunt iusto.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque nostrum nesciunt aliquid, sunt sapiente facilis velit delectus, fuga ut esse voluptatem architecto perferendis expedita officiis culpa. Beatae, perspiciatis laboriosam.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque illum, vitae laborum quas eligendi repellendus ad reiciendis, consectetur nesciunt recusandae aspernatur natus dolorum aliquid doloremque temporibus blanditiis nisi dicta?
-			</p>
+
+			<div class="popup-inner">
+				<div class="popup-baner1">
+					<h1>W OMERO tłumaczymy wszystkie rodzaje dokumentów związane z działalnością biznesową naszych klientów takie jak:</h1>
+					<div>
+						<div>
+							<h3>PRAWNO-BIZNESOWE:</h3>
+							<ul>
+								<li>UMOWY I KONTRAKTY</li>
+								<li>DOKUMENTACJA PROJEKTOWA</li>
+								<li>PRZETARGI I ROZPORZĄDZENIA</li>
+								<li>KORESPONDENCJA</li>
+								<li>CERTYFIKATY I ZASWIADCZENIA</li>
+								<li>AKTY NOTARIALNE</li>
+							</ul>
+						</div>
+						<div>
+						<h3>TECHNICZE:</h3>
+							<ul>
+								<li>INSTRUKCJE OBSLUGI I MONTAZU</li>
+								<li>SPECYFIKACJE TECHNICZNE</li>
+								<li>ARTYKULY NAUKOWE</li>
+							</ul>
+						</div>
+						<div>
+							<h3>MARKETINGowe:</h3>
+								<ul>
+									<li>SPECYFIKACJE PRODUKTÓW</li>
+									<li>KATALOGI I BROSZURY</li>
+									<li>NEWSLETTER</li>
+									<li>STRONY INTERNETOWE</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div class="popup-help">
+					<div class="contact-form">
+						<div class="popup-help-left">
+								<h2>POZOSTAŃMY W KONTAKCIE</h2>
+						</div>
+
+						<div class="popup-help-right">
+								<form action="">
+									<input class="inp-name" type="text" placeholder="Firma"><input class="inp-email" type="email" placeholder="E-mail">
+									<textarea class="inp-msg" name="name" rows="15" cols="10" placeholder="Wiadomość"></textarea>
+									<!-- <input type="file" name="file" id="file" class="inputfile" multiple/> -->
+									<!-- <label for="file">Wybierz pliki</label> -->
+									<input class="btn btn-fix" type="button" name="" value="Wyślij">
+								</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<div class="container">
@@ -211,9 +258,37 @@
 
 			</div>
 
+			<div class="flags">
+				<img class="slide-left" width="100%" src="./assets/images/flags.svg" alt="">
+			</div>
+
+			<div class="trades">
+				<div class="trades-box">
+					<i class="fa fa-industry" aria-hidden="true"></i>
+					<h3>Infrastruktura i przemysł</h3>
+				</div>
+				<div class="trades-box">
+					<i class="fa fa-handshake-o" aria-hidden="true"></i>
+					<h3>Prawo i finanse</h3>
+				</div>
+				<div class="trades-box">
+					<i class="fa fa-heartbeat" aria-hidden="true"></i>
+					<h3>Farmacja i medycyna</h3>
+				</div>
+				<div class="trades-box">
+					<i class="fa fa-laptop" aria-hidden="true"></i>
+					<h3>IT i technologie</h3>
+				</div>
+			</div>
+
 			<div class="about-us">
 				<h1>o nas</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, deleniti, dicta! Quia praesentium distinctio tenetur neque voluptatibus, minima quidem blanditiis, eum qui maiores ut voluptas doloremque fugiat modi nam et!</p>
+				<div class="about-us-left">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="about-us-right">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
 			</div>
 
 			<div class="reference">
@@ -252,14 +327,19 @@
 			</div>
 
 			<div class="contact-form">
-				<h2>KONTAKT</h2>
-				<form action="">
-					<input class="inp-name" type="text" placeholder="Firma"><input class="inp-email" type="email" placeholder="E-mail">
-					<textarea class="inp-msg" name="name" rows="3" cols="10" placeholder="Wiadomość"></textarea>
-					<input type="file" name="file" id="file" class="inputfile" multiple/>
-					<label for="file">Wybierz pliki</label>
-					<input class="btn btn-fix" type="button" name="" value="Wyślij">
-				</form>
+				<div class="popup-help-left">
+						<h2>POZOSTAŃMY W KONTAKCIE</h2>
+				</div>
+
+				<div class="popup-help-right">
+						<form action="">
+							<input class="inp-name" type="text" placeholder="Firma"><input class="inp-email" type="email" placeholder="E-mail">
+							<textarea class="inp-msg" name="name" rows="5" cols="10" placeholder="Wiadomość"></textarea>
+							<!-- <input type="file" name="file" id="file" class="inputfile" multiple/> -->
+							<!-- <label for="file">Wybierz pliki</label> -->
+							<input class="btn btn-fix" type="button" name="" value="Wyślij">
+						</form>
+				</div>
 			</div>
 
 			<div id="googleMap" class="map"></div>
