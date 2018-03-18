@@ -12,7 +12,7 @@
     closeInfoLink: $('.short-info-close'),
     popup: $('.popup'),
     popupInner: $('.popup-inner'),
-    slideDown: $('.short-info'),
+    slideDown: $('.trades-box'),
     pSlide: $('.slide-down'),
 
     /** Popup Event methods */
@@ -20,6 +20,7 @@
     openPopup: function () {
       popupObj.infoLink.on('click', function (e) {
         e.preventDefault();
+        e.stopPropagation();
         var tar = $( e.currentTarget ).data('popup');
         popupObj.popup.show();
         //schowaj zawartosc
@@ -54,7 +55,7 @@
     init: function () {
       this.openPopup();
       this.closePopup();
-      //this.toggleService();
+      this.toggleService();
     }
   };
 

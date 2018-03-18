@@ -58,37 +58,37 @@
 						<div class="nav">
 
 							<div class="nav-menu">
-								<a class="router-link" href="#" data-position=".home" data-target=".home">Home</a><span class="nav-slash">  /  </span>
+								<a class="router-link" href="#" data-position=".header" data-target=".home">Home</a><span class="nav-slash">  /  </span>
 								<a href="#/onas" data-position=".about-us">O nas</a><span class="nav-slash">  /  </span>
 								<div class="dropdown">
 									<a href="#/uslugi" data-position=".services">Usługi</a><span class="nav-slash">  /  </span>
-									<div class="dropdown-content">
+									<div class="dropdown-content router-links">
 
 								    <div class="dropdown-content-link">
-								    	<a href="#/uslugi" data-position=".services">
+								    	<a href="#/uslugi" data-position=".services" data-target=".translations">
 												<i class="fa fa-users" aria-hidden="true"></i>
 												Tłumaczenia <br /> pisemne
 											</a>
 								    </div>
 										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services">
+											<a href="#/uslugi" data-position=".services" data-target=".oral">
 												<i class="fa fa-globe" aria-hidden="true"></i>
 												Tłumaczenia <br /> ustne</a>
 										</div>
 										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services">
+											<a href="#/uslugi" data-position=".services" data-target=".multimedia">
 												<i class="fa fa-video-camera" aria-hidden="true"></i>
 												Multimedia <br />i lokalizacja</a>
 										</div>
 										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services">
+											<a href="#/uslugi" data-position=".services" data-target=".dtp">
 												<i class="fa fa-desktop" aria-hidden="true"></i>
 												Centrum <br /> Dtp</a>
 										</div>
 								  </div>
 								</div>
 
-								<a href="#/referencje" data-position=".reference">Branże</a><span class="nav-slash">  /  </span>
+								<a href="#/referencje" data-position=".trades">Branże</a><span class="nav-slash">  /  </span>
 								<a href="#/referencje" data-position=".reference">Narzędzia i technologie</a><span class="nav-slash">  /  </span>
 								<a href="#/kontakt" data-position=".contact-form">Kontakt</a>
 								<!-- <div class="dropdown">
@@ -128,7 +128,7 @@
 				 </div>
 
 				 <div class="slider-contact">
-				 	<a href="#">
+				 	<a class="btn popup-btn popup-link" href="#" data-popup=".popup-consultant">
 				 		<p>
 				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
 				 				Porozmawiaj z naszym konsultantem
@@ -168,8 +168,8 @@
 			<div class="popup-inner">
 				<div class="popup-baner1">
 					<h1>W OMERO tłumaczymy wszystkie rodzaje dokumentów związane z działalnością biznesową naszych klientów takie jak:</h1>
-					<div>
-						<div>
+					<div class="popup-baner-tab">
+						<div class="popup-baner-col">
 							<h3>PRAWNO-BIZNESOWE:</h3>
 							<ul>
 								<li>UMOWY I KONTRAKTY</li>
@@ -180,7 +180,7 @@
 								<li>AKTY NOTARIALNE</li>
 							</ul>
 						</div>
-						<div>
+						<div class="popup-baner-col">
 						<h3>TECHNICZE:</h3>
 							<ul>
 								<li>INSTRUKCJE OBSLUGI I MONTAZU</li>
@@ -188,7 +188,7 @@
 								<li>ARTYKULY NAUKOWE</li>
 							</ul>
 						</div>
-						<div>
+						<div class="popup-baner-col">
 							<h3>MARKETINGowe:</h3>
 								<ul>
 									<li>SPECYFIKACJE PRODUKTÓW</li>
@@ -198,6 +198,16 @@
 								</ul>
 						</div>
 					</div>
+
+					<div class="slider-contact">
+ 				 	<a href="#" class="popup-link" data-popup=".popup-consultant">
+ 				 		<p>
+ 				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+ 				 			<span>	Porozmawiaj z naszym konsultantem</span>
+ 				 		</p>
+ 				 	</a>
+ 				 </div>
+
 				</div>
 				<div class="popup-help">
 					<div class="contact-form">
@@ -215,6 +225,78 @@
 								</form>
 						</div>
 					</div>
+				</div>
+
+				<div class="popup-consultant">
+					<form action="">
+						<input class="inp-name" type="text" placeholder="Imię">
+						<input class="inp-email" type="email" placeholder="E-mail">
+						<input class="inp-email" type="number" placeholder="Numer telefonu">
+						<input class="inp-email" type="text" placeholder="Nazwa firmy">
+						<select name="data[slanguage]" class="input">
+            	<option val="0">Wybierz język źródłowy</option>
+                <option value="1">Arabic</option>
+						    <option value="2">Bulgarian</option>
+						    <option value="3">Chinese (Simplified)</option>
+						    <option value="4">Chinese (Traditional)</option>
+						    <option value="5">Czech</option>
+						    <option value="6">Danish</option>
+						    <option value="7">Dutch</option>
+						    <option value="8">English</option>
+						    <option value="9">Finnish</option>
+						    <option value="10">French</option>
+						    <option value="11">French (Canada)</option>
+						    <option value="12">German</option>
+						    <option value="13">Greek</option>
+						    <option value="14">Hebrew</option>
+						    <option value="15">Hungarian</option>
+						    <option value="16">Indonesian</option>
+						    <option value="17">Italian</option>
+						    <option value="18">Japanese</option>
+						    <option value="19">Korean</option>
+						    <option value="20">Malay</option>
+						    <option value="21">Norwegian</option>
+						    <option value="22">Polish</option>
+						    <option value="23">Portuguese (Brazil)</option>
+						    <option value="24">Portuguese (Portugal)</option>
+						    <option value="25">Romanian</option>
+						    <option value="26">Russian</option>
+						    <option value="27">Spanish (Latin America)</option>
+						    <option value="28">Spanish (Spain)</option>
+						    <option value="29">Swedish</option>
+						    <option value="30">Tagalog</option>
+						    <option value="31">Thai</option>
+						    <option value="32">Turkish</option>
+						    <option value="33">Vietnamese</option>
+              <option value="other">Other</option>
+            </select>
+
+						<select name="data[tlanguage][]" class="input" multiple="multiple" size="5">
+            	<option val="0">Wybierz język docelowy</option>
+                <option value="3">Chinese (Simplified)</option>
+								<option value="4">Chinese (Traditional)</option>
+						    <option value="7">Dutch</option>
+						    <option value="8">English</option>
+						    <option value="10">French</option>
+						    <option value="12">German</option>
+						    <option value="17">Italian</option>
+						    <option value="18">Japanese</option>
+						    <option value="19">Korean</option>
+						    <option value="22">Polish</option>
+						    <option value="23">Portuguese (Brazil)</option>
+						    <option value="24">Portuguese (Portugal)</option>
+						    <option value="26">Russian</option>
+						    <option value="27">Spanish (Latin America)</option>
+						    <option value="28">Spanish (Spain)</option>
+						    <option value="other">Inny</option>
+            </select>
+						<label for="date">Wybierz datę tłumaczenia</label>
+						<input id="date" type="date">
+						<textarea class="inp-msg" name="name" rows="10" cols="10" placeholder="Wiadomość"></textarea>
+						<input type="file" name="file" id="file" class="inputfile" multiple/>
+						<label for="file"><i class="fa fa-folder-open" aria-hidden="true"></i>  Wybierz pliki</label>
+						<input class="btn btn-fix" type="button" name="" value="Wyślij">
+					</form>
 				</div>
 			</div>
 
@@ -259,71 +341,139 @@
 			</div>
 
 			<div class="flags">
+				<h1>Języki </h1>
+				<p>Od angielskiego do Zulu, nasi eksperci native speaker’s i tłumacze mogą tłumaczyć ponad 100 kombinacjach językowych. Zapewniamy tłumaczenia prawne, techniczne, medyczne, uwierzytelnione, lokalizacyjne i inne. </p>
+
+				<p>Aby otrzymać wycenę dokumentu w pożądanej kombinacji językowej skontaktuj się z nami</p>
+
 				<img class="slide-left" width="100%" src="./assets/images/flags.svg" alt="">
 			</div>
 
 			<div class="trades">
+				<h1>SPECJALIZACJE</h1>
+				<p>	Specjalizujemy się w tłumaczeniach tekstów z wielu dziedzin - prawa, finansów, przemysłu, techniki, medycyny, farmacji i marketingu.</p>
+
 				<div class="trades-box">
 					<i class="fa fa-industry" aria-hidden="true"></i>
 					<h3>Infrastruktura i przemysł</h3>
+					<div class="slide-down">
+						Dla sektora przemysłowego tłumaczymy między innymi:
+						<ul>
+							<li>dokumentacje techniczne</li>
+							<li>instrukcje obsługi</li>
+							<li>książki gwarancyjne i serwisowe</li>
+							<li>certyfikaty, patenty i gwarancje</li>
+							<li>dokumentacje przetargowe</li>
+						</ul>
+					</div>
 				</div>
 				<div class="trades-box">
 					<i class="fa fa-handshake-o" aria-hidden="true"></i>
 					<h3>Prawo i finanse</h3>
+					<div class="slide-down">
+						Dla sektora prawno – finansowego tłumaczymy między innymi:
+						<ul>
+							<li>umowy, uchwały i procedury</li>
+							<li>akty prawne</li>
+							<li>raporty roczne i sprawozdana finansowe</li>
+							<li>opinie biegłych rewidentów</li>
+						</ul>
+					</div>
 				</div>
 				<div class="trades-box">
 					<i class="fa fa-heartbeat" aria-hidden="true"></i>
 					<h3>Farmacja i medycyna</h3>
+					<div class="slide-down">
+						Dla sektora farmaceutyczno - medycznego tłumaczymy między innymi:
+						<ul>
+							<li>charakterystyki produktów leczniczych i chemicznych</li>
+							<li>opisy leków i środków chemicznych</li>
+							<li>dokumentacje badań klinicznych</li>
+							<li>dokumentacje techniczne urządzeń i aparatury medycznej</li>
+						</ul>
+					</div>
 				</div>
 				<div class="trades-box">
 					<i class="fa fa-laptop" aria-hidden="true"></i>
 					<h3>IT i technologie</h3>
+					<div class="slide-down">
+						Dla sektora technologicznego i marketingu tłumaczymy między innymi:
+						<ul>
+							<li>dokumentacje techniczne</li>
+							<li>specyfikacje funkcjonalne i wdrożeniowe</li>
+							<li>certyfikaty, patenty, licencje, umowy</li>
+							<li>materiały marketingowe</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
 			<div class="about-us">
-				<h1>o nas</h1>
+
 				<div class="about-us-left">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<h1>KIM JESTEŚMY?</h1>
+					<p>Jesteśmy agencją tłumaczeniową specjalizującą się w szerokim zakresie usług językowych.</p>
 				</div>
 				<div class="about-us-right">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Oferujemy, oprócz tłumaczeń pisemnych i ustnych, kompleksową obsługę konferencji, szkoleń i sympozjów.
+Zapewniamy sprzęt, nagłośnienie i obsługę techniczną tłumaczeń symultanicznych, usługi DTP i opracowanie graficzne materiałów reklamowych, a także indywidualne rozwiązania informatyczne i technologiczne.
+Naszym priorytetem są najnowocześniejsze metody pozwalające dostarczać Klientom na czas usługi najwyższej jakości. Wszelkie działania podejmujemy z wykorzystaniem wieloletniego doświadczenia, wiedzy i stałej współpracy ze światowymi liderami IT, dzięki którym możemy oferować zintegrowane, nowatorskie podejście.
+Realizujemy nietypowe projekty w ponad 40 językach: współpracujemy z najlepszymi tłumaczami w kraju i za granicą; polecamy tłumaczenia zwykłe, specjalistyczne i uwierzytelnione, pisemne i ustne, a także korekty językowe.
+Stałym Klientom zapewniamy korzystne systemy rabatowe: pozwala to zminimalizować koszty tłumaczeń, a także zaoszczędzić czas.
+Gwarantujemy pełną satysfakcję ze współpracy.
 				</div>
+				<div class="reference">
+					<h1><strong>Referencje</strong></h1>
+					<!-- Swiper -->
+				  <div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+								<p class="quote"><strong>Materne - Polska</strong><br />
+								<span>"Z przyjemnością pragnę zarekomendować usługi wykonywane przez biuro tłumaczeń Omero Spółka z o.o. Współpraca pomiędzy Materne - Polska Spółka z o.o., a wyżej wspomnianym biurem przebiega bardzo pomyślnie: sprawnie i efektywnie. Tłumaczenia zwykłe i przysięgłe wykonywane są profesjonalnie i szybko. Jako dodatkowe atuty wymienić należy wysokiej jakości obsługę oraz dużą elastyczność i chęć dostosowania do potrzeb klienta, właściwie w każdej kwestii (...)."</span></p>
+							</div>
+				      <div class="swiper-slide">
+								<p class="quote"><strong>Berger Bau</strong><br />
+								<span>" (...) Miło nam zarekomendować Biuro Tłumaczeń Omero Sp. z o.o. jako wiarygodną i sprawnie funkcjonujące biuro tłumaczeń, które świadczy usługi tłumaczeniowe zawsze terminowo i z zachowaniem zasad należytej staranności."</span></p>
+							</div>
+				      <div class="swiper-slide">
+								<p class="quote"><strong>Biowin</strong><br />
+								<span>"(...) Planując realizację dużego projektu zawsze możemy liczyć na profesjonalne i uczciwe podejście do współpracy ze strony naszego Partnera (...). W naszej opinii firma OMERO Sp. z o.o. jest godna polecenia z uwagi na fachowość, rzetelność i poszanowanie przyjętych na siebie zobowiązań."</span></p>
+							</div>
+				      <div class="swiper-slide">
+								<p class="quote"><strong>Ziaja</strong><br />
+								<span>"(...) Firma wykazuje najwyższą jakość usług oraz dbałość o klienta (...)."</span></p>
+							</div>			   
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				    <!-- Add Arrows -->
+				    <!-- <div class="swiper-button-next"></div> -->
+				    <!-- <div class="swiper-button-prev"></div> -->
+				  </div>
+				</div>
+
 			</div>
 
-			<div class="reference">
-				<div class="blue-part-inner">
-					<h1>Referencje</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eum omnis odit laboriosam aut fugiat dolor, illum accusamus in beatae molestiae odio tempore quam officiis vitae sunt cum magni, eligendi.</p>
-				</div>
-				<div class="blue-part-inner">
-					<h1>Certyfikaty</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eum omnis odit laboriosam aut fugiat dolor, illum accusamus in beatae molestiae odio tempore quam officiis vitae sunt cum magni, eligendi.</p>
-				</div>
-				<div class="blue-part-inner">
-					<h1>Jakość</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eum omnis odit laboriosam aut fugiat dolor, illum accusamus in beatae molestiae odio tempore quam officiis vitae sunt cum magni, eligendi.</p>
-				</div>
+			<!-- Omero w liczbach -->
+			<div class="statistics">
+				<h1>Omero w liczbach</h1>
 
-
-				<div class="ref-logos">
-					<h1>Zaufali nam</h1>
-					<img src="assets/images/ref-ziaja.jpg" alt="">
-					<img src="assets/images/ref-performance.jpg" alt="">
-					<img src="assets/images/ref-materne.jpg" alt="">
-					<img src="assets/images/ref-lakma.jpg" alt="">
-					<img src="assets/images/ref-hill.jpg" alt="">
-					<img src="assets/images/ref-biowin.jpg" alt="">
-					<img src="assets/images/ref-berger.jpg" alt="">
-				</div>
-			</div>
-
-			<div class="success-block">
-				<div class="success-block-wrapper">
-					<h1>SUKCES</h1>
-					<h4>OSIĄGNIESZ Z NAMI</h4>
-					<button class="btn popup-btn">WIĘCEJ</button>
-				</div>
+			 <div class="statistics-inner">
+			 		<div id="cu" class="circle"></div>
+					<p>Pracowników</p>
+			 </div>
+			 	<div  class="statistics-inner">
+			 		<div id="cu2" class="circle"></div>
+					<p>Lat działalności</p>
+			 	</div>
+			 	<div class="statistics-inner">
+			 		<div id="cu3" class="circle"></div>
+					<p>Zadowolonych klientów</p>
+			 	</div>
+			 <div class="statistics-inner">
+			 		<div id="cu4" class="circle"></div>
+					<p>Zrealizowanych projektów</p>
+			 </div>
 			</div>
 
 			<div class="contact-form">
@@ -349,128 +499,355 @@
 		<!-- Router content-->
 		<div class="other-content translations">
 			<p>
-				1.	Tłumaczenia pisemne
-Tłumaczenia pisemne to najczęściej zamawiana usługa przez naszych klientów. Każdego dnia tłumaczonych jest tysiące stron na całym świecie. Tłumaczenie przybliża różne kultury, łączy ludzi i umożliwia globalny zasięg wielu produktów i usług.
-Profesjonalne tłumaczenie rozpoczyna się przede wszystkim od zrozumienia znaczenia tekstu źródłowego, następnie utworzenia odpowiadającej mu treści w języku docelowym.
-Nasi tłumacze nie tylko świetnie rozumieją język źródłowy, ale przede wszystkim mają znakomity wgląd w kulturę krajów zarówno języka źródłowego jak i docelowego. A co jest najbardziej istotne, doskonale posługują się językiem docelowym. Nasi tłumacze w dużej części są native speakerami języków, na które wykonują tłumaczenia.
+				<h1>1.	Tłumaczenia pisemne</h1>
+				<p>Tłumaczenia pisemne to najczęściej zamawiana usługa przez naszych klientów. Każdego dnia tłumaczonych jest tysiące stron na całym świecie. Tłumaczenie przybliża różne kultury, łączy ludzi i umożliwia globalny zasięg wielu produktów i usług.</p>
+				<p>Profesjonalne tłumaczenie rozpoczyna się przede wszystkim od zrozumienia znaczenia tekstu źródłowego, następnie utworzenia odpowiadającej mu treści w języku docelowym.</p>
+				<p>Nasi tłumacze nie tylko świetnie rozumieją język źródłowy, ale przede wszystkim mają znakomity wgląd w kulturę krajów zarówno języka źródłowego jak i docelowego. A co jest najbardziej istotne, doskonale posługują się językiem docelowym. Nasi tłumacze w dużej części są native speakerami języków, na które wykonują tłumaczenia.</p>
 
-1.1.	Tłumaczenia biznesowe – to niech się zwija tak jak w Powerlingu
-Znaczna część dokumentów powierzanych nam do tłumaczenia ma charakter biznesowy. W takich tłumaczeniach liczy się nie tylko dokładność i precyzja, ale również szybkość. Dzięki sprawnemu zarządzaniu projektami tłumaczeniowymi, pomagamy naszym klientom szybko i skutecznie osiągać ich cele biznesowe, tłumacząc najróżniejsze dokumenty na potrzeby w ich działalności. Nasi klienci często zwracają się do nas z dokumentami do tłumaczenia „na wczoraj”, a my z chęcią podejmujemy się najbardziej nietypowych i wymagających zadań. Dzięki autorskiemu oprogramowaniu do zarządzania projektami tłumaczeniowymi jesteśmy w stanie sprawnie realizować tłumaczenia zachowując najwyższą jakość przekładu.
-Przykłady dokumentów biznesowych:
-umowy, korespondencja handlowa, oferty handlowe, prezentacje, sprawozdania, kosztorysy, biznes plany itp.
+				<h2>1.1.	Tłumaczenia biznesowe</h2>
+				<p>Znaczna część dokumentów powierzanych nam do tłumaczenia ma charakter biznesowy. W takich tłumaczeniach liczy się nie tylko dokładność i precyzja, ale również szybkość. Dzięki sprawnemu zarządzaniu projektami tłumaczeniowymi, pomagamy naszym klientom szybko i skutecznie osiągać ich cele biznesowe, tłumacząc najróżniejsze dokumenty na potrzeby w ich działalności. Nasi klienci często zwracają się do nas z dokumentami do tłumaczenia „na wczoraj”, a my z chęcią podejmujemy się najbardziej nietypowych i wymagających zadań. Dzięki autorskiemu oprogramowaniu do zarządzania projektami tłumaczeniowymi jesteśmy w stanie sprawnie realizować tłumaczenia zachowując najwyższą jakość przekładu.</p>
+				<p><strong>Przykłady dokumentów biznesowych:</strong></p>
+				<p>umowy, korespondencja handlowa, oferty handlowe, prezentacje, sprawozdania, kosztorysy, biznes plany itp.</p>
 
-1.2.	Tłumaczenia specjalistyczne
-Wśród dokumentów biznesowych, które tłumaczymy dla naszych klientów spora część to dokumenty specjalistyczne, wymagające wiedzy i doświadczenia w tłumaczeniu tekstów z poszczególnych dziedzin. Nasi tłumacze to doświadczeni fachowcy specjalizujący się w określonych branżach. Powierzając nam swoje teksty do tłumaczenia, nasi klienci mogą mieć pewność, że zostaną one powierzone specjalistom, którzy oprócz perfekcyjnej znajomości języka źródłowego i docelowego doskonale rozumieją tematykę tłumaczonych tekstów. Dzięki temu nasi klienci mogą mieć pewność, że ich teksty będą poprawne językowo jak i merytorycznie.
-Przykłady dokumentów specjalistycznych:
-sprawozdania finansowe, dokumenty przetargowe, DTR, opisy maszyn rolniczych i sprzętu medycznego, aplikacje komputerowe, instrukcje obsługi itp.
+				<h2>1.2.	Tłumaczenia specjalistyczne</h2>
+				<p>Wśród dokumentów biznesowych, które tłumaczymy dla naszych klientów spora część to dokumenty specjalistyczne, wymagające wiedzy i doświadczenia w tłumaczeniu tekstów z poszczególnych dziedzin. Nasi tłumacze to doświadczeni fachowcy specjalizujący się w określonych branżach. Powierzając nam swoje teksty do tłumaczenia, nasi klienci mogą mieć pewność, że zostaną one powierzone specjalistom, którzy oprócz perfekcyjnej znajomości języka źródłowego i docelowego doskonale rozumieją tematykę tłumaczonych tekstów. Dzięki temu nasi klienci mogą mieć pewność, że ich teksty będą poprawne językowo jak i merytorycznie.</p>
+				<p><strong>Przykłady dokumentów specjalistycznych:</strong></p>
+				<p>sprawozdania finansowe, dokumenty przetargowe, DTR, opisy maszyn rolniczych i sprzętu medycznego, aplikacje komputerowe, instrukcje obsługi itp.</p>
 
-1.3.	Tłumaczenia do publikacji
-Znaczna część powierzanych nam do tłumaczenia dokumentów biznesowych to teksty, które nasi klienci rozpowszechniają zarówno w formie elektronicznej jak i papierowej. Teksty te mają charakter wizytówkowy, reklamowy, marketingowy. Ich zadaniem jest dotarcie do określonych odbiorców i zainteresowanie ich opisywanymi produktami czy usługami. Takie teksty charakteryzują się nienaganną dbałością o poprawność językową i stylistyczną. W tym przypadku istotna jest nie tylko poprawność merytoryczna przekładu, ale również odpowiedni styl i stuprocentowa poprawność językowa. W przypadku tekstów przeznaczonych do publikacji zawsze oferujemy naszym klientom korektę językową Native Speakera języka docelowego. Tylko naturalność, wyczucie językowe i dostosowanie treści do kontekstu kulturowego przez rodzinnego użytkownika języka jest w stanie zapewnić, że przetłumaczony tekst jest naturalny w odbiorze.
-Tekstom do publikacji, które są tłumaczone w naszej firmie, często towarzyszy dodatkowy proces, jakim jest skład graficzny dokumentu. Nasz dział DTP zajmuje się przygotowaniem graficznym przetłumaczonych dokumentów, w rezultacie czego nasi klienci otrzymują produkt gotowy do realizacji swoich celów biznesowych.
-Przykłady dokumentów do publikacji:
-artykuły, ulotki, katalogi, banery, strony internetowe, opisy na opakowaniach produktów, materiały reklamowe, social media itp.
+				<h2>1.3.	Tłumaczenia do publikacji</h2>
+				<p>Znaczna część powierzanych nam do tłumaczenia dokumentów biznesowych to teksty, które nasi klienci rozpowszechniają zarówno w formie elektronicznej jak i papierowej. Teksty te mają charakter wizytówkowy, reklamowy, marketingowy. Ich zadaniem jest dotarcie do określonych odbiorców i zainteresowanie ich opisywanymi produktami czy usługami. Takie teksty charakteryzują się nienaganną dbałością o poprawność językową i stylistyczną. W tym przypadku istotna jest nie tylko poprawność merytoryczna przekładu, ale również odpowiedni styl i stuprocentowa poprawność językowa. W przypadku tekstów przeznaczonych do publikacji zawsze oferujemy naszym klientom korektę językową Native Speakera języka docelowego. Tylko naturalność, wyczucie językowe i dostosowanie treści do kontekstu kulturowego przez rodzinnego użytkownika języka jest w stanie zapewnić, że przetłumaczony tekst jest naturalny w odbiorze.</p>
+				<p>Tekstom do publikacji, które są tłumaczone w naszej firmie, często towarzyszy dodatkowy proces, jakim jest skład graficzny dokumentu. Nasz dział DTP zajmuje się przygotowaniem graficznym przetłumaczonych dokumentów, w rezultacie czego nasi klienci otrzymują produkt gotowy do realizacji swoich celów biznesowych.</p>
+				<p><strong>Przykłady dokumentów do publikacji:</strong></p>
+				<p>artykuły, ulotki, katalogi, banery, strony internetowe, opisy na opakowaniach produktów, materiały reklamowe, social media itp.</p>
 
-1.4.	Tłumaczenia poświadczone
-Niektóre dokumenty, zwłaszcza te tłumaczone celem przedłożenia do urzędów, wymagają poświadczenia przez tłumacza przysięgłego. Współpracujemy z najlepszymi tłumaczami przysięgłymi w kraju, którzy tłumaczą wszelkie dokumenty dla naszych klientów. Tłumaczenie można odebrać osobiście w naszym biurze lub możemy je dostarczyć do Państwa za pomocą kuriera lub Poczty Polskiej.
-Przykłady dokumentów poświadczonych:
-dokumenty rejestrowe firm, zaświadczenia, certyfikaty, faktury, pełnomocnictwa, umowy, formularze, regulaminy itp.
-1.5.	Kontrola jakości
-Jakość to słowo, które w naszej firmie ma szczególne znaczenie i jest wyznacznikiem odpowiedniej organizacji projektów tłumaczeniowych. Zapewnienie najwyższej jakości wykonywanym przez nas tłumaczeniom rozpoczynamy już od pierwszej rozmowy z klientem, omawiając jego potrzeby tłumaczeniowe i przeznaczenie tłumaczonego tekstu. Proponujemy klientom najlepsze rozwiązania i dobieramy odpowiednie procesy, aby zamówione tłumaczenie całkowicie spełniało  oczekiwania najbardziej wymagających klientów.
-Zapewniamy wysoką jakość naszych tłumaczeń już na początkowym etapie realizacji projektu, dobierając odpowiednie narzędzia i procesy, a przede wszystkim najlepszych tłumaczy w danej specjalizacji i stylu dokumentu. Dodatkowo, finalnym procesem w realizacji każdego projektu tłumaczeniowego jest kontrola jakości wykonywana przez kierownika projektu. Etap ten polega na sprawdzeniu tłumaczenia pod kątem kompletności, poprawności stosowanej terminologii z glosariuszem, zgodności danych liczbowych oraz układu i formatowania tekstu.
-Nasz autorski system zarządzania projektami tłumaczeniowymi pomaga nam sprawnie i efektywnie realizować wszystkie procesy tłumaczeniowe. Regularna ewaluacja tłumaczy i procesów tłumaczeniowych oraz ciągłe podnoszenie umiejętności naszych pracowników umożliwia nam ciągłe podnoszenie jakości oferowanych usług.
+				<h2>1.4.	Tłumaczenia poświadczone</h2>
+				<p>Niektóre dokumenty, zwłaszcza te tłumaczone celem przedłożenia do urzędów, wymagają poświadczenia przez tłumacza przysięgłego. Współpracujemy z najlepszymi tłumaczami przysięgłymi w kraju, którzy tłumaczą wszelkie dokumenty dla naszych klientów. Tłumaczenie można odebrać osobiście w naszym biurze lub możemy je dostarczyć do Państwa za pomocą kuriera lub Poczty Polskiej.</p>
+				<p><strong>Przykłady dokumentów poświadczonych:</strong></p>
+				<p>dokumenty rejestrowe firm, zaświadczenia, certyfikaty, faktury, pełnomocnictwa, umowy, formularze, regulaminy itp.</p>
+				<h2>1.5.	Kontrola jakości</h2>
+				<p>Jakość to słowo, które w naszej firmie ma szczególne znaczenie i jest wyznacznikiem odpowiedniej organizacji projektów tłumaczeniowych. Zapewnienie najwyższej jakości wykonywanym przez nas tłumaczeniom rozpoczynamy już od pierwszej rozmowy z klientem, omawiając jego potrzeby tłumaczeniowe i przeznaczenie tłumaczonego tekstu. Proponujemy klientom najlepsze rozwiązania i dobieramy odpowiednie procesy, aby zamówione tłumaczenie całkowicie spełniało  oczekiwania najbardziej wymagających klientów.</p>
+				<p>Zapewniamy wysoką jakość naszych tłumaczeń już na początkowym etapie realizacji projektu, dobierając odpowiednie narzędzia i procesy, a przede wszystkim najlepszych tłumaczy w danej specjalizacji i stylu dokumentu. Dodatkowo, finalnym procesem w realizacji każdego projektu tłumaczeniowego jest kontrola jakości wykonywana przez kierownika projektu. Etap ten polega na sprawdzeniu tłumaczenia pod kątem kompletności, poprawności stosowanej terminologii z glosariuszem, zgodności danych liczbowych oraz układu i formatowania tekstu.</p>
+				<p>Nasz autorski system zarządzania projektami tłumaczeniowymi pomaga nam sprawnie i efektywnie realizować wszystkie procesy tłumaczeniowe. Regularna ewaluacja tłumaczy i procesów tłumaczeniowych oraz ciągłe podnoszenie umiejętności naszych pracowników umożliwia nam ciągłe podnoszenie jakości oferowanych usług.</p>
 
-1.6.	Korekta native speakera
-Tę usługę oferujemy naszym klientom jako kolejny etap po tłumaczeniu tekstów przeznaczonych do publikacji, czyli wszelkich tekstów, w których odpowiedni styl i naturalność zastosowanego języka mogą mieć realny wpływ na osiąganie zamierzonych celów biznesowych przez naszych klientów. Korekta native speakera polega na sprawdzeniu tłumaczenia bez porównywania z oryginałem. Jej celem jest wygładzenie językowe tłumaczenia, aby tekst brzmiał jak najbardziej naturalnie, biorąc pod uwagę kontekst i uwarunkowania kulturowe rodzimych użytkowników języka docelowego.
-1.7.	Weryfikacja merytoryczna
-Dodatkowym procesem zapewniającym najwyższą jakość tłumaczenia jest weryfikacja merytoryczna wykonywana przez tłumacza. Proces ten wykonywany jest przez tłumacza specjalistę w danej dziedzinie i polega na dokładnym porównaniu tłumaczenia z tekstem źródłowym i poprawieniu go pod względem merytorycznym i językowym.
+				<h2>1.6.	Korekta native speakera</h2>
+				<p>Tę usługę oferujemy naszym klientom jako kolejny etap po tłumaczeniu tekstów przeznaczonych do publikacji, czyli wszelkich tekstów, w których odpowiedni styl i naturalność zastosowanego języka mogą mieć realny wpływ na osiąganie zamierzonych celów biznesowych przez naszych klientów. Korekta native speakera polega na sprawdzeniu tłumaczenia bez porównywania z oryginałem. Jej celem jest wygładzenie językowe tłumaczenia, aby tekst brzmiał jak najbardziej naturalnie, biorąc pod uwagę kontekst i uwarunkowania kulturowe rodzimych użytkowników języka docelowego.</p>
+
+				<h2>1.7.	Weryfikacja merytoryczna</h2>
+				<p>Dodatkowym procesem zapewniającym najwyższą jakość tłumaczenia jest weryfikacja merytoryczna wykonywana przez tłumacza. Proces ten wykonywany jest przez tłumacza specjalistę w danej dziedzinie i polega na dokładnym porównaniu tłumaczenia z tekstem źródłowym i poprawieniu go pod względem merytorycznym i językowym.</p>
 
 
 			</p>
 
 		</div>
 		<div class="other-content oral">
-			<p>
-				2.	Tłumaczenia ustne
-W odróżnieniu od tłumaczy pisemnych, tłumacze ustni zajmują się przekładem języka mówionego w czasie rzeczywistym. Przekład taki wymaga od tłumacza nie tylko zgłębionej wiedzy na temat danego zagadnienia, ale również świadomości różnic kulturowych pomiędzy odbiorcami tłumaczonych języków oraz doskonałych umiejętności miękkich, jak zdolność koncentracji przez długi czas, umiejętność rozumienia i rozwijania skrótów myślowych, umiejętność natychmiastowego tłumaczenia. Zadaniem tłumaczy ustnych jest zapewnienie płynnego przebiegu spotkań biznesowych, jakby wszyscy ich uczestnicy mówili jednym językiem.
-Nasi tłumacze ustni są profesjonalistami z wieloletnim doświadczeniem. Współpracujemy z najlepszymi tłumaczami w kraju i dobieramy odpowiednich tłumaczy do tematyki spotkań biznesowych.
-Jesteśmy w stanie sprostać najbardziej nietypowym i wymagającym potrzebom tłumaczeniowym naszych klientów. Mamy doświadczenie w tłumaczeniach ustnych od audytów medycznych, konferencji, spotkań handlowych, po niejednokrotne delegowanie tłumaczy zagranicę - od kilkudniowych tłumaczeń biznesowych po kilkumiesięczne pobyty w fabrykach na tłumaczeniach szkoleń w Stanach Zjednoczonych.
-2.1.	Tłumaczenia symultaniczne
-Ten rodzaj tłumaczeń ustnych ma zastosowanie przede wszystkim podczas wielojęzycznych konferencji. Tłumaczenie odbywa się w czasie rzeczywistym równolegle do słów wypowiadanych przez prelegenta. Tłumacz wykonujący tłumaczenie przebywa w kabinie, a samo tłumaczenie wykonywane jest przez 2 tłumaczy. Wypowiedź prelegenta może być tłumaczona równolegle na kilka języków, a odbiorcy tłumaczenia słuchają jego treści przez słuchawki. Odbywające się równolegle do wypowiedzi prelegentów tłumaczenie symultaniczne nie wydłuża czasu trwania konferencji, co jest niewątpliwą zaletą zwłaszcza podczas całodziennych wydarzeń.
 
-2.2.	Tłumaczenie konsekutywne
-To drugi rodzaj tłumaczeń ustnych wykonywany podczas spotkań biznesowych, przemówień, rozmów handlowych, negocjacji oraz wszelkiego rodzaju spotkań i konferencji, jednak bez korzystania z kabiny i specjalistycznego sprzętu. Tłumaczenie odbywa się tuż po wypowiedzi prelegenta, który robi przerwy w swym wystąpieniu co kilka zdań, aby umożliwić tłumaczowi przekład na język odbiorców. W przypadku tłumaczenia konsekutywnego istnieje możliwość interakcji pomiędzy rozmówcami. Planując organizację wydarzeń z udziałem tłumacza konsekutywnego, klienci powinni mieć świadomość, że tłumaczenie konsekutywne wydłuża ich czas trwania.
-2.3.	Tłumaczenie szeptane
-Jest to forma tłumaczenia symultanicznego bez użycia specjalistycznego sprzętu. W trakcie takiego tłumaczenia tłumacz półgłosem przekazuje niewielkiemu gronu odbiorców treść wypowiedzi, bez konieczności przerywania tej wypowiedzi. Tłumaczenie szeptane jest często stosowane w sytuacjach, gdy niewielka liczba osób nie zna języka, którym posługuje się większość uczestników spotkania.
-2.4.	Tłumaczenie ustne poświadczone
-To rodzaj tłumaczenia konsekutywnego, które wykonywane jest przez tłumacza przysięgłego. Ten rodzaj tłumaczeń najczęściej stosowany jest przy podpisywaniu aktów notarialnych, umów, składaniu dokumentów w urzędach, sądach i innych instytucjach wymagających obecności tłumacza przysięgłego. Podczas takiego tłumaczenia, oprócz tradycyjnego przekładu, tłumacz może również poświadczać podpisem i pieczęcią sporządzone podczas spotkania dokumenty.
+				<h1>2.	Tłumaczenia ustne</h1>
+				<p>W odróżnieniu od tłumaczy pisemnych, tłumacze ustni zajmują się przekładem języka mówionego w czasie rzeczywistym. Przekład taki wymaga od tłumacza nie tylko zgłębionej wiedzy na temat danego zagadnienia, ale również świadomości różnic kulturowych pomiędzy odbiorcami tłumaczonych języków oraz doskonałych umiejętności miękkich, jak zdolność koncentracji przez długi czas, umiejętność rozumienia i rozwijania skrótów myślowych, umiejętność natychmiastowego tłumaczenia. Zadaniem tłumaczy ustnych jest zapewnienie płynnego przebiegu spotkań biznesowych, jakby wszyscy ich uczestnicy mówili jednym językiem.</p>
+				<p>Nasi tłumacze ustni są profesjonalistami z wieloletnim doświadczeniem. Współpracujemy z najlepszymi tłumaczami w kraju i dobieramy odpowiednich tłumaczy do tematyki spotkań biznesowych.</p>
+				<p>Jesteśmy w stanie sprostać najbardziej nietypowym i wymagającym potrzebom tłumaczeniowym naszych klientów. Mamy doświadczenie w tłumaczeniach ustnych od audytów medycznych, konferencji, spotkań handlowych, po niejednokrotne delegowanie tłumaczy zagranicę - od kilkudniowych tłumaczeń biznesowych po kilkumiesięczne pobyty w fabrykach na tłumaczeniach szkoleń w Stanach Zjednoczonych.</p>
 
-			</p>
+				<h2>2.1.	Tłumaczenia symultaniczne</h2>
+				<p>Ten rodzaj tłumaczeń ustnych ma zastosowanie przede wszystkim podczas wielojęzycznych konferencji. Tłumaczenie odbywa się w czasie rzeczywistym równolegle do słów wypowiadanych przez prelegenta. Tłumacz wykonujący tłumaczenie przebywa w kabinie, a samo tłumaczenie wykonywane jest przez 2 tłumaczy. Wypowiedź prelegenta może być tłumaczona równolegle na kilka języków, a odbiorcy tłumaczenia słuchają jego treści przez słuchawki. Odbywające się równolegle do wypowiedzi prelegentów tłumaczenie symultaniczne nie wydłuża czasu trwania konferencji, co jest niewątpliwą zaletą zwłaszcza podczas całodziennych wydarzeń.</p>
+
+				<h2>2.2.	Tłumaczenie konsekutywne</h2>
+				<p>To drugi rodzaj tłumaczeń ustnych wykonywany podczas spotkań biznesowych, przemówień, rozmów handlowych, negocjacji oraz wszelkiego rodzaju spotkań i konferencji, jednak bez korzystania z kabiny i specjalistycznego sprzętu. Tłumaczenie odbywa się tuż po wypowiedzi prelegenta, który robi przerwy w swym wystąpieniu co kilka zdań, aby umożliwić tłumaczowi przekład na język odbiorców. W przypadku tłumaczenia konsekutywnego istnieje możliwość interakcji pomiędzy rozmówcami. Planując organizację wydarzeń z udziałem tłumacza konsekutywnego, klienci powinni mieć świadomość, że tłumaczenie konsekutywne wydłuża ich czas trwania.</p>
+
+				<h2>2.3.	Tłumaczenie szeptane</h2>
+				<p>Jest to forma tłumaczenia symultanicznego bez użycia specjalistycznego sprzętu. W trakcie takiego tłumaczenia tłumacz półgłosem przekazuje niewielkiemu gronu odbiorców treść wypowiedzi, bez konieczności przerywania tej wypowiedzi. Tłumaczenie szeptane jest często stosowane w sytuacjach, gdy niewielka liczba osób nie zna języka, którym posługuje się większość uczestników spotkania.</p>
+
+				<h2>2.4.	Tłumaczenie ustne poświadczone</h2>
+				<p>To rodzaj tłumaczenia konsekutywnego, które wykonywane jest przez tłumacza przysięgłego. Ten rodzaj tłumaczeń najczęściej stosowany jest przy podpisywaniu aktów notarialnych, umów, składaniu dokumentów w urzędach, sądach i innych instytucjach wymagających obecności tłumacza przysięgłego. Podczas takiego tłumaczenia, oprócz tradycyjnego przekładu, tłumacz może również poświadczać podpisem i pieczęcią sporządzone podczas spotkania dokumenty.</p>
+
+
 		</div>
 		<div class="other-content multimedia">
-			<p>
-				3.	Lokalizacja i multimedia
-Lokalizacja
-Każda strona internetowa, każdy rynek ma swój unikalny zestaw wymagań.
-W OMERO specjalizujemy się w dostosowywaniu treści internetowych - tekstu, grafiki, innych treści funkcjonalnych - do lokalnego języka, pamiętając o lokalnej kulturze rynku docelowego. Zapewniając naszym klientom stronę internetową dostosowaną kulturowo, umożliwiamy im dotarcie do docelowej bazy klientów bez żadnych przeszkód, językowych czy kulturowych.
-Zapewniamy tłumaczenia zarówno statycznych jak i dynamicznych stron internetowych z wykorzystaniem HTML, SGML, XML, PHP i MySQL oraz Flash.
-Multimedia
-Omero zapewnia dedykowane rozwiązania multimedialne, które odpowiadają współczesnym wymaganiom naszych klientów. Nasze usługi lokalizowania multimediów obejmują:
-Transkrypcja wideo
-Tłumaczenie i produkcja napisów
-Dubbing
-Lokalizacja grafiki
 
-			</p>
+				<h1>3.	Lokalizacja i multimedia</h1>
+					<h2>Lokalizacja</h2>
+					<p>Każda strona internetowa, każdy rynek ma swój unikalny zestaw wymagań.</p>
+					<p>W OMERO specjalizujemy się w dostosowywaniu treści internetowych - tekstu, grafiki, innych treści funkcjonalnych - do lokalnego języka, pamiętając o lokalnej kulturze rynku docelowego. Zapewniając naszym klientom stronę internetową dostosowaną kulturowo, umożliwiamy im dotarcie do docelowej bazy klientów bez żadnych przeszkód, językowych czy kulturowych.</p>
+					<p>Zapewniamy tłumaczenia zarówno statycznych jak i dynamicznych stron internetowych z wykorzystaniem HTML, SGML, XML, PHP i MySQL oraz Flash.</p>
+					<h2>Multimedia</h2>
+					<p>Omero zapewnia dedykowane rozwiązania multimedialne, które odpowiadają współczesnym wymaganiom naszych klientów.</p>
+					<p><strong>Nasze usługi lokalizowania multimediów obejmują:</strong></p>
+					<ul>
+						<li>Transkrypcja wideo</li>
+						<li>Tłumaczenie i produkcja napisów</li>
+						<li>Dubbing</li>
+						<li>Lokalizacja grafiki</li>
+					</ul>
+
 		</div>
 		<div class="other-content dtp">
 			<p>
-				4.	Centrum DTP
-W OMERO świadczymy kompletną opiekę techniczną nad przygotowaniem dokumentów do publikacji i druku (opracowanie graficzne i językowe np. katalogów reklamowych, instrukcji, ulotek, artykułów prasowych i innych materiałów drukowanych). Usługa obejmuje dostosowanie dokumentu tłumaczenia pod względem graficznym do oryginału bądź też na stworzeniu zupełnie nowego układu graficznego.
-Współpracujemy ze specjalistami zajmującymi się wszelkimi pracami związanymi z całym procesem przygotowania tłumaczenia, opracowaniem grafiki, składu tekstu oraz profesjonalnego przygotowania materiałów do druku.
-DTP proste obejmuje:
-• konwersję dokumentów w formatach .pdf, .jpg, .tiff, .gif, idd., .bmp, na .doc
-• zachowanie układu strony z uwzględnieniem akapitów i czcionek
-• konwersję dokumentów zawierających tabele na format .xls
-• konwersję dokumentów w formacie .doc lub .xls na .pdf
-• przygotowanie wersji elektronicznej skanów o prostym układzie strony
-• przygotowanie wersji elektronicznej maszynopisów o prostym układzie strony
-DTP złożone obejmuje:
-konwersję dokumentów o złożonej szacie graficznej w formatach .pdf, .jpg, .tiff, .gif, .bmp, .indd do formatów edytowalnych, dla dokumentów zawierających:
-• rysunki z opisami, wykresy, schematy
-• skomplikowane układy stron zawierające tabele, kolumny, rysunki w tabelach, nagłówki, stopki
-• rysunki techniczne i dokumentacje techniczne
-• tabele złożone
-• teksty mało czytelne, nieedytowalne
-• inne elementy niestandardowe
-Zaawansowane usługi DTP obejmują wszelkie obróbki dokumentów z wykorzystaniem profesjonalnych programów graficznych, takich jak: Adobe FrameMaker, Adobe InDesign, Adobe PageMaker, Corel Draw, QuarkXPress, Photoshop.
-Projektowanie i wydruk
-Oferujemy druk na różnego rodzaju papierze przy wykorzystaniu nowoczesnych maszyn zgodnie z oczekiwaniami klientów. Dzięki współpracy z najlepszymi drukarniami oferujemy druk materiałów reklamowych na najwyższym poziomie.
-Usługi drukarskie obejmują:
-• projekt szaty graficznej dokumentu
-• naniesienie tłumaczenia na oryginalną szatę graficzną dokumentu
-• wykonanie korekty przed drukiem
-• przygotowanie finalnego dokumentu w dowolnym formacie np. .pdf
-• wydruk gotowego materiału (np. katalog)
-Usługi świadczone przez Centrum DTP w OMERO to nie tylko najwyższa jakość, ale także wysoki poziom kreatywności, unikatowe rozwiązania i elastyczność w reagowaniu na potrzeby naszych klientów.
+			<h1>4.	Centrum DTP</h1>
+				<p>W OMERO świadczymy kompletną opiekę techniczną nad przygotowaniem dokumentów do publikacji i druku (opracowanie graficzne i językowe np. katalogów reklamowych, instrukcji, ulotek, artykułów prasowych i innych materiałów drukowanych). Usługa obejmuje dostosowanie dokumentu tłumaczenia pod względem graficznym do oryginału bądź też na stworzeniu zupełnie nowego układu graficznego.</p>
+				<p>Współpracujemy ze specjalistami zajmującymi się wszelkimi pracami związanymi z całym procesem przygotowania tłumaczenia, opracowaniem grafiki, składu tekstu oraz profesjonalnego przygotowania materiałów do druku.</p>
+				<p><strong>DTP proste obejmuje:</strong></p>
+				<ul>
+					<li>konwersję dokumentów w formatach .pdf, .jpg, .tiff, .gif, idd., .bmp, na .doc</li>
+					<li>zachowanie układu strony z uwzględnieniem akapitów i czcionek</li>
+					<li>konwersję dokumentów zawierających tabele na format .xls</li>
+					<li>konwersję dokumentów w formacie .doc lub .xls na .pdf</li>
+					<li>przygotowanie wersji elektronicznej skanów o prostym układzie strony</li>
+					<li>przygotowanie wersji elektronicznej maszynopisów o prostym układzie strony</li>
+				</ul>
+				<p><strong>DTP złożone obejmuje:</strong></p>
+				<p>konwersję dokumentów o złożonej szacie graficznej w formatach .pdf, .jpg, .tiff, .gif, .bmp, .indd do formatów edytowalnych, dla dokumentów zawierających:</p>
+				<ul>
+					<li>rysunki z opisami, wykresy, schematy</li>
+					<li>skomplikowane układy stron zawierające tabele, kolumny, rysunki w tabelach, nagłówki, stopki</li>
+					<li>rysunki techniczne i dokumentacje techniczne</li>
+					<li>tabele złożone</li>
+					<li>teksty mało czytelne, nieedytowalne</li>
+					<li>inne elementy niestandardowe</li>
+				</ul>
+				<p>Zaawansowane usługi DTP obejmują wszelkie obróbki dokumentów z wykorzystaniem profesjonalnych programów graficznych, takich jak: Adobe FrameMaker, Adobe InDesign, Adobe PageMaker, Corel Draw, QuarkXPress, Photoshop.</p>
+			<p>	Projektowanie i wydruk</p>
+				<p>Oferujemy druk na różnego rodzaju papierze przy wykorzystaniu nowoczesnych maszyn zgodnie z oczekiwaniami klientów. Dzięki współpracy z najlepszymi drukarniami oferujemy druk materiałów reklamowych na najwyższym poziomie.</p>
+				<p><strong>Usługi drukarskie obejmują:</strong></p>
+				<ul>
+					<li>projekt szaty graficznej dokumentu</li>
+					<li>naniesienie tłumaczenia na oryginalną szatę graficzną dokumentu</li>
+					<li>wykonanie korekty przed drukiem</li>
+					<li>przygotowanie finalnego dokumentu w dowolnym formacie np. .pdf</li>
+					<li>wydruk gotowego materiału (np. katalog)</li>
+				</ul>
+				<p>Usługi świadczone przez Centrum DTP w OMERO to nie tylko najwyższa jakość, ale także wysoki poziom kreatywności, unikatowe rozwiązania i elastyczność w reagowaniu na potrzeby naszych klientów.</p>
 
 			</p>
 		</div>
 		<div class="other-content policy">
+
 			<h1>Polityka prywatności</h1>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cum tempora culpa libero dicta perspiciatis natus id eius eum nobis non, quis, deleniti nulla nisi debitis labore eaque itaque. Itaque.</div>
+			<p>
+				Gromadzone informacje
+Aby oferować wszystkim użytkownikom lepsze usługi, zbieramy różnorodne informacje – od informacji podstawowych, takich jak określenie, jakim językiem posługuje się użytkownik, aż po te bardziej złożone, np. ustalenie najbardziej przydatnych reklam, najbliższych internetowych znajomych lub ulubionych filmów na YouTube.
+
+Gromadzimy informacje w następujący sposób:
+
+Informacje podawane przez użytkownika – przykładowo wiele naszych usług wymaga założenia konta Google. W takich przypadkach prosimy o podanie danych osobowych, takich jak imię i nazwisko, adres e-mail, numer telefonu czy numer karty kredytowej. Będziemy je przechowywać z danymi konta. Jeśli użytkownik chce w pełni wykorzystać oferowane przez nas funkcje udostępniania treści, jest również proszony o utworzenie publicznego profilu Google zawierającego m.in. jego imię i nazwisko oraz zdjęcie.
+
+Informacje uzyskiwane podczas korzystania z usług Google – zbieramy dane o usługach, z których korzysta użytkownik, oraz sposobie, w jaki to robi (np. wówczas, gdy ogląda film na YouTube, odwiedza witrynę, w której działa nasz program reklamowy lub wyświetla i klika udostępnione przez nas reklamy i materiały. Są to między innymi:
+
+Informacje o urządzeniu
+
+Gromadzimy dane dotyczące urządzenia (takie jak model sprzętu, wersja systemu operacyjnego i unikalny identyfikator urządzenia, a także informacje o sieci komórkowej, w tym numer telefonu). Identyfikator urządzenia i numer telefonu mogą zostać powiązane z kontem Google.
+
+Informacje w dziennikach
+
+Gdy użytkownik korzysta z usług lub wyświetla treści udostępnione przez Google, automatycznie zbieramy określone informacje i zapisujemy je w dziennikach serwerów. Są to między innymi:
+
+szczegóły dotyczące sposobu korzystania z usługi, np. wyszukiwane hasła;
+dane z dziennika połączeń telefonicznych, takie jak numer telefonu użytkownika, numer rozmówcy, numery docelowe przekazywania, daty i godziny rozmów, czasy trwania rozmów, ustawienia przesyłania wiadomości SMS oraz typy połączeń telefonicznych.
+adres IP;
+dane o działaniu urządzenia, m.in. o awariach, aktywności systemu, ustawieniach sprzętu, typie i języku przeglądarki, datach i godzinach przesyłanych żądań oraz odsyłających adresach URL;
+pliki cookie, które mogą jednoznacznie identyfikować daną przeglądarkę lub konto Google.
+Informacje o lokalizacji
+
+Jeśli użytkownik korzysta z usług Google, możemy gromadzić i przetwarzać informacje na temat rzeczywistego miejsca pobytu użytkownika. Stosujemy różne technologie, aby określić tę lokalizację, w tym adres IP, GPS i inne czujniki np. przekazujące Google informacje na temat pobliskich urządzeń, punktów dostępu do sieci Wi-Fi czy stacji bazowych sieci komórkowej.
+
+Unikalne numery aplikacji
+
+W określonych usługach występuje unikalny numer aplikacji. Ten numer wraz z informacjami na temat danej instalacji (takimi jak typ systemu operacyjnego i numer wersji aplikacji) może zostać wysłany do Google, gdy usługa jest instalowana lub odinstalowywana bądź okresowo kontaktuje się z naszymi serwerami (np. w celu automatycznej aktualizacji).
+
+Pamięć lokalna
+
+Możemy zbierać informacje (m.in. dane osobowe) i przechowywać je lokalnie na urządzeniu użytkownika, korzystając z takich mechanizmów jak pamięć podręczna przeglądarki (w tym protokół HTML 5) oraz pamięci podręczne aplikacji.
+
+Pliki cookie i podobne technologie
+
+Gdy użytkownik korzysta z usługi Google, stosujemy, podobnie jak nasi partnerzy, różne technologie do gromadzenia i zapisywania informacji – może to obejmować pliki cookie lub podobne technologie umożliwiające identyfikację przeglądarki lub urządzenia użytkownika. Technologie te wykorzystujemy również do gromadzenia informacji wtedy, gdy użytkownik wchodzi w interakcję z usługami, które oferujemy naszym partnerom, takimi jak usługi reklamowe czy funkcje Google działające w innych witrynach. Nasza usługa Google Analytics pomaga firmom i właścicielom witryn analizować ruch na ich witrynach i w aplikacjach. W przypadku korzystania z Google Analytics w połączeniu z usługami reklamowymi, na przykład tymi, które korzystają z plików cookie DoubleClick, informacje z Google Analytics są łączone przez klienta Google Analytics lub przez nas, za pomocą technologii Google, z informacjami na temat wizyt w wielu witrynach.
+
+Poza informacjami uzyskanymi o użytkowniku od naszych partnerów, z kontem Google użytkownika możemy powiązać także informacje gromadzone przez nas od momentu jego zalogowania się do Google. Informacje powiązane z kontem Google użytkownika traktujemy jako dane osobowe. Więcej informacji na temat sposobu uzyskiwania dostępu, zarządzania lub usuwania przez użytkownika danych powiązanych z jego kontem zawiera sekcja Transparentność i wybór w niniejszych zasadach.
+
+Powrót do góry
+Sposoby wykorzystania zgromadzonych informacji
+Dane zbierane za pośrednictwem wszystkich naszych usług służą do udostępniania, utrzymywania, ochrony i udoskonalania ich w celu tworzenia nowych usług, a także ochrony firmy Google i jej użytkowników. Wykorzystujemy je również, oferując dostosowane treści – np. w postaci trafniejszych wyników wyszukiwania oraz reklam.
+
+Imię i nazwisko podane przez użytkownika w profilu Google może być stosowane we wszelkich usługach, które wymagają konta Google. Ponadto może ono zastąpić poprzednie takie dane powiązane z kontem Google, tak aby użytkownik był w jednakowy sposób reprezentowany we wszystkich naszych usługach. Osoby, które znają adres e-mail użytkownika lub inne identyfikujące go dane, mogą zobaczyć publicznie dostępne dane z jego profilu Google, takie jak imię i nazwisko oraz zdjęcie.
+
+Google może w swoich usługach, w tym w reklamach i innych materiałach o charakterze komercyjnym, wyświetlać nazwę profilu, zdjęcie profilowe oraz czynności wykonywane przez właściciela konta Google w odniesieniu do posiadanego konta Google lub aplikacji innych firm połączonych z kontem Google (takich jak kliknięcia +1, opublikowane opinie oraz komentarze). Szanujemy wybory użytkowników w zakresie ograniczeń udostępniania lub ustawień widoczności konta Google.
+
+Jeśli użytkownik kontaktuje się z Google, przechowujemy związaną z tym korespondencję, aby ułatwić rozwiązywanie wszelkich problemów. Adres e-mail użytkownika możemy wykorzystywać do informowania go o naszych usługach, w tym o nadchodzących zmianach lub udoskonaleniach.
+
+Informacje zgromadzone za pomocą plików cookie i innych technologii (takich jak tagi pikselowe) służą do zwiększania wygody użytkowników oraz poprawy ogólnej jakości oferowanych przez nas usług. Jedną z usług pełniących to zadanie w odniesieniu do naszych własnych usług jest Google Analytics. Na przykład dzięki zapisywaniu ustawień językowych usługi mogą być wyświetlane w języku preferowanym przez użytkownika. Podczas pokazywania dostosowanych reklam nie kojarzymy identyfikatorów z plików cookie ani podobnych technologii z poufnymi kategoriami (takimi jak rasa, religia, orientacja seksualna czy zdrowie).
+
+Nasze automatyczne systemy analizują treść (w tym wiadomości e-mail) w celu oferowania spersonalizowanych funkcji usług, takich jak wyniki wyszukiwania, reklamy indywidualne i wykrywanie spamu oraz złośliwego oprogramowania.
+
+Dane osobowe z jednej usługi mogą być łączone z informacjami (w tym danymi osobowymi) z pozostałych usług Google – aby np. ułatwić udostępnianie materiałów znajomym. W zależności od ustawień konta możemy powiązać działania, które wykonujesz w witrynach i aplikacjach, z Twoimi danymi osobowymi. Pomaga nam to w ulepszaniu usług i reklam Google.
+
+Przed wykorzystaniem informacji w celu innym niż wymienione w niniejszej Polityce prywatności prosimy użytkownika o pozwolenie.
+
+Google przetwarza dane osobowe na serwerach w wielu krajach na całym świecie. Może się to odbywać poza krajem zamieszkania użytkownika.
+			</p>
+
+		</div>
+
 		<div class="other-content job">
-			<h1>Praca</h1>
-			2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.
-			<ul>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Lorem ipsum dolor sit amet</li>
-			</ul>
+			<h1>Regulamin świadczenia usług</h1>
+			<p>
+
+§ 1
+
+Zakres podmiotowy świadczenia usług
+
+Niniejszy Regulamin określa warunki współpracy pomiędzy Omero Sp. z o.o., zwanym dalej Wykonawcą, a podmiotami gospodarczymi lub osobami fizycznymi, zwanymi dalej Zamawiającym, w zakresie usług wykonywanych przez Wykonawcę na rzecz Zamawiającego.
+
+ § 2
+
+Zakres przedmiotowy świadczenia usług
+
+1.         Przedmiotem usług świadczonych przez Wykonawcę jest wykonywanie tłumaczeń pisemnych zwykłych, tłumaczeń pisemnych przysięgłych, tłumaczeń ustnych – symultanicznych, konsekutywnych oraz przysięgłych, obsługa konferencji oraz wszelkie usługi pomocnicze, w szczególności takie jak: obróbka graficzna tekstu, redakcja tekstu, korekta tekstu, przygotowanie tekstu do publikacji, aktualizacja tekstu, opracowanie terminologii, zapewnienie sprzętu do tłumaczeń ustnych, konsultacja językowa.
+
+2.         Zakres przedmiotowy usług zleconych Wykonawcy oraz warunki ich realizacji określa szczegółowo Zamówienie jakie Zamawiający składa Wykonawcy.
+
+ § 3
+
+Zasady składania zamówień
+
+1.         Przed złożeniem Zamówienia strony ustalają zakres, cenę, sposób dostarczenia usługi będącej przedmiotem Zamówienia oraz wszelkie inne informacje niezbędne do należytego wykonania tej usługi.
+
+2.         Świadczenie usług przez Wykonawcę odbywa się na podstawie otrzymanego od Zamawiającego Zamówienia na daną usługę.
+
+3.         Zamawiający akceptuje Zamówienie poprzez:
+
+a)         przesłanie Wykonawcy podpisanego i opieczętowanego formularza Zamówienia w formie faksu lub skanu pocztą elektroniczną, lub składając je osobiście w siedzibie Wykonawcy.
+
+b)         przesłanie Wykonawcy zwrotnego potwierdzenia pocztą elektroniczną oświadczenia woli o akceptacji Zamówienia.
+
+4.         W celu dochowania warunków wykonania usługi Zamawiający winien dostarczyć złożone Zamówienie najpóźniej do godziny 16:00 w dniu ustalania warunków wykonania usługi. W przypadku opóźnienia w dostarczeniu Zamówienia, Wykonawca ma prawo do ustalenia nowych warunków wykonania usługi i przedstawienia ich Zamawiającemu.
+
+5.         Zamawiający każdorazowo otrzyma potwierdzenie przyjęcia Zamówienia do realizacji przez Wykonawcę, co jest równoznaczne z przystąpieniem Wykonawcy do realizacji niniejszego Zamówienia.
+
+§ 4
+
+Warunki wykonywania usług
+
+1.         Zamawiający zobowiązuje się do odbioru wykonanego Zamówienia oraz do zapłaty na rzecz Wykonawcy wynagrodzenia w uzgodnionym terminie.
+
+2.         Potwierdzeniem wydania Zamawiającemu wykonanego Zamówienia jest:
+
+a)         W przypadku tłumaczeń pisemnych:
+
+i.          Złożenie podpisu przez Zamawiającego na jakimkolwiek z dokumentów potwierdzających wykonanie usługi (np. faktura, paragon, potwierdzenie odbioru na formularzu Zamówienia itp.),
+
+ii.         Dokument potwierdzający nadanie przesyłki pocztą lub kurierem na adres wskazany przez Zamawiającego,
+
+iii.        Potwierdzenie nadania e-maila do Zamawiającego lub na adres przez niego wskazany wraz z załącznikami,
+
+iv.        Potwierdzenie nadania faksu na numer faksu podany przez Zamawiającego
+
+b)         W przypadku tłumaczeń ustnych:
+
+i.          Złożenie podpisu przez Zamawiającego na jakimkolwiek z dokumentów potwierdzających wykonanie usługi (np. faktura, paragon, potwierdzenie odbioru na formularzu Zamówienia itp.),
+
+ii.         Złożenie podpisu na Karcie Pracy Tłumacza przez Zamawiającego lub osobę przez niego wskazaną.
+
+3.         Podstawą zapłaty za wykonaną usługę jest faktura lub paragon wystawiony przez Wykonawcę.
+
+4.         Zamawiający zobowiązany jest do przyjęcia wykonanego przedmiotu Zamówienia w terminie nie późniejszym niż 10 dni od dnia jego wydania przez Wykonawcę. Zamawiającemu przysługuje prawo do zgłaszania zastrzeżeń w terminie 10 dni po otrzymaniu przedmiotu Zamówienia, przy czym niezgłoszenie zastrzeżeń jest równoznaczne z przyjęciem przedmiotu Zamówienia. W razie zgłoszenia zastrzeżeń przez Zamawiającego co do wydanego przedmiotu Zamówienia, Wykonawca zobowiązany jest do dokonania naprawy przedmiotu Zamówienia, zgodnie ze wskazaniami Zamawiającego.
+
+ § 5
+
+Termin wykonania usługi
+
+Za termin wykonania usługi uznaje się termin określony w Zamówieniu i potwierdzony przez Wykonawcę.
+
+ § 6
+
+Odstąpienie od umowy, wyłączność, odpowiedzialność
+
+1.         Zamawiający ma prawo odstąpić od realizacji Zamówienia za jednoczesną zapłatą na rzecz Wykonawcy odstępnego, w następujących wysokościach:
+
+a)         w przypadku, gdy Zamówienie obejmowało tłumaczenie pisemne lub inną usługę dodatkową świadczoną przez Wykonawcę, z wyłączeniem tłumaczeń ustnych:
+
+i.          wynagrodzenia za rzeczywiście wykonaną pracę oraz do zwrot innych kosztów poniesionych przez Wykonawcę w związku z przygotowaniem do świadczenia zamówionych usług, jednak nie mniej niż 20% wartości zlecenia.
+
+ii.         100% wartości Zamówienia, jeśli odwoła usługę tłumaczenia pisemnego lub usługi dodatkowej świadczonej w trybie ekspresowym, lub po upływie 50 % czasu przewidzianego na realizację Zamówienia.
+
+b)         W przypadku, gdy Zamówienie obejmowało tłumaczenie ustne:
+
+i.          10% wartości Zamówienia, jeśli odwoła Zamówienie na 3 dni przed terminem rozpoczęcia tłumaczenia;
+
+ii.         50% wartości Zamówienia, jeśli odwoła Zamówienie na 2 dni przed terminem rozpoczęcia tłumaczenia;
+
+iii.        100% wartości Zamówienia, jeśli odwoła Zamówienie na 1 dzień przed terminem rozpoczęcia tłumaczenia lub w dniu jego rozpoczęcia.
+
+2.         Zamawiający zobowiązuje się, że wszelkie ustalenia dotyczące realizowanego Zamówienia podejmować będzie jedynie w drodze bezpośrednich kontaktów wyłącznie z Wykonawcą. Zabrania się prowadzenia przez Zamawiającego jakichkolwiek ustaleń dotyczących Zamówienia bezpośrednio z osobami trzecimi, a w szczególności tłumaczem, podwykonawcą Wykonawcy itp.
+
+3.         Jeżeli Zamawiający naruszy zakaz określony w ust. 2 § 6, zobowiązany będzie do zapłaty na rzecz Wykonawcy kary umownej w wysokości 50% wynagrodzenia ustalonego za realizację danego Zamówienia.
+
+ § 7
+
+Wykonanie, niewykonanie lub nienależyte wykonanie usługi
+
+1.         Usługę, będącą przedmiotem Zamówienia uznaje się za wykonaną należycie, jeżeli:
+
+a)         została wykonana na stosownym poziomie fachowym,
+
+b)         została dostarczona lub była gotowa do przekazania w uzgodnionym terminie.
+
+2. W przypadku wykazania przez Zamawiającego, że wykonane Zamówienie obciążone jest którąś z wad wymienionych w ust. 2, Wykonawca zobowiązany jest do niezwłocznego ich usunięcia, w terminie ustalonym z Zamawiającym.
+
+3. W przypadku gdy, wady określone w ust. 1 lit a) nie są możliwe do usunięcia, Zamawiający ma prawo żądania kary umownej w wysokości 25% wynagrodzenia netto ustalonego za realizację danego Zamówienia, zaś gdyby wady miały charakter wad istotnych, co zostanie stwierdzone w toku postępowania reklamacyjnego przeprowadzonego w trybie określonym w § 8 Regulaminu, Zamawiający ma prawo żądania kary umownej w wysokości 50% wynagrodzenia netto ustalonego za realizację przedmiotu Zamówienia.
+
+4. W przypadku niedotrzymania terminu wykonania przedmiotu Zamówienia przez Wykonawcę, Wykonawca obniży kwotę wynagrodzenia netto za wykonanie przedmiotu Zamówienia o 5% za każdy dzień zwłoki w wydaniu przedmiotu Zamówienia, w sumie nie więcej jednak niż równowartość 30% wartości wynagrodzenia netto ustalonego za realizację danego Zamówienia. W przypadku opóźnienia w wydaniu przedmiotu Zamówienia przekraczającego 10 dni, Zamawiający ma prawo odstąpić od umowy bez wypłaty wynagrodzenia na rzecz Wykonawcy.
+
+5. Wykonawca ponosi odpowiedzialność za szkody wynikające z nienależycie wykonanego Zamówienia do wysokości wartości Zamówienia bez podatku VAT. W przypadku, gdyby szkoda wywołana niewykonaniem lub nienależytym wykonaniem przedmiotu Zamówienia przez Wykonawcę przekraczała kwotę ustalonych w Regulaminie dla danej okoliczności kar umownych, Zamawiający uprawniony jest do dochodzenia odszkodowania do wysokości pełnej szkody.
+
+6. Zamawiający, który wymaga wykonania usług w trybach przyspieszonych bądź ekspresowych rozumie i akceptuje, że Zamówienia takie mogą być wykonywane przez grupę podwykonawców, co może mieć wpływ na jednolitość terminologii.
+
+7. Wyłączona jest odpowiedzialność Wykonawcy za brak spójności w terminologii użytej w tłumaczeniu w stosunku do terminologii stosowanej przez Zamawiającego, w przypadku, jeśli Zamawiający ustalając warunki Zamówienia i składając Zamówienie nie wskaże i nie udostępni Wykonawcy terminologii używanej przez Zamawiającego, albowiem w takim przypadku tłumaczenie wykonywane jest na zasadzie użycia słownictwa najbardziej popularnego dla danej dziedziny.
+
+8. Wyłączona jest odpowiedzialność Wykonawcy za przygotowanie tekstu do publikacji oraz brak dodatkowych procesów kontroli i weryfikacji w przypadkach, gdy:
+
+a)         Zamawiający nie poinformuje Wykonawcy o przeznaczeniu tekstu do publikacji,
+
+b)         Zamawiający zrezygnuje z dodatkowych procesów zapewnianych w przypadku tłumaczeń przeznaczonych do publikacji. Rezygnacja taka oznacza, że rozumie on i akceptuje ryzyko powstałe w skutek pominięcia procesów stosowanych w przypadku tłumaczeń przeznaczonych do publikacji.
+
+9. Strony nie ponoszą wobec siebie odpowiedzialności z tytułu nienależytego wykonania lub niewykonania swych zobowiązań w wypadku, gdy spowodowane to zostało wystąpieniem okoliczności o charakterze siły wyższej. Za zdarzenia o charakterze siły wyższej, w rozumieniu niniejszego Regulaminu, uważa się: strajki, blokady, awarię systemów komputerowych, zaniki energii elektrycznej, zamachy terrorystyczne, wystąpienie epidemii lub chorób zakaźnych w stopniu wpływającym na utrudnienia w prawidłowym funkcjonowaniu przedsiębiorstwa Strony dotkniętej skutkami siły wyższej. Strona dotknięta skutkami zdarzeń o charakterze siły wyższej winna niezwłocznie zawiadomić drugą Stronę o ich wystąpieniu i preliminowanym terminie ustąpienia.
+
+ § 8
+
+Reklamacje
+
+1.         Wszelkie zastrzeżenia dotyczące niewykonania lub nienależytego wykonania przedmiotu Zamówienia Zamawiający jest zobowiązany zgłosić Wykonawcy w ciągu 10 dni roboczych od daty otrzymania wykonanego przedmiotu Zamówienia, przy czym niezgłoszenie wad oznacza, że Zamawiający przyjmuje przedmiot Zamówienia bez zastrzeżeń.
+
+2.         Z zastrzeżeniem przepisów prawa dotyczącego konsumentów po upływie terminu określonego w ust. 1 wszelkie uprawnienia Zamawiającego wynikające z niewykonania lub nienależytego wykonania przedmiotu Zamówienia, wygasają.
+
+3.         Zastrzeżenia Zamawiającego muszą zostać zgłoszone w formie pisemnej i dostarczone Wykonawcy pocztą elektroniczną, faxem, pocztą lub osobiście. Ponadto Zamawiający jest zobowiązany do wskazania okoliczności, czasu i sposobu odkrycia wad oraz opisu wady. W odniesieniu do tłumaczeń ustnych zgłoszenie wad powinno dodatkowo zawierać nagranie audio lub audio-video.
+
+4.         Wykonawca rozpatruje reklamację w możliwie najkrótszym terminie, nie dłuższym niż 7 dni roboczych od zgłoszenia przez Zamawiającego zastrzeżeń, o których mowa w ust. 1.
+
+5.         W przypadku wystąpienia między Zamawiającym a Wykonawcą sporu co do wystąpienia wad w wykonanym Zamówieniu, o jakich mowa w § 7 Regulaminu, strony zobowiązują się rozwiązać spór na drodze polubownej, na podstawie niezależnego arbitra, wybranego wspólnie przez obydwie strony z listy biegłych tłumaczy sądowych z terenu kognicji Sądu Okręgowego w Lublinie.
+
+6.         Wysokość kary umownej wynikającej z postanowień § 7 ust. 5 Regulaminu uzależniona jest od wyniku oceny dokonanej przez niezależnego arbitra. Koszty sporządzenia opinii niezależnego arbitra pokrywa strona, która w postępowaniu przegra spór.
+
+ § 9
+
+Poufność
+
+1.         Z wyjątkiem materiałów powszechnie dostępnych (publikacje prasowe i internetowe, ogólnie dostępne akty prawne itp.), wszystkie dokumenty i materiały pomocnicze powierzane przez Zamawiającego oraz treść spotkań tłumaczonych przez tłumaczy ustnych są traktowane jako poufne i nie są w żaden sposób udostępniane osobom trzecim. Wykonawca oświadcza, że wszyscy pracownicy oraz podwykonawcy, którzy angażowani będą do obsługi zleceń Zamawiającego, zawarli z Wykonawcą umowę zobowiązującą ich do zachowania poufności wszelkich informacji pochodzących od Zamawiających,
+
+2.         Na życzenie Zamawiającego Wykonawca może dostarczyć odrębny dokument stanowiący zobowiązanie do zachowania poufności.
+
+ § 10
+
+Postanowienia końcowe
+
+1.         Niniejszy Regulamin obowiązuje Zamawiającego od dnia złożenia Zamówienia wraz z akceptacją niniejszego Regulaminu.
+
+2.         W szczególnych przypadkach Wykonawca, za zgodą Zamawiającego może zastosować inne niż określone w Regulaminie zasady wykonania usługi, z zachowaniem formy pisemnej, pod rygorem nieważności.
+
+3.         Wykonawca zastrzega sobie prawo do zmiany Regulaminu.
+
+4.         W sprawach nieuregulowanych przepisami niniejszego Regulaminu mają zastosowanie ogólnie obowiązujące przepisy prawa.
+
+5.         Wszelkie wynikłe między stronami spory będą rozstrzygane przez właściwy sąd w Lublinie.
+
+6.         Niniejszy Regulamin obowiązuje od dnia 06.03.2014 r.
+			</p>
 
 
 		</div>
@@ -488,31 +865,29 @@ Usługi świadczone przez Centrum DTP w OMERO to nie tylko najwyższa jakość, 
 
 		<!-- Footer -->
 		<div id="footer">
+
+			<div class="bottom-links router-links">
+				<a href="#/polityka" data-position=".policy" data-target=".policy">Polityka prywatności</a><span> | </span>
+				<a href="#/praca" data-position=".job" data-target=".job">Warunki i regulamin</a>
+			</div>
+
 			<div class="footer-inner">
 				<div class="footer-logo"><img src="assets/images/logo.jpg" /></div>
 				<div class="rights">All rights reserved <span class="copyright"></span></div>
 			</div>
-			<div class="bottom-links router-links">
-				<h1>Przydatne linki</h1>
-				<a href="#/polityka" data-position=".policy" data-target=".policy">Polityka prywatności</a>
-				<a href="#/praca" data-position=".job" data-target=".job">Praca</a>
-				<a href="#/certyfikaty" data-position=".cert" data-target=".cert">Certyfikaty jakości</a>
-			</div>
-			<div class="bottom-links">
+			<!--div class="bottom-links">
 				<h1>Menu</h1>
 				<a href="#" data-position=".home">Home</a>
 				<a href="#/uslugi" data-position=".services">Usługi</a>
 				<a href="#/onas" data-position=".aboutus">O nas</a>
 				<a href="#/referencje" data-position=".reference">Referencje</a>
 				<a href="#/kontakt" data-position=".contact-form">Kontakt</a>
-			</div>
+			</div-->
 		</div>
 
 
 
- <!-- Counup -->
-<div id="cu"></div>
-<div id="cu2"></div>
+
 
 
 		</div>

@@ -29,12 +29,12 @@ $orange: #FF9900;
 
 @font-face {
     font-family: MontserratRegular;
-    src: url('../fonts/montserrat_regular.ttf');
+    src: url('../fonts/lato_bold.ttf');
 }
 
 @font-face {
     font-family: MontserratBold;
-    src: url('../fonts/montserrat_bold.ttf');
+    src: url('../fonts/lato_bold.ttf');
 }
 
 *, *:before, *:after {
@@ -440,7 +440,7 @@ body {
   color: white;
   text-align: center;
   width: 100%;
-  text-shadow: 2px 2px 2px grey;
+  text-shadow: 1px 1px 1px black;
 
 
   h1 {
@@ -570,17 +570,23 @@ body {
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  padding: 40px;
+  align-items: stretch;
+  align-content: space-between;
+  color: $light-grey;
+  background-color: $blue;
+  text-align: left;
+  padding: 15px;
 
-  .about-us-left, .about-us-right {
-    width: 50%;
+  .about-us-left, .about-us-right, .reference {
+    width: 33.3%;
+    padding: 15px;
 
   }
 
   h1 {
     font-family: MontserratRegular;
     font-size: 3em;
+    margin-top: 0;
     width: 100%;
   }
 
@@ -592,13 +598,66 @@ body {
 }
 
 .reference {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
   background-color: $blue;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 30px;
+
+  .quote {
+    font-size: 1em !important;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    margin-top: 5px;
+  }
+}
+
+h1 {
+  width: 100%;
+}
+
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $light-grey;
+
+  .statistics-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .circle {
+    align-self: center;
+    color: $orange;
+    background-color: white;
+    font-size: 2em;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin: auto;
+    vertical-align: middle;
+    border: 5px solid $orange;
+    padding-top: 50px;
+  }
+
+  p {
+    width: 100%;
+  }
+
 }
 
 .blue-part-inner {
@@ -781,20 +840,36 @@ body {
 }
 
 .popup {
+
   display: none;
   position: fixed;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.9);
-  color: $black;
+  color: $grey;
   padding: 15px;
   width: 100%;
   height: 100%;
   top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);
   border-radius: 10px;
   box-shadow: 2px 2px 5px $black;
+
+  h1, h2, h3 {
+    color: $orange;
+  }
+
+  .slider-contact {
+    position: relative;
+    vertical-align: middle;
+
+    i, span {
+      vertical-align: middle;
+    }
+  }
 
 
   .short-info-close {
@@ -807,27 +882,75 @@ body {
     font-size: 2em;
   }
 
+  .fa-folder-open {
+    font-size: 1em;
+  }
+
   .popup-inner {
     width: 1100px;
-    margin: auto;
+    margin: 0 auto;
   }
+
+  .popup-baner-tab {
+    display: flex;
+    flex-wrap: wrap;
+
+    .popup-baner-col {
+      width: 33.3%;
+      padding: 15px;
+    }
+  }
+
+  .popup-consultant {
+
+    color: $light-grey;
+
+    input, select, .inp-msg, .inputfile, .btn {
+      color: $grey;
+      width: 100%;
+      width: 100%;
+      border: 1px solid $blue;
+      padding: 5px;
+      margin-top: 15px;
+      font-size: 1.2em;
+    }
+
+
+
+    #date {
+      margin-top: 0;
+    }
+
+  }
+}
+
+label {
+  margin-top: 15px;
+  color: $grey;
+  display: block;
+  // width: 20%;
 }
 
 .slide-down {
   display: none;
+  text-align: left;
+
+  ul {
+    margin: 0 !important;
+  }
 }
 
 .bottom-links {
-  width: 50%;
+  width: 100%;
   background-color: $orange;
   color: white;
-  padding: 55px;
+  padding: 15px;
   font-family: LatoLight;
+  text-align: right;
 
   a {
     text-decoration: none;
     color: white;
-    display: block;
   }
 
   a:hover {
@@ -850,6 +973,29 @@ body {
 .flags {
   overflow: hidden;
 }
+
+.trades {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $orange;
+  color: white;
+  text-align: center;
+  padding: 15px;
+
+  i {
+    font-size: 2em;
+  }
+
+  .trades-box {
+    width: 25%;
+    cursor: pointer;
+  }
+
+
+
+}
+
+
 
 .slide-in-top {
 	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
