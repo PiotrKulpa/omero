@@ -25,30 +25,30 @@
 	</head>
 
 	<body>
-
+		<!-- SEKCJA HEADER -->
 		<div class="header">
 			<div class="nav-wrapper">
-		<div class="stripe-wrapper">
-			<div class="nav-stripe-top">
-				<div class="stripe-top-left">dok@omero.pl</div>
-				<div class="stripe-top-right">
-				<div class="stripe-top-content"><a href="#freetranslation">Freetranslation</a></div>
-				<div class="stripe-top-content"><a href="#login">Zaloguj</a></div>
-				<div class="stripe-top-content">
-					<div class=" languages" value="pl">
-						<div>
-							<a href="/">PL <img class="flag" src="./assets/images/pl.jpg" alt="flaga polski"></a>
+				<div class="stripe-wrapper">
+					<div class="nav-stripe-top">
+						<div class="stripe-top-left">dok@omero.pl</div>
+						<div class="stripe-top-right">
+						<div class="stripe-top-content popup-link"><a class="popup-link" href="#freetranslation" data-popup=".popup-sdl">Freetranslation</a></div>
+						<div class="stripe-top-content"><a href="#login">Zaloguj</a></div>
+						<div class="stripe-top-content">
+							<div class=" languages" value="pl">
+								<div>
+									<a href="/">PL <img class="flag" src="./assets/images/pl.jpg" alt="flaga polski"></a>
+								</div>
+								<div class="languages-dropdown">
+								  <div value="en"><a href="/en">EN <img class="flag" src="./assets/images/en.jpg" alt="flaga anglii"></a></div>
+								  <div value="de"><a href="/de">DE <img class="flag" src="./assets/images/de.jpg" alt="flaga niemiec"></a></div>
+								  <div value="es"><a href="/es">ES <img class="flag" src="./assets/images/es.jpg" alt="flaga hiszpani"></a></div>
+								</div>
+							</div>
+							</div>
 						</div>
-						<div class="languages-dropdown">
-						  <div value="en"><a href="/en">EN <img class="flag" src="./assets/images/en.jpg" alt="flaga anglii"></a></div>
-						  <div value="de"><a href="/de">DE <img class="flag" src="./assets/images/de.jpg" alt="flaga niemiec"></a></div>
-						  <div value="es"><a href="/es">ES <img class="flag" src="./assets/images/es.jpg" alt="flaga hiszpani"></a></div>
-						</div>
-					</div>
 					</div>
 				</div>
-			</div>
-		</div>
 			<div class="nav-wrapper-box">
 				<div class="nav-wrapper-inner">
 						<div class="logo-container">
@@ -59,29 +59,30 @@
 
 							<div class="nav-menu">
 								<a class="router-link" href="#" data-position=".header" data-target=".home">Home</a><span class="nav-slash">  /  </span>
-								<a href="#/onas" data-position=".about-us">O nas</a><span class="nav-slash">  /  </span>
+								<a  class="router-link" href="#/onas" data-position=".about-us" data-target=".home">O nas</a>
 								<div class="dropdown">
+									<span class="nav-slash">  /  </span>
 									<a href="#/uslugi" data-position=".services">Usługi</a><span class="nav-slash">  /  </span>
 									<div class="dropdown-content router-links">
 
 								    <div class="dropdown-content-link">
-								    	<a href="#/uslugi" data-position=".services" data-target=".translations">
+								    	<a href="#/uslugi" data-position=".translations" data-target=".translations">
 												<i class="fa fa-users" aria-hidden="true"></i>
 												Tłumaczenia <br /> pisemne
 											</a>
 								    </div>
 										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services" data-target=".oral">
+											<a href="#/uslugi" data-position=".oral" data-target=".oral">
 												<i class="fa fa-globe" aria-hidden="true"></i>
 												Tłumaczenia <br /> ustne</a>
 										</div>
 										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services" data-target=".multimedia">
+											<a href="#/uslugi" data-position=".multimedia" data-target=".multimedia">
 												<i class="fa fa-video-camera" aria-hidden="true"></i>
 												Multimedia <br />i lokalizacja</a>
 										</div>
 										<div class="dropdown-content-link">
-											<a href="#/uslugi" data-position=".services" data-target=".dtp">
+											<a href="#/uslugi" data-position=".dtp" data-target=".dtp">
 												<i class="fa fa-desktop" aria-hidden="true"></i>
 												Centrum <br /> Dtp</a>
 										</div>
@@ -89,8 +90,35 @@
 								</div>
 
 								<a href="#/referencje" data-position=".trades">Branże</a><span class="nav-slash">  /  </span>
-								<a href="#/referencje" data-position=".reference">Narzędzia i technologie</a><span class="nav-slash">  /  </span>
-								<a href="#/kontakt" data-position=".contact-form">Kontakt</a>
+
+								<div class="dropdown">
+									<a href="#/referencje" data-position=".reference">Narzędzia i technologie</a><span class="nav-slash">  /  </span>
+									<div class="dropdown-content router-links">
+
+										<div class="dropdown-content-link">
+											<a href="#/uslugi" data-position=".translations" data-target=".translations">
+												<i class="fa fa-users" aria-hidden="true"></i>
+												SDL
+											</a>
+										</div>
+										<div class="dropdown-content-link">
+											<a href="#/uslugi" data-position=".oral" data-target=".oral">
+												<i class="fa fa-globe" aria-hidden="true"></i>
+												Deja Vu
+										</div>
+										<div class="dropdown-content-link">
+											<a href="#/uslugi" data-position=".multimedia" data-target=".multimedia">
+												<i class="fa fa-video-camera" aria-hidden="true"></i>
+												Across</a>
+										</div>
+										<div class="dropdown-content-link">
+											<a href="#/uslugi" data-position=".dtp" data-target=".dtp">
+												<i class="fa fa-desktop" aria-hidden="true"></i>
+												Adobe</a>
+										</div>
+									</div>
+								</div>
+								<a class="router-link" href="#/kontakt" data-position=".cf-main" data-target=".home">Kontakt</a>
 								<!-- <div class="dropdown">
 									<a href="#/kontakt" data-position=".contact-form">Kontakt</a>
 									<div class="dropdown-content">
@@ -106,7 +134,7 @@
 			</div>
 
 			<!-- Swiper -->
-	 <div class="swiper-container">
+	 <div id="swiper1" class="swiper-container">
 
 		 <div class="social-wrapper">
 
@@ -139,14 +167,87 @@
 
 			 </div>
 			 <div class="swiper-slide" style="background-image: url(./assets/images/paris.jpg)">
-				 Slide 2
+
+				 <div class="slider-slogan">
+				 	<h1>Omero - twój partner w biznesie</h1>
+				 	<h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
+				 	<button class="btn popup-btn popup-link" data-popup=".popup-baner1">WIĘCEJ</button>
+				 </div>
+
+				 <div class="slider-contact">
+				 	<a class="btn popup-btn popup-link" href="#" data-popup=".popup-consultant">
+				 		<p>
+				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				 				Porozmawiaj z naszym konsultantem
+				 		</p>
+				 	</a>
+				 </div>
+
 			 </div>
 			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">
-				 Slide 3
+				 <div class="slider-slogan">
+				 	<h1>Omero - twój partner w biznesie</h1>
+				 	<h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
+				 	<button class="btn popup-btn popup-link" data-popup=".popup-baner1">WIĘCEJ</button>
+				 </div>
+
+				 <div class="slider-contact">
+				 	<a class="btn popup-btn popup-link" href="#" data-popup=".popup-consultant">
+				 		<p>
+				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				 				Porozmawiaj z naszym konsultantem
+				 		</p>
+				 	</a>
+				 </div>
 			 </div>
-			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">Slide 4</div>
-			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">Slide 5</div>
-			 <div class="swiper-slide" style="background-image: url(./assets/images/budapest.jpg)">Slide 6</div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/mazury.jpg)">
+				 <div class="slider-slogan">
+				 	<h1>Omero - twój partner w biznesie</h1>
+				 	<h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
+				 	<button class="btn popup-btn popup-link" data-popup=".popup-baner1">WIĘCEJ</button>
+				 </div>
+
+				 <div class="slider-contact">
+				 	<a class="btn popup-btn popup-link" href="#" data-popup=".popup-consultant">
+				 		<p>
+				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				 				Porozmawiaj z naszym konsultantem
+				 		</p>
+				 	</a>
+				 </div>
+			 </div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/madryt.jpg)">
+				 <div class="slider-slogan">
+ 				 <h1>Omero - twój partner w biznesie</h1>
+ 				 <h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
+ 				 <button class="btn popup-btn popup-link" data-popup=".popup-baner1">WIĘCEJ</button>
+ 				</div>
+
+ 				<div class="slider-contact">
+ 				 <a class="btn popup-btn popup-link" href="#" data-popup=".popup-consultant">
+ 					 <p>
+ 						 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+ 							 Porozmawiaj z naszym konsultantem
+ 					 </p>
+ 				 </a>
+ 				</div>
+			 </div>
+			 <div class="swiper-slide" style="background-image: url(./assets/images/wenecja.jpg)">
+				 <div class="slider-slogan">
+				 	<h1>Omero - twój partner w biznesie</h1>
+				 	<h3>Tłumaczymy dokumentację i materiały niezbędne do międzynarodowej działalności każdej firmy lub organizacji.</h3>
+				 	<button class="btn popup-btn popup-link" data-popup=".popup-baner1">WIĘCEJ</button>
+				 </div>
+
+				 <div class="slider-contact">
+				 	<a class="btn popup-btn popup-link" href="#" data-popup=".popup-consultant">
+				 		<p>
+				 			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+				 				Porozmawiaj z naszym konsultantem
+				 		</p>
+				 	</a>
+				 </div>
+			 </div>
 		 </div>
 		 <!-- Add Arrows -->
 		 <div class="swiper-button-next"></div>
@@ -161,7 +262,7 @@
 
 		</div>
 
-		<!-- Popup system -->
+		<!-- SEKCJA POPUP -->
 		<div class="popup">
 			<div class="short-info-close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
 
@@ -298,205 +399,213 @@
 						<input class="btn btn-fix" type="button" name="" value="Wyślij">
 					</form>
 				</div>
+
+				<div class="popup-sdl">
+					<iframe scrolling="no" width="1100px" height="500px" src="https://www.freetranslation.com/" frameborder="0">
+						<p>Your browser does not support iframes.</p>
+					</iframe>
+				</div>
+
 			</div>
 
 		</div>
 
 		<div class="container">
 
-		<!-- Home content -->
-		<div id="main">
-		<div class="home">
+		<!-- SEKCJA HOME -->
+			<div id="main">
 
+				<div class="home">
 
+					<div class="services router-links">
 
-			<div class="services router-links">
+						<div class="short-info ">
+							<a href="#/tlumaczenia-pisemne" data-position=".translations" data-target=".translations"><i class="fa fa-users" aria-hidden="true"></i>
+								<h1>TŁUMACZENIA PISEMNE</h1>
+								<p>Tłumaczymy setki tysięcy słów na ponad 40 języków w różnych specjalizacjach i różnego rodzaju dokumentów.</p></a>
+							<p class="slide-down"></p>
+							<!-- <a href="">Więcej <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a> -->
+						</div>
+						<div class="short-info">
+							<a href="#" data-position=".oral" data-target=".oral"><i class="fa fa-globe" aria-hidden="true"></i>
+								<h1>TŁUMACZENIA USTNE</h1>
+								<p>Zapewniamy realizację wszystkich rodzajów potrzeb tłumaczeniowych, takimi jak tłumaczenie symultaniczne, konsekutywne, telefoniczne lub obsługa konferencji.</p></a>
+							<p class="slide-down"></p>
+						</div>
+						<div class="short-info">
+							<a href="#" data-position=".multimedia" data-target=".multimedia"><i class="fa fa-video-camera" aria-hidden="true"></i>
+								<h1>MULTIMEDIA I LOKALIZACJA</h1>
+								<p>Pomagamy naszym klientom działać globalnie lokalizując strony internetowe oraz dostosowujemy zawartość multimedialną za pomocą transkrypcji wideo, dubbingu, produkcji napisów lub lokalizacji grafiki.</p></a>
+							<p class="slide-down"></p>
+						</div>
+						<div class="short-info">
+							<a href="#" data-position=".dtp" data-target=".dtp"><i class="fa fa-desktop" aria-hidden="true"></i>
+								<h1>CENTRUM DTP</h1>
+								<p>Nasz zespół DTP dostosuje lub utworzy układ dokumentów i dostarczy profesjonalne wielojęzyczne pliki cyfrowe lub gotowe do druku.</p></a>
+							<p class="slide-down"></p>
+						</div>
 
-				<div class="short-info ">
-					<a href="#/tlumaczenia-pisemne" data-position=".translations" data-target=".translations"><i class="fa fa-users" aria-hidden="true"></i>
-						<h1>TŁUMACZENIA PISEMNE</h1>
-						<p>Tłumaczymy setki tysięcy słów na ponad 40 języków w różnych specjalizacjach i różnego rodzaju dokumentów.</p></a>
-					<p class="slide-down"></p>
-					<!-- <a href="">Więcej <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a> -->
-				</div>
-				<div class="short-info">
-					<a href="#" data-position=".oral" data-target=".oral"><i class="fa fa-globe" aria-hidden="true"></i>
-						<h1>TŁUMACZENIA USTNE</h1>
-						<p>Zapewniamy realizację wszystkich rodzajów potrzeb tłumaczeniowych, takimi jak tłumaczenie symultaniczne, konsekutywne, telefoniczne lub obsługa konferencji.</p></a>
-					<p class="slide-down"></p>
-				</div>
-				<div class="short-info">
-					<a href="#" data-position=".multimedia" data-target=".multimedia"><i class="fa fa-video-camera" aria-hidden="true"></i>
-						<h1>MULTIMEDIA I LOKALIZACJA</h1>
-						<p>Pomagamy naszym klientom działać globalnie lokalizując strony internetowe oraz dostosowujemy zawartość multimedialną za pomocą transkrypcji wideo, dubbingu, produkcji napisów lub lokalizacji grafiki.</p></a>
-					<p class="slide-down"></p>
-				</div>
-				<div class="short-info">
-					<a href="#" data-position=".dtp" data-target=".dtp"><i class="fa fa-desktop" aria-hidden="true"></i>
-						<h1>CENTRUM DTP</h1>
-						<p>Nasz zespół DTP dostosuje lub utworzy układ dokumentów i dostarczy profesjonalne wielojęzyczne pliki cyfrowe lub gotowe do druku.</p></a>
-					<p class="slide-down"></p>
-				</div>
-
-			</div>
-
-			<div class="flags">
-				<h1>Języki </h1>
-				<p>Od angielskiego do Zulu, nasi eksperci native speaker’s i tłumacze mogą tłumaczyć ponad 100 kombinacjach językowych. Zapewniamy tłumaczenia prawne, techniczne, medyczne, uwierzytelnione, lokalizacyjne i inne. </p>
-
-				<p>Aby otrzymać wycenę dokumentu w pożądanej kombinacji językowej skontaktuj się z nami</p>
-
-				<img class="slide-left" width="100%" src="./assets/images/flags.svg" alt="">
-			</div>
-
-			<div class="trades">
-				<h1>SPECJALIZACJE</h1>
-				<p>	Specjalizujemy się w tłumaczeniach tekstów z wielu dziedzin - prawa, finansów, przemysłu, techniki, medycyny, farmacji i marketingu.</p>
-
-				<div class="trades-box">
-					<i class="fa fa-industry" aria-hidden="true"></i>
-					<h3>Infrastruktura i przemysł</h3>
-					<div class="slide-down">
-						Dla sektora przemysłowego tłumaczymy między innymi:
-						<ul>
-							<li>dokumentacje techniczne</li>
-							<li>instrukcje obsługi</li>
-							<li>książki gwarancyjne i serwisowe</li>
-							<li>certyfikaty, patenty i gwarancje</li>
-							<li>dokumentacje przetargowe</li>
-						</ul>
 					</div>
-				</div>
-				<div class="trades-box">
-					<i class="fa fa-handshake-o" aria-hidden="true"></i>
-					<h3>Prawo i finanse</h3>
-					<div class="slide-down">
-						Dla sektora prawno – finansowego tłumaczymy między innymi:
-						<ul>
-							<li>umowy, uchwały i procedury</li>
-							<li>akty prawne</li>
-							<li>raporty roczne i sprawozdana finansowe</li>
-							<li>opinie biegłych rewidentów</li>
-						</ul>
-					</div>
-				</div>
-				<div class="trades-box">
-					<i class="fa fa-heartbeat" aria-hidden="true"></i>
-					<h3>Farmacja i medycyna</h3>
-					<div class="slide-down">
-						Dla sektora farmaceutyczno - medycznego tłumaczymy między innymi:
-						<ul>
-							<li>charakterystyki produktów leczniczych i chemicznych</li>
-							<li>opisy leków i środków chemicznych</li>
-							<li>dokumentacje badań klinicznych</li>
-							<li>dokumentacje techniczne urządzeń i aparatury medycznej</li>
-						</ul>
-					</div>
-				</div>
-				<div class="trades-box">
-					<i class="fa fa-laptop" aria-hidden="true"></i>
-					<h3>IT i technologie</h3>
-					<div class="slide-down">
-						Dla sektora technologicznego i marketingu tłumaczymy między innymi:
-						<ul>
-							<li>dokumentacje techniczne</li>
-							<li>specyfikacje funkcjonalne i wdrożeniowe</li>
-							<li>certyfikaty, patenty, licencje, umowy</li>
-							<li>materiały marketingowe</li>
-						</ul>
-					</div>
-				</div>
-			</div>
 
-			<div class="about-us">
+					<div class="flags">
+						<h1>Języki </h1>
+						<p>Od angielskiego do Zulu, nasi eksperci native speaker’s i tłumacze mogą tłumaczyć ponad 100 kombinacjach językowych. Zapewniamy tłumaczenia prawne, techniczne, medyczne, uwierzytelnione, lokalizacyjne i inne. </p>
 
-				<div class="about-us-left">
-					<h1>KIM JESTEŚMY?</h1>
-					<p>Jesteśmy agencją tłumaczeniową specjalizującą się w szerokim zakresie usług językowych.</p>
-				</div>
-				<div class="about-us-right">
-					Oferujemy, oprócz tłumaczeń pisemnych i ustnych, kompleksową obsługę konferencji, szkoleń i sympozjów.
-Zapewniamy sprzęt, nagłośnienie i obsługę techniczną tłumaczeń symultanicznych, usługi DTP i opracowanie graficzne materiałów reklamowych, a także indywidualne rozwiązania informatyczne i technologiczne.
-Naszym priorytetem są najnowocześniejsze metody pozwalające dostarczać Klientom na czas usługi najwyższej jakości. Wszelkie działania podejmujemy z wykorzystaniem wieloletniego doświadczenia, wiedzy i stałej współpracy ze światowymi liderami IT, dzięki którym możemy oferować zintegrowane, nowatorskie podejście.
-Realizujemy nietypowe projekty w ponad 40 językach: współpracujemy z najlepszymi tłumaczami w kraju i za granicą; polecamy tłumaczenia zwykłe, specjalistyczne i uwierzytelnione, pisemne i ustne, a także korekty językowe.
-Stałym Klientom zapewniamy korzystne systemy rabatowe: pozwala to zminimalizować koszty tłumaczeń, a także zaoszczędzić czas.
-Gwarantujemy pełną satysfakcję ze współpracy.
-				</div>
-				<div class="reference">
-					<h1><strong>Referencje</strong></h1>
-					<!-- Swiper -->
-				  <div class="swiper-container">
-				    <div class="swiper-wrapper">
-				      <div class="swiper-slide">
-								<p class="quote"><strong>Materne - Polska</strong><br />
-								<span>"Z przyjemnością pragnę zarekomendować usługi wykonywane przez biuro tłumaczeń Omero Spółka z o.o. Współpraca pomiędzy Materne - Polska Spółka z o.o., a wyżej wspomnianym biurem przebiega bardzo pomyślnie: sprawnie i efektywnie. Tłumaczenia zwykłe i przysięgłe wykonywane są profesjonalnie i szybko. Jako dodatkowe atuty wymienić należy wysokiej jakości obsługę oraz dużą elastyczność i chęć dostosowania do potrzeb klienta, właściwie w każdej kwestii (...)."</span></p>
+						<p>Aby otrzymać wycenę dokumentu w pożądanej kombinacji językowej skontaktuj się z nami</p>
+
+						<img class="slide-left" width="2200px" src="./assets/images/flags.jpg" alt="">
+					</div>
+
+					<div class="trades">
+						<h1>SPECJALIZACJE</h1>
+						<p>	Specjalizujemy się w tłumaczeniach tekstów z wielu dziedzin - prawa, finansów, przemysłu, techniki, medycyny, farmacji i marketingu.</p>
+
+						<div class="trades-box">
+							<i class="fa fa-industry" aria-hidden="true"></i>
+							<h3>Infrastruktura i przemysł</h3>
+							<div class="slide-down">
+								Dla sektora przemysłowego tłumaczymy między innymi:
+								<ul>
+									<li>dokumentacje techniczne</li>
+									<li>instrukcje obsługi</li>
+									<li>książki gwarancyjne i serwisowe</li>
+									<li>certyfikaty, patenty i gwarancje</li>
+									<li>dokumentacje przetargowe</li>
+								</ul>
 							</div>
-				      <div class="swiper-slide">
-								<p class="quote"><strong>Berger Bau</strong><br />
-								<span>" (...) Miło nam zarekomendować Biuro Tłumaczeń Omero Sp. z o.o. jako wiarygodną i sprawnie funkcjonujące biuro tłumaczeń, które świadczy usługi tłumaczeniowe zawsze terminowo i z zachowaniem zasad należytej staranności."</span></p>
+						</div>
+						<div class="trades-box">
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+							<h3>Prawo i finanse</h3>
+							<div class="slide-down">
+								Dla sektora prawno – finansowego tłumaczymy między innymi:
+								<ul>
+									<li>umowy, uchwały i procedury</li>
+									<li>akty prawne</li>
+									<li>raporty roczne i sprawozdana finansowe</li>
+									<li>opinie biegłych rewidentów</li>
+								</ul>
 							</div>
-				      <div class="swiper-slide">
-								<p class="quote"><strong>Biowin</strong><br />
-								<span>"(...) Planując realizację dużego projektu zawsze możemy liczyć na profesjonalne i uczciwe podejście do współpracy ze strony naszego Partnera (...). W naszej opinii firma OMERO Sp. z o.o. jest godna polecenia z uwagi na fachowość, rzetelność i poszanowanie przyjętych na siebie zobowiązań."</span></p>
+						</div>
+						<div class="trades-box">
+							<i class="fa fa-heartbeat" aria-hidden="true"></i>
+							<h3>Farmacja i medycyna</h3>
+							<div class="slide-down">
+								Dla sektora farmaceutyczno - medycznego tłumaczymy między innymi:
+								<ul>
+									<li>charakterystyki produktów leczniczych i chemicznych</li>
+									<li>opisy leków i środków chemicznych</li>
+									<li>dokumentacje badań klinicznych</li>
+									<li>dokumentacje techniczne urządzeń i aparatury medycznej</li>
+								</ul>
 							</div>
-				      <div class="swiper-slide">
-								<p class="quote"><strong>Ziaja</strong><br />
-								<span>"(...) Firma wykazuje najwyższą jakość usług oraz dbałość o klienta (...)."</span></p>
-							</div>			   
-				    </div>
-				    <!-- Add Pagination -->
-				    <div class="swiper-pagination"></div>
-				    <!-- Add Arrows -->
-				    <!-- <div class="swiper-button-next"></div> -->
-				    <!-- <div class="swiper-button-prev"></div> -->
-				  </div>
+						</div>
+						<div class="trades-box">
+							<i class="fa fa-laptop" aria-hidden="true"></i>
+							<h3>IT i technologie</h3>
+							<div class="slide-down">
+								Dla sektora technologicznego i marketingu tłumaczymy między innymi:
+								<ul>
+									<li>dokumentacje techniczne</li>
+									<li>specyfikacje funkcjonalne i wdrożeniowe</li>
+									<li>certyfikaty, patenty, licencje, umowy</li>
+									<li>materiały marketingowe</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="about-us">
+
+						<div class="about-us-left">
+							<h1><span class="big-word">KIM</span> JESTEŚMY?</h1>
+							<p>Jesteśmy agencją tłumaczeniową specjalizującą się w szerokim zakresie usług językowych.</p>
+						</div>
+						<div class="about-us-right">
+							Oferujemy, oprócz tłumaczeń pisemnych i ustnych, kompleksową obsługę konferencji, szkoleń i sympozjów.
+					Zapewniamy sprzęt, nagłośnienie i obsługę techniczną tłumaczeń symultanicznych, usługi DTP i opracowanie graficzne materiałów reklamowych, a także indywidualne rozwiązania informatyczne i technologiczne.
+					Naszym priorytetem są najnowocześniejsze metody pozwalające dostarczać Klientom na czas usługi najwyższej jakości. Wszelkie działania podejmujemy z wykorzystaniem wieloletniego doświadczenia, wiedzy i stałej współpracy ze światowymi liderami IT, dzięki którym możemy oferować zintegrowane, nowatorskie podejście.
+					Realizujemy nietypowe projekty w ponad 40 językach: współpracujemy z najlepszymi tłumaczami w kraju i za granicą; polecamy tłumaczenia zwykłe, specjalistyczne i uwierzytelnione, pisemne i ustne, a także korekty językowe.
+					Stałym Klientom zapewniamy korzystne systemy rabatowe: pozwala to zminimalizować koszty tłumaczeń, a także zaoszczędzić czas.
+					Gwarantujemy pełną satysfakcję ze współpracy.
+						</div>
+						<div class="reference">
+							<h1><strong>Referencje</strong></h1>
+							<!-- Swiper -->
+						  <div id="swiper2" class="swiper-container">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide">
+										<p class="quote"><strong>Materne - Polska</strong><br />
+										<span>"Z przyjemnością pragnę zarekomendować usługi wykonywane przez biuro tłumaczeń Omero Spółka z o.o. Współpraca pomiędzy Materne - Polska Spółka z o.o., a wyżej wspomnianym biurem przebiega bardzo pomyślnie: sprawnie i efektywnie. Tłumaczenia zwykłe i przysięgłe wykonywane są profesjonalnie i szybko. Jako dodatkowe atuty wymienić należy wysokiej jakości obsługę oraz dużą elastyczność i chęć dostosowania do potrzeb klienta, właściwie w każdej kwestii (...)."</span></p>
+									</div>
+						      <div class="swiper-slide">
+										<p class="quote"><strong>Berger Bau</strong><br />
+										<span>" (...) Miło nam zarekomendować Biuro Tłumaczeń Omero Sp. z o.o. jako wiarygodną i sprawnie funkcjonujące biuro tłumaczeń, które świadczy usługi tłumaczeniowe zawsze terminowo i z zachowaniem zasad należytej staranności."</span></p>
+									</div>
+						      <div class="swiper-slide">
+										<p class="quote"><strong>Biowin</strong><br />
+										<span>"(...) Planując realizację dużego projektu zawsze możemy liczyć na profesjonalne i uczciwe podejście do współpracy ze strony naszego Partnera (...). W naszej opinii firma OMERO Sp. z o.o. jest godna polecenia z uwagi na fachowość, rzetelność i poszanowanie przyjętych na siebie zobowiązań."</span></p>
+									</div>
+						      <div class="swiper-slide">
+										<p class="quote"><strong>Ziaja</strong><br />
+										<span>"(...) Firma wykazuje najwyższą jakość usług oraz dbałość o klienta (...)."</span></p>
+									</div>
+						    </div>
+						    <!-- Add Pagination -->
+						    <!--div class="swiper-pagination"></div-->
+						    <!-- Add Arrows -->
+						    <!-- <div class="swiper-button-next"></div> -->
+						    <!-- <div class="swiper-button-prev"></div> -->
+						  </div>
+						</div>
+
+					</div>
+
+					<!-- Omero w liczbach -->
+					<div class="statistics">
+						<h1>Omero w liczbach</h1>
+
+					 <div class="statistics-inner">
+					 		<div id="cu" class="circle"></div>
+							<p>Pracowników</p>
+					 </div>
+					 	<div  class="statistics-inner">
+					 		<div id="cu2" class="circle"></div>
+							<p>Wypitych kaw</p>
+					 	</div>
+					 	<div class="statistics-inner">
+					 		<div id="cu3" class="circle"></div>
+							<p>Zadowolonych klientów</p>
+					 	</div>
+					 <div class="statistics-inner">
+					 		<div id="cu4" class="circle"></div>
+							<p>Zrealizowanych projektów</p>
+					 </div>
+					</div>
+
+					<div class="contact-form cf-main">
+						<div class="popup-help-left">
+								<h2>POZOSTAŃMY W KONTAKCIE</h2>
+						</div>
+
+						<div class="popup-help-right">
+								<form action="">
+									<input class="inp-name" type="text" placeholder="Firma"><input class="inp-email" type="email" placeholder="E-mail">
+									<textarea class="inp-msg" name="name" rows="5" cols="10" placeholder="Wiadomość"></textarea>
+									<!-- <input type="file" name="file" id="file" class="inputfile" multiple/> -->
+									<!-- <label for="file">Wybierz pliki</label> -->
+									<input class="btn btn-fix" type="button" name="" value="Wyślij">
+								</form>
+						</div>
+					</div>
+
+					<div id="googleMap" class="map"></div>
 				</div>
 
 			</div>
 
-			<!-- Omero w liczbach -->
-			<div class="statistics">
-				<h1>Omero w liczbach</h1>
-
-			 <div class="statistics-inner">
-			 		<div id="cu" class="circle"></div>
-					<p>Pracowników</p>
-			 </div>
-			 	<div  class="statistics-inner">
-			 		<div id="cu2" class="circle"></div>
-					<p>Lat działalności</p>
-			 	</div>
-			 	<div class="statistics-inner">
-			 		<div id="cu3" class="circle"></div>
-					<p>Zadowolonych klientów</p>
-			 	</div>
-			 <div class="statistics-inner">
-			 		<div id="cu4" class="circle"></div>
-					<p>Zrealizowanych projektów</p>
-			 </div>
-			</div>
-
-			<div class="contact-form">
-				<div class="popup-help-left">
-						<h2>POZOSTAŃMY W KONTAKCIE</h2>
-				</div>
-
-				<div class="popup-help-right">
-						<form action="">
-							<input class="inp-name" type="text" placeholder="Firma"><input class="inp-email" type="email" placeholder="E-mail">
-							<textarea class="inp-msg" name="name" rows="5" cols="10" placeholder="Wiadomość"></textarea>
-							<!-- <input type="file" name="file" id="file" class="inputfile" multiple/> -->
-							<!-- <label for="file">Wybierz pliki</label> -->
-							<input class="btn btn-fix" type="button" name="" value="Wyślij">
-						</form>
-				</div>
-			</div>
-
-			<div id="googleMap" class="map"></div>
-		</div>
-		</div>
-
-		<!-- Router content-->
+		<!-- SEKCJA ROUTING (UKRYTA ZAWARTOŚĆ) -->
+		<!-- SEKCJA TŁUMACZENIA PISEMNE -->
 		<div class="other-content translations">
 			<p>
 				<h1>1.	Tłumaczenia pisemne</h1>
@@ -539,6 +648,8 @@ Gwarantujemy pełną satysfakcję ze współpracy.
 			</p>
 
 		</div>
+
+		<!-- SEKCJA TŁUMACZENIA USTNE -->
 		<div class="other-content oral">
 
 				<h1>2.	Tłumaczenia ustne</h1>
@@ -560,6 +671,8 @@ Gwarantujemy pełną satysfakcję ze współpracy.
 
 
 		</div>
+
+		<!-- SEKCJA MULTIMEDIA -->
 		<div class="other-content multimedia">
 
 				<h1>3.	Lokalizacja i multimedia</h1>
@@ -578,6 +691,8 @@ Gwarantujemy pełną satysfakcję ze współpracy.
 					</ul>
 
 		</div>
+
+		<!-- SEKCJA DTP -->
 		<div class="other-content dtp">
 			<p>
 			<h1>4.	Centrum DTP</h1>
@@ -617,280 +732,265 @@ Gwarantujemy pełną satysfakcję ze współpracy.
 
 			</p>
 		</div>
+
+		<!-- SEKCJA POLITYKA PRYWATNOŚCI -->
 		<div class="other-content policy">
 
 			<h1>Polityka prywatności</h1>
 			<p>
 				Gromadzone informacje
-Aby oferować wszystkim użytkownikom lepsze usługi, zbieramy różnorodne informacje – od informacji podstawowych, takich jak określenie, jakim językiem posługuje się użytkownik, aż po te bardziej złożone, np. ustalenie najbardziej przydatnych reklam, najbliższych internetowych znajomych lub ulubionych filmów na YouTube.
+				Aby oferować wszystkim użytkownikom lepsze usługi, zbieramy różnorodne informacje – od informacji podstawowych, takich jak określenie, jakim językiem posługuje się użytkownik, aż po te bardziej złożone, np. ustalenie najbardziej przydatnych reklam, najbliższych internetowych znajomych lub ulubionych filmów na YouTube.
 
-Gromadzimy informacje w następujący sposób:
+				Gromadzimy informacje w następujący sposób:
 
-Informacje podawane przez użytkownika – przykładowo wiele naszych usług wymaga założenia konta Google. W takich przypadkach prosimy o podanie danych osobowych, takich jak imię i nazwisko, adres e-mail, numer telefonu czy numer karty kredytowej. Będziemy je przechowywać z danymi konta. Jeśli użytkownik chce w pełni wykorzystać oferowane przez nas funkcje udostępniania treści, jest również proszony o utworzenie publicznego profilu Google zawierającego m.in. jego imię i nazwisko oraz zdjęcie.
+				Informacje podawane przez użytkownika – przykładowo wiele naszych usług wymaga założenia konta Google. W takich przypadkach prosimy o podanie danych osobowych, takich jak imię i nazwisko, adres e-mail, numer telefonu czy numer karty kredytowej. Będziemy je przechowywać z danymi konta. Jeśli użytkownik chce w pełni wykorzystać oferowane przez nas funkcje udostępniania treści, jest również proszony o utworzenie publicznego profilu Google zawierającego m.in. jego imię i nazwisko oraz zdjęcie.
 
-Informacje uzyskiwane podczas korzystania z usług Google – zbieramy dane o usługach, z których korzysta użytkownik, oraz sposobie, w jaki to robi (np. wówczas, gdy ogląda film na YouTube, odwiedza witrynę, w której działa nasz program reklamowy lub wyświetla i klika udostępnione przez nas reklamy i materiały. Są to między innymi:
+				Informacje uzyskiwane podczas korzystania z usług Google – zbieramy dane o usługach, z których korzysta użytkownik, oraz sposobie, w jaki to robi (np. wówczas, gdy ogląda film na YouTube, odwiedza witrynę, w której działa nasz program reklamowy lub wyświetla i klika udostępnione przez nas reklamy i materiały. Są to między innymi:
 
-Informacje o urządzeniu
+				Informacje o urządzeniu
 
-Gromadzimy dane dotyczące urządzenia (takie jak model sprzętu, wersja systemu operacyjnego i unikalny identyfikator urządzenia, a także informacje o sieci komórkowej, w tym numer telefonu). Identyfikator urządzenia i numer telefonu mogą zostać powiązane z kontem Google.
+				Gromadzimy dane dotyczące urządzenia (takie jak model sprzętu, wersja systemu operacyjnego i unikalny identyfikator urządzenia, a także informacje o sieci komórkowej, w tym numer telefonu). Identyfikator urządzenia i numer telefonu mogą zostać powiązane z kontem Google.
 
-Informacje w dziennikach
+				Informacje w dziennikach
 
-Gdy użytkownik korzysta z usług lub wyświetla treści udostępnione przez Google, automatycznie zbieramy określone informacje i zapisujemy je w dziennikach serwerów. Są to między innymi:
+				Gdy użytkownik korzysta z usług lub wyświetla treści udostępnione przez Google, automatycznie zbieramy określone informacje i zapisujemy je w dziennikach serwerów. Są to między innymi:
 
-szczegóły dotyczące sposobu korzystania z usługi, np. wyszukiwane hasła;
-dane z dziennika połączeń telefonicznych, takie jak numer telefonu użytkownika, numer rozmówcy, numery docelowe przekazywania, daty i godziny rozmów, czasy trwania rozmów, ustawienia przesyłania wiadomości SMS oraz typy połączeń telefonicznych.
-adres IP;
-dane o działaniu urządzenia, m.in. o awariach, aktywności systemu, ustawieniach sprzętu, typie i języku przeglądarki, datach i godzinach przesyłanych żądań oraz odsyłających adresach URL;
-pliki cookie, które mogą jednoznacznie identyfikować daną przeglądarkę lub konto Google.
-Informacje o lokalizacji
+				szczegóły dotyczące sposobu korzystania z usługi, np. wyszukiwane hasła;
+				dane z dziennika połączeń telefonicznych, takie jak numer telefonu użytkownika, numer rozmówcy, numery docelowe przekazywania, daty i godziny rozmów, czasy trwania rozmów, ustawienia przesyłania wiadomości SMS oraz typy połączeń telefonicznych.
+				adres IP;
+				dane o działaniu urządzenia, m.in. o awariach, aktywności systemu, ustawieniach sprzętu, typie i języku przeglądarki, datach i godzinach przesyłanych żądań oraz odsyłających adresach URL;
+				pliki cookie, które mogą jednoznacznie identyfikować daną przeglądarkę lub konto Google.
+				Informacje o lokalizacji
 
-Jeśli użytkownik korzysta z usług Google, możemy gromadzić i przetwarzać informacje na temat rzeczywistego miejsca pobytu użytkownika. Stosujemy różne technologie, aby określić tę lokalizację, w tym adres IP, GPS i inne czujniki np. przekazujące Google informacje na temat pobliskich urządzeń, punktów dostępu do sieci Wi-Fi czy stacji bazowych sieci komórkowej.
+				Jeśli użytkownik korzysta z usług Google, możemy gromadzić i przetwarzać informacje na temat rzeczywistego miejsca pobytu użytkownika. Stosujemy różne technologie, aby określić tę lokalizację, w tym adres IP, GPS i inne czujniki np. przekazujące Google informacje na temat pobliskich urządzeń, punktów dostępu do sieci Wi-Fi czy stacji bazowych sieci komórkowej.
 
-Unikalne numery aplikacji
+				Unikalne numery aplikacji
 
-W określonych usługach występuje unikalny numer aplikacji. Ten numer wraz z informacjami na temat danej instalacji (takimi jak typ systemu operacyjnego i numer wersji aplikacji) może zostać wysłany do Google, gdy usługa jest instalowana lub odinstalowywana bądź okresowo kontaktuje się z naszymi serwerami (np. w celu automatycznej aktualizacji).
+				W określonych usługach występuje unikalny numer aplikacji. Ten numer wraz z informacjami na temat danej instalacji (takimi jak typ systemu operacyjnego i numer wersji aplikacji) może zostać wysłany do Google, gdy usługa jest instalowana lub odinstalowywana bądź okresowo kontaktuje się z naszymi serwerami (np. w celu automatycznej aktualizacji).
 
-Pamięć lokalna
+				Pamięć lokalna
 
-Możemy zbierać informacje (m.in. dane osobowe) i przechowywać je lokalnie na urządzeniu użytkownika, korzystając z takich mechanizmów jak pamięć podręczna przeglądarki (w tym protokół HTML 5) oraz pamięci podręczne aplikacji.
+				Możemy zbierać informacje (m.in. dane osobowe) i przechowywać je lokalnie na urządzeniu użytkownika, korzystając z takich mechanizmów jak pamięć podręczna przeglądarki (w tym protokół HTML 5) oraz pamięci podręczne aplikacji.
 
-Pliki cookie i podobne technologie
+				Pliki cookie i podobne technologie
 
-Gdy użytkownik korzysta z usługi Google, stosujemy, podobnie jak nasi partnerzy, różne technologie do gromadzenia i zapisywania informacji – może to obejmować pliki cookie lub podobne technologie umożliwiające identyfikację przeglądarki lub urządzenia użytkownika. Technologie te wykorzystujemy również do gromadzenia informacji wtedy, gdy użytkownik wchodzi w interakcję z usługami, które oferujemy naszym partnerom, takimi jak usługi reklamowe czy funkcje Google działające w innych witrynach. Nasza usługa Google Analytics pomaga firmom i właścicielom witryn analizować ruch na ich witrynach i w aplikacjach. W przypadku korzystania z Google Analytics w połączeniu z usługami reklamowymi, na przykład tymi, które korzystają z plików cookie DoubleClick, informacje z Google Analytics są łączone przez klienta Google Analytics lub przez nas, za pomocą technologii Google, z informacjami na temat wizyt w wielu witrynach.
+				Gdy użytkownik korzysta z usługi Google, stosujemy, podobnie jak nasi partnerzy, różne technologie do gromadzenia i zapisywania informacji – może to obejmować pliki cookie lub podobne technologie umożliwiające identyfikację przeglądarki lub urządzenia użytkownika. Technologie te wykorzystujemy również do gromadzenia informacji wtedy, gdy użytkownik wchodzi w interakcję z usługami, które oferujemy naszym partnerom, takimi jak usługi reklamowe czy funkcje Google działające w innych witrynach. Nasza usługa Google Analytics pomaga firmom i właścicielom witryn analizować ruch na ich witrynach i w aplikacjach. W przypadku korzystania z Google Analytics w połączeniu z usługami reklamowymi, na przykład tymi, które korzystają z plików cookie DoubleClick, informacje z Google Analytics są łączone przez klienta Google Analytics lub przez nas, za pomocą technologii Google, z informacjami na temat wizyt w wielu witrynach.
 
-Poza informacjami uzyskanymi o użytkowniku od naszych partnerów, z kontem Google użytkownika możemy powiązać także informacje gromadzone przez nas od momentu jego zalogowania się do Google. Informacje powiązane z kontem Google użytkownika traktujemy jako dane osobowe. Więcej informacji na temat sposobu uzyskiwania dostępu, zarządzania lub usuwania przez użytkownika danych powiązanych z jego kontem zawiera sekcja Transparentność i wybór w niniejszych zasadach.
+				Poza informacjami uzyskanymi o użytkowniku od naszych partnerów, z kontem Google użytkownika możemy powiązać także informacje gromadzone przez nas od momentu jego zalogowania się do Google. Informacje powiązane z kontem Google użytkownika traktujemy jako dane osobowe. Więcej informacji na temat sposobu uzyskiwania dostępu, zarządzania lub usuwania przez użytkownika danych powiązanych z jego kontem zawiera sekcja Transparentność i wybór w niniejszych zasadach.
 
-Powrót do góry
-Sposoby wykorzystania zgromadzonych informacji
-Dane zbierane za pośrednictwem wszystkich naszych usług służą do udostępniania, utrzymywania, ochrony i udoskonalania ich w celu tworzenia nowych usług, a także ochrony firmy Google i jej użytkowników. Wykorzystujemy je również, oferując dostosowane treści – np. w postaci trafniejszych wyników wyszukiwania oraz reklam.
+				Powrót do góry
+				Sposoby wykorzystania zgromadzonych informacji
+				Dane zbierane za pośrednictwem wszystkich naszych usług służą do udostępniania, utrzymywania, ochrony i udoskonalania ich w celu tworzenia nowych usług, a także ochrony firmy Google i jej użytkowników. Wykorzystujemy je również, oferując dostosowane treści – np. w postaci trafniejszych wyników wyszukiwania oraz reklam.
 
-Imię i nazwisko podane przez użytkownika w profilu Google może być stosowane we wszelkich usługach, które wymagają konta Google. Ponadto może ono zastąpić poprzednie takie dane powiązane z kontem Google, tak aby użytkownik był w jednakowy sposób reprezentowany we wszystkich naszych usługach. Osoby, które znają adres e-mail użytkownika lub inne identyfikujące go dane, mogą zobaczyć publicznie dostępne dane z jego profilu Google, takie jak imię i nazwisko oraz zdjęcie.
+				Imię i nazwisko podane przez użytkownika w profilu Google może być stosowane we wszelkich usługach, które wymagają konta Google. Ponadto może ono zastąpić poprzednie takie dane powiązane z kontem Google, tak aby użytkownik był w jednakowy sposób reprezentowany we wszystkich naszych usługach. Osoby, które znają adres e-mail użytkownika lub inne identyfikujące go dane, mogą zobaczyć publicznie dostępne dane z jego profilu Google, takie jak imię i nazwisko oraz zdjęcie.
 
-Google może w swoich usługach, w tym w reklamach i innych materiałach o charakterze komercyjnym, wyświetlać nazwę profilu, zdjęcie profilowe oraz czynności wykonywane przez właściciela konta Google w odniesieniu do posiadanego konta Google lub aplikacji innych firm połączonych z kontem Google (takich jak kliknięcia +1, opublikowane opinie oraz komentarze). Szanujemy wybory użytkowników w zakresie ograniczeń udostępniania lub ustawień widoczności konta Google.
+				Google może w swoich usługach, w tym w reklamach i innych materiałach o charakterze komercyjnym, wyświetlać nazwę profilu, zdjęcie profilowe oraz czynności wykonywane przez właściciela konta Google w odniesieniu do posiadanego konta Google lub aplikacji innych firm połączonych z kontem Google (takich jak kliknięcia +1, opublikowane opinie oraz komentarze). Szanujemy wybory użytkowników w zakresie ograniczeń udostępniania lub ustawień widoczności konta Google.
 
-Jeśli użytkownik kontaktuje się z Google, przechowujemy związaną z tym korespondencję, aby ułatwić rozwiązywanie wszelkich problemów. Adres e-mail użytkownika możemy wykorzystywać do informowania go o naszych usługach, w tym o nadchodzących zmianach lub udoskonaleniach.
+				Jeśli użytkownik kontaktuje się z Google, przechowujemy związaną z tym korespondencję, aby ułatwić rozwiązywanie wszelkich problemów. Adres e-mail użytkownika możemy wykorzystywać do informowania go o naszych usługach, w tym o nadchodzących zmianach lub udoskonaleniach.
 
-Informacje zgromadzone za pomocą plików cookie i innych technologii (takich jak tagi pikselowe) służą do zwiększania wygody użytkowników oraz poprawy ogólnej jakości oferowanych przez nas usług. Jedną z usług pełniących to zadanie w odniesieniu do naszych własnych usług jest Google Analytics. Na przykład dzięki zapisywaniu ustawień językowych usługi mogą być wyświetlane w języku preferowanym przez użytkownika. Podczas pokazywania dostosowanych reklam nie kojarzymy identyfikatorów z plików cookie ani podobnych technologii z poufnymi kategoriami (takimi jak rasa, religia, orientacja seksualna czy zdrowie).
+				Informacje zgromadzone za pomocą plików cookie i innych technologii (takich jak tagi pikselowe) służą do zwiększania wygody użytkowników oraz poprawy ogólnej jakości oferowanych przez nas usług. Jedną z usług pełniących to zadanie w odniesieniu do naszych własnych usług jest Google Analytics. Na przykład dzięki zapisywaniu ustawień językowych usługi mogą być wyświetlane w języku preferowanym przez użytkownika. Podczas pokazywania dostosowanych reklam nie kojarzymy identyfikatorów z plików cookie ani podobnych technologii z poufnymi kategoriami (takimi jak rasa, religia, orientacja seksualna czy zdrowie).
 
-Nasze automatyczne systemy analizują treść (w tym wiadomości e-mail) w celu oferowania spersonalizowanych funkcji usług, takich jak wyniki wyszukiwania, reklamy indywidualne i wykrywanie spamu oraz złośliwego oprogramowania.
+				Nasze automatyczne systemy analizują treść (w tym wiadomości e-mail) w celu oferowania spersonalizowanych funkcji usług, takich jak wyniki wyszukiwania, reklamy indywidualne i wykrywanie spamu oraz złośliwego oprogramowania.
 
-Dane osobowe z jednej usługi mogą być łączone z informacjami (w tym danymi osobowymi) z pozostałych usług Google – aby np. ułatwić udostępnianie materiałów znajomym. W zależności od ustawień konta możemy powiązać działania, które wykonujesz w witrynach i aplikacjach, z Twoimi danymi osobowymi. Pomaga nam to w ulepszaniu usług i reklam Google.
+				Dane osobowe z jednej usługi mogą być łączone z informacjami (w tym danymi osobowymi) z pozostałych usług Google – aby np. ułatwić udostępnianie materiałów znajomym. W zależności od ustawień konta możemy powiązać działania, które wykonujesz w witrynach i aplikacjach, z Twoimi danymi osobowymi. Pomaga nam to w ulepszaniu usług i reklam Google.
 
-Przed wykorzystaniem informacji w celu innym niż wymienione w niniejszej Polityce prywatności prosimy użytkownika o pozwolenie.
+				Przed wykorzystaniem informacji w celu innym niż wymienione w niniejszej Polityce prywatności prosimy użytkownika o pozwolenie.
 
-Google przetwarza dane osobowe na serwerach w wielu krajach na całym świecie. Może się to odbywać poza krajem zamieszkania użytkownika.
+				Google przetwarza dane osobowe na serwerach w wielu krajach na całym świecie. Może się to odbywać poza krajem zamieszkania użytkownika.
 			</p>
 
 		</div>
 
+		<!-- SEKCJA REGULAMIN ŚWIADCZENIA USŁUG -->
 		<div class="other-content job">
 			<h1>Regulamin świadczenia usług</h1>
 			<p>
 
-§ 1
+				§ 1
 
-Zakres podmiotowy świadczenia usług
+				Zakres podmiotowy świadczenia usług
 
-Niniejszy Regulamin określa warunki współpracy pomiędzy Omero Sp. z o.o., zwanym dalej Wykonawcą, a podmiotami gospodarczymi lub osobami fizycznymi, zwanymi dalej Zamawiającym, w zakresie usług wykonywanych przez Wykonawcę na rzecz Zamawiającego.
+				Niniejszy Regulamin określa warunki współpracy pomiędzy Omero Sp. z o.o., zwanym dalej Wykonawcą, a podmiotami gospodarczymi lub osobami fizycznymi, zwanymi dalej Zamawiającym, w zakresie usług wykonywanych przez Wykonawcę na rzecz Zamawiającego.
 
- § 2
+				 § 2
 
-Zakres przedmiotowy świadczenia usług
+				Zakres przedmiotowy świadczenia usług
 
-1.         Przedmiotem usług świadczonych przez Wykonawcę jest wykonywanie tłumaczeń pisemnych zwykłych, tłumaczeń pisemnych przysięgłych, tłumaczeń ustnych – symultanicznych, konsekutywnych oraz przysięgłych, obsługa konferencji oraz wszelkie usługi pomocnicze, w szczególności takie jak: obróbka graficzna tekstu, redakcja tekstu, korekta tekstu, przygotowanie tekstu do publikacji, aktualizacja tekstu, opracowanie terminologii, zapewnienie sprzętu do tłumaczeń ustnych, konsultacja językowa.
+				1.         Przedmiotem usług świadczonych przez Wykonawcę jest wykonywanie tłumaczeń pisemnych zwykłych, tłumaczeń pisemnych przysięgłych, tłumaczeń ustnych – symultanicznych, konsekutywnych oraz przysięgłych, obsługa konferencji oraz wszelkie usługi pomocnicze, w szczególności takie jak: obróbka graficzna tekstu, redakcja tekstu, korekta tekstu, przygotowanie tekstu do publikacji, aktualizacja tekstu, opracowanie terminologii, zapewnienie sprzętu do tłumaczeń ustnych, konsultacja językowa.
 
-2.         Zakres przedmiotowy usług zleconych Wykonawcy oraz warunki ich realizacji określa szczegółowo Zamówienie jakie Zamawiający składa Wykonawcy.
+				2.         Zakres przedmiotowy usług zleconych Wykonawcy oraz warunki ich realizacji określa szczegółowo Zamówienie jakie Zamawiający składa Wykonawcy.
 
- § 3
+				 § 3
 
-Zasady składania zamówień
+				Zasady składania zamówień
 
-1.         Przed złożeniem Zamówienia strony ustalają zakres, cenę, sposób dostarczenia usługi będącej przedmiotem Zamówienia oraz wszelkie inne informacje niezbędne do należytego wykonania tej usługi.
+				1.         Przed złożeniem Zamówienia strony ustalają zakres, cenę, sposób dostarczenia usługi będącej przedmiotem Zamówienia oraz wszelkie inne informacje niezbędne do należytego wykonania tej usługi.
 
-2.         Świadczenie usług przez Wykonawcę odbywa się na podstawie otrzymanego od Zamawiającego Zamówienia na daną usługę.
+				2.         Świadczenie usług przez Wykonawcę odbywa się na podstawie otrzymanego od Zamawiającego Zamówienia na daną usługę.
 
-3.         Zamawiający akceptuje Zamówienie poprzez:
+				3.         Zamawiający akceptuje Zamówienie poprzez:
 
-a)         przesłanie Wykonawcy podpisanego i opieczętowanego formularza Zamówienia w formie faksu lub skanu pocztą elektroniczną, lub składając je osobiście w siedzibie Wykonawcy.
+				a)         przesłanie Wykonawcy podpisanego i opieczętowanego formularza Zamówienia w formie faksu lub skanu pocztą elektroniczną, lub składając je osobiście w siedzibie Wykonawcy.
 
-b)         przesłanie Wykonawcy zwrotnego potwierdzenia pocztą elektroniczną oświadczenia woli o akceptacji Zamówienia.
+				b)         przesłanie Wykonawcy zwrotnego potwierdzenia pocztą elektroniczną oświadczenia woli o akceptacji Zamówienia.
 
-4.         W celu dochowania warunków wykonania usługi Zamawiający winien dostarczyć złożone Zamówienie najpóźniej do godziny 16:00 w dniu ustalania warunków wykonania usługi. W przypadku opóźnienia w dostarczeniu Zamówienia, Wykonawca ma prawo do ustalenia nowych warunków wykonania usługi i przedstawienia ich Zamawiającemu.
+				4.         W celu dochowania warunków wykonania usługi Zamawiający winien dostarczyć złożone Zamówienie najpóźniej do godziny 16:00 w dniu ustalania warunków wykonania usługi. W przypadku opóźnienia w dostarczeniu Zamówienia, Wykonawca ma prawo do ustalenia nowych warunków wykonania usługi i przedstawienia ich Zamawiającemu.
 
-5.         Zamawiający każdorazowo otrzyma potwierdzenie przyjęcia Zamówienia do realizacji przez Wykonawcę, co jest równoznaczne z przystąpieniem Wykonawcy do realizacji niniejszego Zamówienia.
+				5.         Zamawiający każdorazowo otrzyma potwierdzenie przyjęcia Zamówienia do realizacji przez Wykonawcę, co jest równoznaczne z przystąpieniem Wykonawcy do realizacji niniejszego Zamówienia.
 
-§ 4
+				§ 4
 
-Warunki wykonywania usług
+				Warunki wykonywania usług
 
-1.         Zamawiający zobowiązuje się do odbioru wykonanego Zamówienia oraz do zapłaty na rzecz Wykonawcy wynagrodzenia w uzgodnionym terminie.
+				1.         Zamawiający zobowiązuje się do odbioru wykonanego Zamówienia oraz do zapłaty na rzecz Wykonawcy wynagrodzenia w uzgodnionym terminie.
 
-2.         Potwierdzeniem wydania Zamawiającemu wykonanego Zamówienia jest:
+				2.         Potwierdzeniem wydania Zamawiającemu wykonanego Zamówienia jest:
 
-a)         W przypadku tłumaczeń pisemnych:
+				a)         W przypadku tłumaczeń pisemnych:
 
-i.          Złożenie podpisu przez Zamawiającego na jakimkolwiek z dokumentów potwierdzających wykonanie usługi (np. faktura, paragon, potwierdzenie odbioru na formularzu Zamówienia itp.),
+				i.          Złożenie podpisu przez Zamawiającego na jakimkolwiek z dokumentów potwierdzających wykonanie usługi (np. faktura, paragon, potwierdzenie odbioru na formularzu Zamówienia itp.),
 
-ii.         Dokument potwierdzający nadanie przesyłki pocztą lub kurierem na adres wskazany przez Zamawiającego,
+				ii.         Dokument potwierdzający nadanie przesyłki pocztą lub kurierem na adres wskazany przez Zamawiającego,
 
-iii.        Potwierdzenie nadania e-maila do Zamawiającego lub na adres przez niego wskazany wraz z załącznikami,
+				iii.        Potwierdzenie nadania e-maila do Zamawiającego lub na adres przez niego wskazany wraz z załącznikami,
 
-iv.        Potwierdzenie nadania faksu na numer faksu podany przez Zamawiającego
+				iv.        Potwierdzenie nadania faksu na numer faksu podany przez Zamawiającego
 
-b)         W przypadku tłumaczeń ustnych:
+				b)         W przypadku tłumaczeń ustnych:
 
-i.          Złożenie podpisu przez Zamawiającego na jakimkolwiek z dokumentów potwierdzających wykonanie usługi (np. faktura, paragon, potwierdzenie odbioru na formularzu Zamówienia itp.),
+				i.          Złożenie podpisu przez Zamawiającego na jakimkolwiek z dokumentów potwierdzających wykonanie usługi (np. faktura, paragon, potwierdzenie odbioru na formularzu Zamówienia itp.),
 
-ii.         Złożenie podpisu na Karcie Pracy Tłumacza przez Zamawiającego lub osobę przez niego wskazaną.
+				ii.         Złożenie podpisu na Karcie Pracy Tłumacza przez Zamawiającego lub osobę przez niego wskazaną.
 
-3.         Podstawą zapłaty za wykonaną usługę jest faktura lub paragon wystawiony przez Wykonawcę.
+				3.         Podstawą zapłaty za wykonaną usługę jest faktura lub paragon wystawiony przez Wykonawcę.
 
-4.         Zamawiający zobowiązany jest do przyjęcia wykonanego przedmiotu Zamówienia w terminie nie późniejszym niż 10 dni od dnia jego wydania przez Wykonawcę. Zamawiającemu przysługuje prawo do zgłaszania zastrzeżeń w terminie 10 dni po otrzymaniu przedmiotu Zamówienia, przy czym niezgłoszenie zastrzeżeń jest równoznaczne z przyjęciem przedmiotu Zamówienia. W razie zgłoszenia zastrzeżeń przez Zamawiającego co do wydanego przedmiotu Zamówienia, Wykonawca zobowiązany jest do dokonania naprawy przedmiotu Zamówienia, zgodnie ze wskazaniami Zamawiającego.
+				4.         Zamawiający zobowiązany jest do przyjęcia wykonanego przedmiotu Zamówienia w terminie nie późniejszym niż 10 dni od dnia jego wydania przez Wykonawcę. Zamawiającemu przysługuje prawo do zgłaszania zastrzeżeń w terminie 10 dni po otrzymaniu przedmiotu Zamówienia, przy czym niezgłoszenie zastrzeżeń jest równoznaczne z przyjęciem przedmiotu Zamówienia. W razie zgłoszenia zastrzeżeń przez Zamawiającego co do wydanego przedmiotu Zamówienia, Wykonawca zobowiązany jest do dokonania naprawy przedmiotu Zamówienia, zgodnie ze wskazaniami Zamawiającego.
 
- § 5
+				 § 5
 
-Termin wykonania usługi
+				Termin wykonania usługi
 
-Za termin wykonania usługi uznaje się termin określony w Zamówieniu i potwierdzony przez Wykonawcę.
+				Za termin wykonania usługi uznaje się termin określony w Zamówieniu i potwierdzony przez Wykonawcę.
 
- § 6
+				 § 6
 
-Odstąpienie od umowy, wyłączność, odpowiedzialność
+				Odstąpienie od umowy, wyłączność, odpowiedzialność
 
-1.         Zamawiający ma prawo odstąpić od realizacji Zamówienia za jednoczesną zapłatą na rzecz Wykonawcy odstępnego, w następujących wysokościach:
+				1.         Zamawiający ma prawo odstąpić od realizacji Zamówienia za jednoczesną zapłatą na rzecz Wykonawcy odstępnego, w następujących wysokościach:
 
-a)         w przypadku, gdy Zamówienie obejmowało tłumaczenie pisemne lub inną usługę dodatkową świadczoną przez Wykonawcę, z wyłączeniem tłumaczeń ustnych:
+				a)         w przypadku, gdy Zamówienie obejmowało tłumaczenie pisemne lub inną usługę dodatkową świadczoną przez Wykonawcę, z wyłączeniem tłumaczeń ustnych:
 
-i.          wynagrodzenia za rzeczywiście wykonaną pracę oraz do zwrot innych kosztów poniesionych przez Wykonawcę w związku z przygotowaniem do świadczenia zamówionych usług, jednak nie mniej niż 20% wartości zlecenia.
+				i.          wynagrodzenia za rzeczywiście wykonaną pracę oraz do zwrot innych kosztów poniesionych przez Wykonawcę w związku z przygotowaniem do świadczenia zamówionych usług, jednak nie mniej niż 20% wartości zlecenia.
 
-ii.         100% wartości Zamówienia, jeśli odwoła usługę tłumaczenia pisemnego lub usługi dodatkowej świadczonej w trybie ekspresowym, lub po upływie 50 % czasu przewidzianego na realizację Zamówienia.
+				ii.         100% wartości Zamówienia, jeśli odwoła usługę tłumaczenia pisemnego lub usługi dodatkowej świadczonej w trybie ekspresowym, lub po upływie 50 % czasu przewidzianego na realizację Zamówienia.
 
-b)         W przypadku, gdy Zamówienie obejmowało tłumaczenie ustne:
+				b)         W przypadku, gdy Zamówienie obejmowało tłumaczenie ustne:
 
-i.          10% wartości Zamówienia, jeśli odwoła Zamówienie na 3 dni przed terminem rozpoczęcia tłumaczenia;
+				i.          10% wartości Zamówienia, jeśli odwoła Zamówienie na 3 dni przed terminem rozpoczęcia tłumaczenia;
 
-ii.         50% wartości Zamówienia, jeśli odwoła Zamówienie na 2 dni przed terminem rozpoczęcia tłumaczenia;
+				ii.         50% wartości Zamówienia, jeśli odwoła Zamówienie na 2 dni przed terminem rozpoczęcia tłumaczenia;
 
-iii.        100% wartości Zamówienia, jeśli odwoła Zamówienie na 1 dzień przed terminem rozpoczęcia tłumaczenia lub w dniu jego rozpoczęcia.
+				iii.        100% wartości Zamówienia, jeśli odwoła Zamówienie na 1 dzień przed terminem rozpoczęcia tłumaczenia lub w dniu jego rozpoczęcia.
 
-2.         Zamawiający zobowiązuje się, że wszelkie ustalenia dotyczące realizowanego Zamówienia podejmować będzie jedynie w drodze bezpośrednich kontaktów wyłącznie z Wykonawcą. Zabrania się prowadzenia przez Zamawiającego jakichkolwiek ustaleń dotyczących Zamówienia bezpośrednio z osobami trzecimi, a w szczególności tłumaczem, podwykonawcą Wykonawcy itp.
+				2.         Zamawiający zobowiązuje się, że wszelkie ustalenia dotyczące realizowanego Zamówienia podejmować będzie jedynie w drodze bezpośrednich kontaktów wyłącznie z Wykonawcą. Zabrania się prowadzenia przez Zamawiającego jakichkolwiek ustaleń dotyczących Zamówienia bezpośrednio z osobami trzecimi, a w szczególności tłumaczem, podwykonawcą Wykonawcy itp.
 
-3.         Jeżeli Zamawiający naruszy zakaz określony w ust. 2 § 6, zobowiązany będzie do zapłaty na rzecz Wykonawcy kary umownej w wysokości 50% wynagrodzenia ustalonego za realizację danego Zamówienia.
+				3.         Jeżeli Zamawiający naruszy zakaz określony w ust. 2 § 6, zobowiązany będzie do zapłaty na rzecz Wykonawcy kary umownej w wysokości 50% wynagrodzenia ustalonego za realizację danego Zamówienia.
 
- § 7
+				 § 7
 
-Wykonanie, niewykonanie lub nienależyte wykonanie usługi
+				Wykonanie, niewykonanie lub nienależyte wykonanie usługi
 
-1.         Usługę, będącą przedmiotem Zamówienia uznaje się za wykonaną należycie, jeżeli:
+				1.         Usługę, będącą przedmiotem Zamówienia uznaje się za wykonaną należycie, jeżeli:
 
-a)         została wykonana na stosownym poziomie fachowym,
+				a)         została wykonana na stosownym poziomie fachowym,
 
-b)         została dostarczona lub była gotowa do przekazania w uzgodnionym terminie.
+				b)         została dostarczona lub była gotowa do przekazania w uzgodnionym terminie.
 
-2. W przypadku wykazania przez Zamawiającego, że wykonane Zamówienie obciążone jest którąś z wad wymienionych w ust. 2, Wykonawca zobowiązany jest do niezwłocznego ich usunięcia, w terminie ustalonym z Zamawiającym.
+				2. W przypadku wykazania przez Zamawiającego, że wykonane Zamówienie obciążone jest którąś z wad wymienionych w ust. 2, Wykonawca zobowiązany jest do niezwłocznego ich usunięcia, w terminie ustalonym z Zamawiającym.
 
-3. W przypadku gdy, wady określone w ust. 1 lit a) nie są możliwe do usunięcia, Zamawiający ma prawo żądania kary umownej w wysokości 25% wynagrodzenia netto ustalonego za realizację danego Zamówienia, zaś gdyby wady miały charakter wad istotnych, co zostanie stwierdzone w toku postępowania reklamacyjnego przeprowadzonego w trybie określonym w § 8 Regulaminu, Zamawiający ma prawo żądania kary umownej w wysokości 50% wynagrodzenia netto ustalonego za realizację przedmiotu Zamówienia.
+				3. W przypadku gdy, wady określone w ust. 1 lit a) nie są możliwe do usunięcia, Zamawiający ma prawo żądania kary umownej w wysokości 25% wynagrodzenia netto ustalonego za realizację danego Zamówienia, zaś gdyby wady miały charakter wad istotnych, co zostanie stwierdzone w toku postępowania reklamacyjnego przeprowadzonego w trybie określonym w § 8 Regulaminu, Zamawiający ma prawo żądania kary umownej w wysokości 50% wynagrodzenia netto ustalonego za realizację przedmiotu Zamówienia.
 
-4. W przypadku niedotrzymania terminu wykonania przedmiotu Zamówienia przez Wykonawcę, Wykonawca obniży kwotę wynagrodzenia netto za wykonanie przedmiotu Zamówienia o 5% za każdy dzień zwłoki w wydaniu przedmiotu Zamówienia, w sumie nie więcej jednak niż równowartość 30% wartości wynagrodzenia netto ustalonego za realizację danego Zamówienia. W przypadku opóźnienia w wydaniu przedmiotu Zamówienia przekraczającego 10 dni, Zamawiający ma prawo odstąpić od umowy bez wypłaty wynagrodzenia na rzecz Wykonawcy.
+				4. W przypadku niedotrzymania terminu wykonania przedmiotu Zamówienia przez Wykonawcę, Wykonawca obniży kwotę wynagrodzenia netto za wykonanie przedmiotu Zamówienia o 5% za każdy dzień zwłoki w wydaniu przedmiotu Zamówienia, w sumie nie więcej jednak niż równowartość 30% wartości wynagrodzenia netto ustalonego za realizację danego Zamówienia. W przypadku opóźnienia w wydaniu przedmiotu Zamówienia przekraczającego 10 dni, Zamawiający ma prawo odstąpić od umowy bez wypłaty wynagrodzenia na rzecz Wykonawcy.
 
-5. Wykonawca ponosi odpowiedzialność za szkody wynikające z nienależycie wykonanego Zamówienia do wysokości wartości Zamówienia bez podatku VAT. W przypadku, gdyby szkoda wywołana niewykonaniem lub nienależytym wykonaniem przedmiotu Zamówienia przez Wykonawcę przekraczała kwotę ustalonych w Regulaminie dla danej okoliczności kar umownych, Zamawiający uprawniony jest do dochodzenia odszkodowania do wysokości pełnej szkody.
+				5. Wykonawca ponosi odpowiedzialność za szkody wynikające z nienależycie wykonanego Zamówienia do wysokości wartości Zamówienia bez podatku VAT. W przypadku, gdyby szkoda wywołana niewykonaniem lub nienależytym wykonaniem przedmiotu Zamówienia przez Wykonawcę przekraczała kwotę ustalonych w Regulaminie dla danej okoliczności kar umownych, Zamawiający uprawniony jest do dochodzenia odszkodowania do wysokości pełnej szkody.
 
-6. Zamawiający, który wymaga wykonania usług w trybach przyspieszonych bądź ekspresowych rozumie i akceptuje, że Zamówienia takie mogą być wykonywane przez grupę podwykonawców, co może mieć wpływ na jednolitość terminologii.
+				6. Zamawiający, który wymaga wykonania usług w trybach przyspieszonych bądź ekspresowych rozumie i akceptuje, że Zamówienia takie mogą być wykonywane przez grupę podwykonawców, co może mieć wpływ na jednolitość terminologii.
 
-7. Wyłączona jest odpowiedzialność Wykonawcy za brak spójności w terminologii użytej w tłumaczeniu w stosunku do terminologii stosowanej przez Zamawiającego, w przypadku, jeśli Zamawiający ustalając warunki Zamówienia i składając Zamówienie nie wskaże i nie udostępni Wykonawcy terminologii używanej przez Zamawiającego, albowiem w takim przypadku tłumaczenie wykonywane jest na zasadzie użycia słownictwa najbardziej popularnego dla danej dziedziny.
+				7. Wyłączona jest odpowiedzialność Wykonawcy za brak spójności w terminologii użytej w tłumaczeniu w stosunku do terminologii stosowanej przez Zamawiającego, w przypadku, jeśli Zamawiający ustalając warunki Zamówienia i składając Zamówienie nie wskaże i nie udostępni Wykonawcy terminologii używanej przez Zamawiającego, albowiem w takim przypadku tłumaczenie wykonywane jest na zasadzie użycia słownictwa najbardziej popularnego dla danej dziedziny.
 
-8. Wyłączona jest odpowiedzialność Wykonawcy za przygotowanie tekstu do publikacji oraz brak dodatkowych procesów kontroli i weryfikacji w przypadkach, gdy:
+				8. Wyłączona jest odpowiedzialność Wykonawcy za przygotowanie tekstu do publikacji oraz brak dodatkowych procesów kontroli i weryfikacji w przypadkach, gdy:
 
-a)         Zamawiający nie poinformuje Wykonawcy o przeznaczeniu tekstu do publikacji,
+				a)         Zamawiający nie poinformuje Wykonawcy o przeznaczeniu tekstu do publikacji,
 
-b)         Zamawiający zrezygnuje z dodatkowych procesów zapewnianych w przypadku tłumaczeń przeznaczonych do publikacji. Rezygnacja taka oznacza, że rozumie on i akceptuje ryzyko powstałe w skutek pominięcia procesów stosowanych w przypadku tłumaczeń przeznaczonych do publikacji.
+				b)         Zamawiający zrezygnuje z dodatkowych procesów zapewnianych w przypadku tłumaczeń przeznaczonych do publikacji. Rezygnacja taka oznacza, że rozumie on i akceptuje ryzyko powstałe w skutek pominięcia procesów stosowanych w przypadku tłumaczeń przeznaczonych do publikacji.
 
-9. Strony nie ponoszą wobec siebie odpowiedzialności z tytułu nienależytego wykonania lub niewykonania swych zobowiązań w wypadku, gdy spowodowane to zostało wystąpieniem okoliczności o charakterze siły wyższej. Za zdarzenia o charakterze siły wyższej, w rozumieniu niniejszego Regulaminu, uważa się: strajki, blokady, awarię systemów komputerowych, zaniki energii elektrycznej, zamachy terrorystyczne, wystąpienie epidemii lub chorób zakaźnych w stopniu wpływającym na utrudnienia w prawidłowym funkcjonowaniu przedsiębiorstwa Strony dotkniętej skutkami siły wyższej. Strona dotknięta skutkami zdarzeń o charakterze siły wyższej winna niezwłocznie zawiadomić drugą Stronę o ich wystąpieniu i preliminowanym terminie ustąpienia.
+				9. Strony nie ponoszą wobec siebie odpowiedzialności z tytułu nienależytego wykonania lub niewykonania swych zobowiązań w wypadku, gdy spowodowane to zostało wystąpieniem okoliczności o charakterze siły wyższej. Za zdarzenia o charakterze siły wyższej, w rozumieniu niniejszego Regulaminu, uważa się: strajki, blokady, awarię systemów komputerowych, zaniki energii elektrycznej, zamachy terrorystyczne, wystąpienie epidemii lub chorób zakaźnych w stopniu wpływającym na utrudnienia w prawidłowym funkcjonowaniu przedsiębiorstwa Strony dotkniętej skutkami siły wyższej. Strona dotknięta skutkami zdarzeń o charakterze siły wyższej winna niezwłocznie zawiadomić drugą Stronę o ich wystąpieniu i preliminowanym terminie ustąpienia.
 
- § 8
+				 § 8
 
-Reklamacje
+				Reklamacje
 
-1.         Wszelkie zastrzeżenia dotyczące niewykonania lub nienależytego wykonania przedmiotu Zamówienia Zamawiający jest zobowiązany zgłosić Wykonawcy w ciągu 10 dni roboczych od daty otrzymania wykonanego przedmiotu Zamówienia, przy czym niezgłoszenie wad oznacza, że Zamawiający przyjmuje przedmiot Zamówienia bez zastrzeżeń.
+				1.         Wszelkie zastrzeżenia dotyczące niewykonania lub nienależytego wykonania przedmiotu Zamówienia Zamawiający jest zobowiązany zgłosić Wykonawcy w ciągu 10 dni roboczych od daty otrzymania wykonanego przedmiotu Zamówienia, przy czym niezgłoszenie wad oznacza, że Zamawiający przyjmuje przedmiot Zamówienia bez zastrzeżeń.
 
-2.         Z zastrzeżeniem przepisów prawa dotyczącego konsumentów po upływie terminu określonego w ust. 1 wszelkie uprawnienia Zamawiającego wynikające z niewykonania lub nienależytego wykonania przedmiotu Zamówienia, wygasają.
+				2.         Z zastrzeżeniem przepisów prawa dotyczącego konsumentów po upływie terminu określonego w ust. 1 wszelkie uprawnienia Zamawiającego wynikające z niewykonania lub nienależytego wykonania przedmiotu Zamówienia, wygasają.
 
-3.         Zastrzeżenia Zamawiającego muszą zostać zgłoszone w formie pisemnej i dostarczone Wykonawcy pocztą elektroniczną, faxem, pocztą lub osobiście. Ponadto Zamawiający jest zobowiązany do wskazania okoliczności, czasu i sposobu odkrycia wad oraz opisu wady. W odniesieniu do tłumaczeń ustnych zgłoszenie wad powinno dodatkowo zawierać nagranie audio lub audio-video.
+				3.         Zastrzeżenia Zamawiającego muszą zostać zgłoszone w formie pisemnej i dostarczone Wykonawcy pocztą elektroniczną, faxem, pocztą lub osobiście. Ponadto Zamawiający jest zobowiązany do wskazania okoliczności, czasu i sposobu odkrycia wad oraz opisu wady. W odniesieniu do tłumaczeń ustnych zgłoszenie wad powinno dodatkowo zawierać nagranie audio lub audio-video.
 
-4.         Wykonawca rozpatruje reklamację w możliwie najkrótszym terminie, nie dłuższym niż 7 dni roboczych od zgłoszenia przez Zamawiającego zastrzeżeń, o których mowa w ust. 1.
+				4.         Wykonawca rozpatruje reklamację w możliwie najkrótszym terminie, nie dłuższym niż 7 dni roboczych od zgłoszenia przez Zamawiającego zastrzeżeń, o których mowa w ust. 1.
 
-5.         W przypadku wystąpienia między Zamawiającym a Wykonawcą sporu co do wystąpienia wad w wykonanym Zamówieniu, o jakich mowa w § 7 Regulaminu, strony zobowiązują się rozwiązać spór na drodze polubownej, na podstawie niezależnego arbitra, wybranego wspólnie przez obydwie strony z listy biegłych tłumaczy sądowych z terenu kognicji Sądu Okręgowego w Lublinie.
+				5.         W przypadku wystąpienia między Zamawiającym a Wykonawcą sporu co do wystąpienia wad w wykonanym Zamówieniu, o jakich mowa w § 7 Regulaminu, strony zobowiązują się rozwiązać spór na drodze polubownej, na podstawie niezależnego arbitra, wybranego wspólnie przez obydwie strony z listy biegłych tłumaczy sądowych z terenu kognicji Sądu Okręgowego w Lublinie.
 
-6.         Wysokość kary umownej wynikającej z postanowień § 7 ust. 5 Regulaminu uzależniona jest od wyniku oceny dokonanej przez niezależnego arbitra. Koszty sporządzenia opinii niezależnego arbitra pokrywa strona, która w postępowaniu przegra spór.
+				6.         Wysokość kary umownej wynikającej z postanowień § 7 ust. 5 Regulaminu uzależniona jest od wyniku oceny dokonanej przez niezależnego arbitra. Koszty sporządzenia opinii niezależnego arbitra pokrywa strona, która w postępowaniu przegra spór.
 
- § 9
+				 § 9
 
-Poufność
+				Poufność
 
-1.         Z wyjątkiem materiałów powszechnie dostępnych (publikacje prasowe i internetowe, ogólnie dostępne akty prawne itp.), wszystkie dokumenty i materiały pomocnicze powierzane przez Zamawiającego oraz treść spotkań tłumaczonych przez tłumaczy ustnych są traktowane jako poufne i nie są w żaden sposób udostępniane osobom trzecim. Wykonawca oświadcza, że wszyscy pracownicy oraz podwykonawcy, którzy angażowani będą do obsługi zleceń Zamawiającego, zawarli z Wykonawcą umowę zobowiązującą ich do zachowania poufności wszelkich informacji pochodzących od Zamawiających,
+				1.         Z wyjątkiem materiałów powszechnie dostępnych (publikacje prasowe i internetowe, ogólnie dostępne akty prawne itp.), wszystkie dokumenty i materiały pomocnicze powierzane przez Zamawiającego oraz treść spotkań tłumaczonych przez tłumaczy ustnych są traktowane jako poufne i nie są w żaden sposób udostępniane osobom trzecim. Wykonawca oświadcza, że wszyscy pracownicy oraz podwykonawcy, którzy angażowani będą do obsługi zleceń Zamawiającego, zawarli z Wykonawcą umowę zobowiązującą ich do zachowania poufności wszelkich informacji pochodzących od Zamawiających,
 
-2.         Na życzenie Zamawiającego Wykonawca może dostarczyć odrębny dokument stanowiący zobowiązanie do zachowania poufności.
+				2.         Na życzenie Zamawiającego Wykonawca może dostarczyć odrębny dokument stanowiący zobowiązanie do zachowania poufności.
 
- § 10
+				 § 10
 
-Postanowienia końcowe
+				Postanowienia końcowe
 
-1.         Niniejszy Regulamin obowiązuje Zamawiającego od dnia złożenia Zamówienia wraz z akceptacją niniejszego Regulaminu.
+				1.         Niniejszy Regulamin obowiązuje Zamawiającego od dnia złożenia Zamówienia wraz z akceptacją niniejszego Regulaminu.
 
-2.         W szczególnych przypadkach Wykonawca, za zgodą Zamawiającego może zastosować inne niż określone w Regulaminie zasady wykonania usługi, z zachowaniem formy pisemnej, pod rygorem nieważności.
+				2.         W szczególnych przypadkach Wykonawca, za zgodą Zamawiającego może zastosować inne niż określone w Regulaminie zasady wykonania usługi, z zachowaniem formy pisemnej, pod rygorem nieważności.
 
-3.         Wykonawca zastrzega sobie prawo do zmiany Regulaminu.
+				3.         Wykonawca zastrzega sobie prawo do zmiany Regulaminu.
 
-4.         W sprawach nieuregulowanych przepisami niniejszego Regulaminu mają zastosowanie ogólnie obowiązujące przepisy prawa.
+				4.         W sprawach nieuregulowanych przepisami niniejszego Regulaminu mają zastosowanie ogólnie obowiązujące przepisy prawa.
 
-5.         Wszelkie wynikłe między stronami spory będą rozstrzygane przez właściwy sąd w Lublinie.
+				5.         Wszelkie wynikłe między stronami spory będą rozstrzygane przez właściwy sąd w Lublinie.
 
-6.         Niniejszy Regulamin obowiązuje od dnia 06.03.2014 r.
+				6.         Niniejszy Regulamin obowiązuje od dnia 06.03.2014 r.
 			</p>
 
 
 		</div>
-		<div class="other-content cert">
-			<h1>Certyfikaty</h1>
-			<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
-			<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
-			<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
-			<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
-			<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, excepturi, quasi! Impedit natus sequi repellendus incidunt ipsa. Provident saepe repellendus nam ratione sint, ipsa architecto, quidem voluptatem dolores iusto ipsum.</p>
-			<p><a href="https://placeholder.com"><img src="http://via.placeholder.com/650x350"></a></p>
-
 
 		</div>
 
-		<!-- Footer -->
-		<div id="footer">
+		<!-- SEKCJA STOPKA -->
+		<div id="footer" class="container-outer">
 
-			<div class="bottom-links router-links">
-				<a href="#/polityka" data-position=".policy" data-target=".policy">Polityka prywatności</a><span> | </span>
-				<a href="#/praca" data-position=".job" data-target=".job">Warunki i regulamin</a>
+			<div class="container-inner">
+
+				<div class="bottom-links router-links">
+					<a href="#/polityka" data-position=".policy" data-target=".policy">Polityka prywatności</a><span> | </span>
+					<a href="#/praca" data-position=".job" data-target=".job">Warunki i regulamin</a>
+				</div>
+
+				<div class="footer-inner">
+					<div class="footer-logo"><img width="200px" src="assets/images/logo.svg" /></div>
+					<div class="rights">All rights reserved <span class="copyright"></span></div>
+				</div>
+
 			</div>
 
-			<div class="footer-inner">
-				<div class="footer-logo"><img src="assets/images/logo.jpg" /></div>
-				<div class="rights">All rights reserved <span class="copyright"></span></div>
-			</div>
-			<!--div class="bottom-links">
-				<h1>Menu</h1>
-				<a href="#" data-position=".home">Home</a>
-				<a href="#/uslugi" data-position=".services">Usługi</a>
-				<a href="#/onas" data-position=".aboutus">O nas</a>
-				<a href="#/referencje" data-position=".reference">Referencje</a>
-				<a href="#/kontakt" data-position=".contact-form">Kontakt</a>
-			</div-->
 		</div>
 
-
-
-
-
-
-		</div>
 		<!-- inject:js -->
 		<script src="./assets/js/menu.js"></script>
 		<script src="./assets/js/map.js"></script>
@@ -902,6 +1002,7 @@ Postanowienia końcowe
 		<script src="../node_modules/countup.js/dist/countUp.min.js"></script>
 		<script src="./assets/js/countup.js"></script>
 		<!-- endinject -->
+
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0CNfYubMCK65RWVnI8TzIRw1ROhSZLzc&callback=omeroMap"></script>
 	</body>
 

@@ -66,13 +66,13 @@
       */
 
       /** Initialize top menu bar color change after scroling down. */
-      // $( window ).scroll(function() {
-      //   // var scrollPos = $( window ).scrollTop();
-      //   // scrollPos > 300 ?
-      //   view.scrollPos() > 300 ?
-      //   view.navWrapper.css( "background-color", "#29c0ff" ) :
-      //   view.navWrapper.css( "background-color", "transparent" );
-      // });
+      $( window ).scroll(function() {
+        // var scrollPos = $( window ).scrollTop();
+        // scrollPos > 300 ?
+        view.scrollPos() > 100 ?
+        view.navWrapper.css( "box-shadow", "0 1px 55px #000" ) :
+        view.navWrapper.css( "box-shadow", "none" );
+      });
 
       /** Initialize top and bottom menu scroll system. */
       this.navMenuBottom.on('click', 'a', function(e){

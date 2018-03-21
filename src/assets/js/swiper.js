@@ -6,7 +6,7 @@
   * Represents copyright medhods.
   */
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('#swiper1', {
     spaceBetween: 30,
      centeredSlides: true,
      autoplay: {
@@ -22,5 +22,14 @@
        prevEl: '.swiper-button-prev',
      },
    });
+
+   var swiperRef = new Swiper('#swiper2', {
+     spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      }
+    });
 
 } ());
